@@ -1,0 +1,38 @@
+[
+  {
+    "floor": "4th Floor",
+    "source": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-4F.svg",
+    "svg": "4th-floor.svg",
+    "png": "4th-floor.png"
+  },
+  {
+    "floor": "3rd Floor",
+    "source": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-3F.svg",
+    "svg": "3rd-floor.svg",
+    "png": "3rd-floor.png"
+  },
+  {
+    "floor": "2nd Floor",
+    "source": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-2F.svg",
+    "svg": "2nd-floor.svg",
+    "png": "2nd-floor.png"
+  },
+  {
+    "floor": "1st Floor",
+    "source": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-1F.svg",
+    "svg": "1st-floor.svg",
+    "png": "1st-floor.png"
+  },
+  {
+    "floor": "Ground Floor",
+    "source": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-GF-1.svg",
+    "svg": "ground-floor.svg",
+    "png": "ground-floor.png"
+  },
+  {
+    "floor": "Lower Ground",
+    "source": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-LG.svg",
+    "svg": "lower-ground.svg",
+    "png": "lower-ground.png"
+  }
+]

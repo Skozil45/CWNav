@@ -1,0 +1,6841 @@
+{
+  "meters_per_unit": 1.0,
+  "scale_verified": false,
+  "scale_note": "Illustrative 1 meter per SVG unit only. Replace with measured distance / SVG distance before claiming real meters.",
+  "network_type": "shared_corridor_rails",
+  "mapping_note": "Single shared corridor-centerline rail network from thinned walkable masks. Destination branches join existing rails on first contact; Dijkstra and player movement reuse these fixed LineStrings. Entrances, connector pairs, costs and directionality are inferred, not surveyed.",
+  "start": "g0",
+  "nodes": {
+    "g-fore": {
+      "floor": "ground",
+      "xy": [
+        282.0,
+        140.0
+      ]
+    },
+    "ground-wilson-approach": {
+      "floor": "ground",
+      "xy": [
+        155.0,
+        158.0
+      ]
+    },
+    "g-chagee": {
+      "floor": "ground",
+      "xy": [
+        240.0,
+        145.0
+      ]
+    },
+    "ground-loft-approach": {
+      "floor": "ground",
+      "xy": [
+        85.0,
+        141.0
+      ]
+    },
+    "g-lexus": {
+      "floor": "ground",
+      "xy": [
+        334.0,
+        251.0
+      ]
+    },
+    "ground-marketing-gallery-apartment-approach": {
+      "floor": "ground",
+      "xy": [
+        244.0,
+        65.0
+      ]
+    },
+    "ground-starbucks-approach": {
+      "floor": "ground",
+      "xy": [
+        210.5,
+        174.0
+      ]
+    },
+    "ground-bowie-approach": {
+      "floor": "ground",
+      "xy": [
+        284.0,
+        199.5
+      ]
+    },
+    "ground-tumi-approach": {
+      "floor": "ground",
+      "xy": [
+        244.0,
+        167.0
+      ]
+    },
+    "ground-tissot-approach": {
+      "floor": "ground",
+      "xy": [
+        203.0,
+        92.0
+      ]
+    },
+    "ground-sandro-approach": {
+      "floor": "ground",
+      "xy": [
+        181.0,
+        158.0
+      ]
+    },
+    "ground-pandora-approach": {
+      "floor": "ground",
+      "xy": [
+        189.0,
+        111.5
+      ]
+    },
+    "ground-molton-brown-approach": {
+      "floor": "ground",
+      "xy": [
+        131.0,
+        127.0
+      ]
+    },
+    "g-metro": {
+      "floor": "ground",
+      "xy": [
+        346.0,
+        139.0
+      ]
+    },
+    "ground-memo-paris-approach": {
+      "floor": "ground",
+      "xy": [
+        162.0,
+        92.0
+      ]
+    },
+    "ground-kate-spade-approach": {
+      "floor": "ground",
+      "xy": [
+        233.0,
+        145.0
+      ]
+    },
+    "ground-hnm-gf-approach": {
+      "floor": "ground",
+      "xy": [
+        119.0,
+        170.0
+      ]
+    },
+    "ground-frederique-constant-approach": {
+      "floor": "ground",
+      "xy": [
+        127.0,
+        92.0
+      ]
+    },
+    "ground-frank-and-co-approach": {
+      "floor": "ground",
+      "xy": [
+        299.0,
+        151.0
+      ]
+    },
+    "ground-filosofia-approach": {
+      "floor": "ground",
+      "xy": [
+        165.0,
+        111.5
+      ]
+    },
+    "ground-digimap-approach": {
+      "floor": "ground",
+      "xy": [
+        198.0,
+        179.0
+      ]
+    },
+    "ground-denza-approach": {
+      "floor": "ground",
+      "xy": [
+        351.5,
+        253.5
+      ]
+    },
+    "ground-aigner-approach": {
+      "floor": "ground",
+      "xy": [
+        310.0,
+        231.0
+      ]
+    },
+    "g-cole": {
+      "floor": "ground",
+      "xy": [
+        224.0,
+        169.0
+      ]
+    },
+    "ground-coach-approach": {
+      "floor": "ground",
+      "xy": [
+        268.0,
+        168.0
+      ]
+    },
+    "ground-boss-approach": {
+      "floor": "ground",
+      "xy": [
+        340.0,
+        173.0
+      ]
+    },
+    "g-escalator": {
+      "floor": "ground",
+      "xy": [
+        281.0,
+        155.0
+      ]
+    },
+    "ground-east-toilets-approach": {
+      "floor": "ground",
+      "xy": [
+        104.5,
+        65.0
+      ]
+    },
+    "ground-south-toilets-approach": {
+      "floor": "ground",
+      "xy": [
+        261.0,
+        38.0
+      ]
+    },
+    "ground-north-toilets-approach": {
+      "floor": "ground",
+      "xy": [
+        394.0,
+        207.0
+      ]
+    },
+    "ground-south-lift-approach": {
+      "floor": "ground",
+      "xy": [
+        261.0,
+        45.0
+      ]
+    },
+    "ground-east-lift-approach": {
+      "floor": "ground",
+      "xy": [
+        91.0,
+        73.0
+      ]
+    },
+    "ground-central-lift-approach": {
+      "floor": "ground",
+      "xy": [
+        175.0,
+        202.0
+      ]
+    },
+    "ground-north-lift-approach": {
+      "floor": "ground",
+      "xy": [
+        387.0,
+        147.0
+      ]
+    },
+    "ground-south-escalator-approach": {
+      "floor": "ground",
+      "xy": [
+        247.0,
+        73.0
+      ]
+    },
+    "ground-central-escalator-approach": {
+      "floor": "ground",
+      "xy": [
+        182.0,
+        181.5
+      ]
+    },
+    "g0": {
+      "floor": "ground",
+      "xy": [
+        239.0,
+        164.0
+      ]
+    },
+    "ground-corridor-170-298": {
+      "floor": "ground",
+      "xy": [
+        85.0,
+        149.0
+      ]
+    },
+    "ground-corridor-148-297": {
+      "floor": "ground",
+      "xy": [
+        74.0,
+        148.5
+      ]
+    },
+    "ground-corridor-135-282": {
+      "floor": "ground",
+      "xy": [
+        67.5,
+        141.0
+      ]
+    },
+    "ground-corridor-135-242": {
+      "floor": "ground",
+      "xy": [
+        67.5,
+        121.0
+      ]
+    },
+    "ground-corridor-135-202": {
+      "floor": "ground",
+      "xy": [
+        67.5,
+        101.0
+      ]
+    },
+    "ground-corridor-135-162": {
+      "floor": "ground",
+      "xy": [
+        67.5,
+        81.0
+      ]
+    },
+    "ground-corridor-136-127": {
+      "floor": "ground",
+      "xy": [
+        68.0,
+        63.5
+      ]
+    },
+    "ground-corridor-174-127": {
+      "floor": "ground",
+      "xy": [
+        87.0,
+        63.5
+      ]
+    },
+    "ground-corridor-176-128": {
+      "floor": "ground",
+      "xy": [
+        88.0,
+        64.0
+      ]
+    },
+    "ground-corridor-210-298": {
+      "floor": "ground",
+      "xy": [
+        105.0,
+        149.0
+      ]
+    },
+    "ground-corridor-239-297": {
+      "floor": "ground",
+      "xy": [
+        119.5,
+        148.5
+      ]
+    },
+    "ground-corridor-176-146": {
+      "floor": "ground",
+      "xy": [
+        88.0,
+        73.0
+      ]
+    },
+    "ground-corridor-192-126": {
+      "floor": "ground",
+      "xy": [
+        96.0,
+        63.0
+      ]
+    },
+    "ground-corridor-209-127": {
+      "floor": "ground",
+      "xy": [
+        104.5,
+        63.5
+      ]
+    },
+    "ground-corridor-177-165": {
+      "floor": "ground",
+      "xy": [
+        88.5,
+        82.5
+      ]
+    },
+    "ground-corridor-185-167": {
+      "floor": "ground",
+      "xy": [
+        92.5,
+        83.5
+      ]
+    },
+    "ground-corridor-225-167": {
+      "floor": "ground",
+      "xy": [
+        112.5,
+        83.5
+      ]
+    },
+    "ground-corridor-237-168": {
+      "floor": "ground",
+      "xy": [
+        118.5,
+        84.0
+      ]
+    },
+    "ground-corridor-239-184": {
+      "floor": "ground",
+      "xy": [
+        119.5,
+        92.0
+      ]
+    },
+    "ground-corridor-246-191": {
+      "floor": "ground",
+      "xy": [
+        123.0,
+        95.5
+      ]
+    },
+    "ground-corridor-254-323": {
+      "floor": "ground",
+      "xy": [
+        127.0,
+        161.5
+      ]
+    },
+    "ground-corridor-251-319": {
+      "floor": "ground",
+      "xy": [
+        125.5,
+        159.5
+      ]
+    },
+    "ground-corridor-249-257": {
+      "floor": "ground",
+      "xy": [
+        124.5,
+        128.5
+      ]
+    },
+    "ground-corridor-249-254": {
+      "floor": "ground",
+      "xy": [
+        124.5,
+        127.0
+      ]
+    },
+    "ground-corridor-253-198": {
+      "floor": "ground",
+      "xy": [
+        126.5,
+        99.0
+      ]
+    },
+    "ground-corridor-253-226": {
+      "floor": "ground",
+      "xy": [
+        126.5,
+        113.0
+      ]
+    },
+    "ground-corridor-261-195": {
+      "floor": "ground",
+      "xy": [
+        130.5,
+        97.5
+      ]
+    },
+    "ground-corridor-301-194": {
+      "floor": "ground",
+      "xy": [
+        150.5,
+        97.0
+      ]
+    },
+    "ground-corridor-320-191": {
+      "floor": "ground",
+      "xy": [
+        160.0,
+        95.5
+      ]
+    },
+    "ground-corridor-325-186": {
+      "floor": "ground",
+      "xy": [
+        162.5,
+        93.0
+      ]
+    },
+    "ground-corridor-293-223": {
+      "floor": "ground",
+      "xy": [
+        146.5,
+        111.5
+      ]
+    },
+    "ground-corridor-259-326": {
+      "floor": "ground",
+      "xy": [
+        129.5,
+        163.0
+      ]
+    },
+    "ground-corridor-272-352": {
+      "floor": "ground",
+      "xy": [
+        136.0,
+        176.0
+      ]
+    },
+    "ground-corridor-288-364": {
+      "floor": "ground",
+      "xy": [
+        144.0,
+        182.0
+      ]
+    },
+    "ground-corridor-302-365": {
+      "floor": "ground",
+      "xy": [
+        151.0,
+        182.5
+      ]
+    },
+    "ground-corridor-317-368": {
+      "floor": "ground",
+      "xy": [
+        158.5,
+        184.0
+      ]
+    },
+    "ground-corridor-329-369": {
+      "floor": "ground",
+      "xy": [
+        164.5,
+        184.5
+      ]
+    },
+    "ground-corridor-297-319": {
+      "floor": "ground",
+      "xy": [
+        148.5,
+        159.5
+      ]
+    },
+    "ground-corridor-309-316": {
+      "floor": "ground",
+      "xy": [
+        154.5,
+        158.0
+      ]
+    },
+    "ground-corridor-341-314": {
+      "floor": "ground",
+      "xy": [
+        170.5,
+        157.0
+      ]
+    },
+    "ground-corridor-362-317": {
+      "floor": "ground",
+      "xy": [
+        181.0,
+        158.5
+      ]
+    },
+    "ground-corridor-333-184": {
+      "floor": "ground",
+      "xy": [
+        166.5,
+        92.0
+      ]
+    },
+    "ground-corridor-356-183": {
+      "floor": "ground",
+      "xy": [
+        178.0,
+        91.5
+      ]
+    },
+    "ground-corridor-361-180": {
+      "floor": "ground",
+      "xy": [
+        180.5,
+        90.0
+      ]
+    },
+    "ground-corridor-368-184": {
+      "floor": "ground",
+      "xy": [
+        184.0,
+        92.0
+      ]
+    },
+    "ground-corridor-406-186": {
+      "floor": "ground",
+      "xy": [
+        203.0,
+        93.0
+      ]
+    },
+    "ground-corridor-329-392": {
+      "floor": "ground",
+      "xy": [
+        164.5,
+        196.0
+      ]
+    },
+    "ground-corridor-338-403": {
+      "floor": "ground",
+      "xy": [
+        169.0,
+        201.5
+      ]
+    },
+    "ground-corridor-352-368": {
+      "floor": "ground",
+      "xy": [
+        176.0,
+        184.0
+      ]
+    },
+    "ground-corridor-364-365": {
+      "floor": "ground",
+      "xy": [
+        182.0,
+        182.5
+      ]
+    },
+    "ground-corridor-370-223": {
+      "floor": "ground",
+      "xy": [
+        185.0,
+        111.5
+      ]
+    },
+    "ground-corridor-396-323": {
+      "floor": "ground",
+      "xy": [
+        198.0,
+        161.5
+      ]
+    },
+    "ground-corridor-405-330": {
+      "floor": "ground",
+      "xy": [
+        202.5,
+        165.0
+      ]
+    },
+    "ground-corridor-383-359": {
+      "floor": "ground",
+      "xy": [
+        191.5,
+        179.5
+      ]
+    },
+    "ground-corridor-392-354": {
+      "floor": "ground",
+      "xy": [
+        196.0,
+        177.0
+      ]
+    },
+    "ground-corridor-397-223": {
+      "floor": "ground",
+      "xy": [
+        198.5,
+        111.5
+      ]
+    },
+    "ground-corridor-416-220": {
+      "floor": "ground",
+      "xy": [
+        208.0,
+        110.0
+      ]
+    },
+    "ground-corridor-426-216": {
+      "floor": "ground",
+      "xy": [
+        213.0,
+        108.0
+      ]
+    },
+    "ground-corridor-420-328": {
+      "floor": "ground",
+      "xy": [
+        210.0,
+        164.0
+      ]
+    },
+    "ground-corridor-424-190": {
+      "floor": "ground",
+      "xy": [
+        212.0,
+        95.0
+      ]
+    },
+    "ground-corridor-448-326": {
+      "floor": "ground",
+      "xy": [
+        224.0,
+        163.0
+      ]
+    },
+    "ground-corridor-426-206": {
+      "floor": "ground",
+      "xy": [
+        213.0,
+        103.0
+      ]
+    },
+    "ground-corridor-438-185": {
+      "floor": "ground",
+      "xy": [
+        219.0,
+        92.5
+      ]
+    },
+    "ground-corridor-470-183": {
+      "floor": "ground",
+      "xy": [
+        235.0,
+        91.5
+      ]
+    },
+    "ground-corridor-484-177": {
+      "floor": "ground",
+      "xy": [
+        242.0,
+        88.5
+      ]
+    },
+    "ground-corridor-496-166": {
+      "floor": "ground",
+      "xy": [
+        248.0,
+        83.0
+      ]
+    },
+    "ground-corridor-434-221": {
+      "floor": "ground",
+      "xy": [
+        217.0,
+        110.5
+      ]
+    },
+    "ground-corridor-443-223": {
+      "floor": "ground",
+      "xy": [
+        221.5,
+        111.5
+      ]
+    },
+    "ground-corridor-451-223": {
+      "floor": "ground",
+      "xy": [
+        225.5,
+        111.5
+      ]
+    },
+    "ground-corridor-452-224": {
+      "floor": "ground",
+      "xy": [
+        226.0,
+        112.0
+      ]
+    },
+    "ground-corridor-454-224": {
+      "floor": "ground",
+      "xy": [
+        227.0,
+        112.0
+      ]
+    },
+    "ground-corridor-468-232": {
+      "floor": "ground",
+      "xy": [
+        234.0,
+        116.0
+      ]
+    },
+    "ground-corridor-471-236": {
+      "floor": "ground",
+      "xy": [
+        235.5,
+        118.0
+      ]
+    },
+    "ground-corridor-469-324": {
+      "floor": "ground",
+      "xy": [
+        234.5,
+        162.0
+      ]
+    },
+    "ground-corridor-471-290": {
+      "floor": "ground",
+      "xy": [
+        235.5,
+        145.0
+      ]
+    },
+    "ground-corridor-478-326": {
+      "floor": "ground",
+      "xy": [
+        239.0,
+        163.0
+      ]
+    },
+    "ground-corridor-471-276": {
+      "floor": "ground",
+      "xy": [
+        235.5,
+        138.0
+      ]
+    },
+    "ground-corridor-491-231": {
+      "floor": "ground",
+      "xy": [
+        245.5,
+        115.5
+      ]
+    },
+    "ground-corridor-500-232": {
+      "floor": "ground",
+      "xy": [
+        250.0,
+        116.0
+      ]
+    },
+    "ground-corridor-533-240": {
+      "floor": "ground",
+      "xy": [
+        266.5,
+        120.0
+      ]
+    },
+    "ground-corridor-553-223": {
+      "floor": "ground",
+      "xy": [
+        276.5,
+        111.5
+      ]
+    },
+    "ground-corridor-488-326": {
+      "floor": "ground",
+      "xy": [
+        244.0,
+        163.0
+      ]
+    },
+    "ground-corridor-504-146": {
+      "floor": "ground",
+      "xy": [
+        252.0,
+        73.0
+      ]
+    },
+    "ground-corridor-528-326": {
+      "floor": "ground",
+      "xy": [
+        264.0,
+        163.0
+      ]
+    },
+    "ground-corridor-536-326": {
+      "floor": "ground",
+      "xy": [
+        268.0,
+        163.0
+      ]
+    },
+    "ground-corridor-499-151": {
+      "floor": "ground",
+      "xy": [
+        249.5,
+        75.5
+      ]
+    },
+    "ground-corridor-497-153": {
+      "floor": "ground",
+      "xy": [
+        248.5,
+        76.5
+      ]
+    },
+    "ground-corridor-517-194": {
+      "floor": "ground",
+      "xy": [
+        258.5,
+        97.0
+      ]
+    },
+    "ground-corridor-540-204": {
+      "floor": "ground",
+      "xy": [
+        270.0,
+        102.0
+      ]
+    },
+    "ground-corridor-553-222": {
+      "floor": "ground",
+      "xy": [
+        276.5,
+        111.0
+      ]
+    },
+    "ground-corridor-518-130": {
+      "floor": "ground",
+      "xy": [
+        259.0,
+        65.0
+      ]
+    },
+    "ground-corridor-517-92": {
+      "floor": "ground",
+      "xy": [
+        258.5,
+        46.0
+      ]
+    },
+    "ground-corridor-517-76": {
+      "floor": "ground",
+      "xy": [
+        258.5,
+        38.0
+      ]
+    },
+    "ground-corridor-521-90": {
+      "floor": "ground",
+      "xy": [
+        260.5,
+        45.0
+      ]
+    },
+    "ground-corridor-560-325": {
+      "floor": "ground",
+      "xy": [
+        280.0,
+        162.5
+      ]
+    },
+    "ground-corridor-566-320": {
+      "floor": "ground",
+      "xy": [
+        283.0,
+        160.0
+      ]
+    },
+    "ground-corridor-574-230": {
+      "floor": "ground",
+      "xy": [
+        287.0,
+        115.0
+      ]
+    },
+    "ground-corridor-566-317": {
+      "floor": "ground",
+      "xy": [
+        283.0,
+        158.5
+      ]
+    },
+    "ground-corridor-574-279": {
+      "floor": "ground",
+      "xy": [
+        287.0,
+        139.5
+      ]
+    },
+    "ground-corridor-576-277": {
+      "floor": "ground",
+      "xy": [
+        288.0,
+        138.5
+      ]
+    },
+    "ground-corridor-576-322": {
+      "floor": "ground",
+      "xy": [
+        288.0,
+        161.0
+      ]
+    },
+    "ground-corridor-568-395": {
+      "floor": "ground",
+      "xy": [
+        284.0,
+        197.5
+      ]
+    },
+    "ground-corridor-562-384": {
+      "floor": "ground",
+      "xy": [
+        281.0,
+        192.0
+      ]
+    },
+    "ground-corridor-564-344": {
+      "floor": "ground",
+      "xy": [
+        282.0,
+        172.0
+      ]
+    },
+    "ground-corridor-569-329": {
+      "floor": "ground",
+      "xy": [
+        284.5,
+        164.5
+      ]
+    },
+    "ground-corridor-576-262": {
+      "floor": "ground",
+      "xy": [
+        288.0,
+        131.0
+      ]
+    },
+    "ground-corridor-582-227": {
+      "floor": "ground",
+      "xy": [
+        291.0,
+        113.5
+      ]
+    },
+    "ground-corridor-608-230": {
+      "floor": "ground",
+      "xy": [
+        304.0,
+        115.0
+      ]
+    },
+    "ground-corridor-646-249": {
+      "floor": "ground",
+      "xy": [
+        323.0,
+        124.5
+      ]
+    },
+    "ground-corridor-686-277": {
+      "floor": "ground",
+      "xy": [
+        343.0,
+        138.5
+      ]
+    },
+    "ground-corridor-690-280": {
+      "floor": "ground",
+      "xy": [
+        345.0,
+        140.0
+      ]
+    },
+    "ground-corridor-580-285": {
+      "floor": "ground",
+      "xy": [
+        290.0,
+        142.5
+      ]
+    },
+    "ground-corridor-578-322": {
+      "floor": "ground",
+      "xy": [
+        289.0,
+        161.0
+      ]
+    },
+    "ground-corridor-580-302": {
+      "floor": "ground",
+      "xy": [
+        290.0,
+        151.0
+      ]
+    },
+    "ground-corridor-607-357": {
+      "floor": "ground",
+      "xy": [
+        303.5,
+        178.5
+      ]
+    },
+    "ground-corridor-624-388": {
+      "floor": "ground",
+      "xy": [
+        312.0,
+        194.0
+      ]
+    },
+    "ground-corridor-633-419": {
+      "floor": "ground",
+      "xy": [
+        316.5,
+        209.5
+      ]
+    },
+    "ground-corridor-635-431": {
+      "floor": "ground",
+      "xy": [
+        317.5,
+        215.5
+      ]
+    },
+    "ground-corridor-652-448": {
+      "floor": "ground",
+      "xy": [
+        326.0,
+        224.0
+      ]
+    },
+    "ground-corridor-591-277": {
+      "floor": "ground",
+      "xy": [
+        295.5,
+        138.5
+      ]
+    },
+    "ground-corridor-612-278": {
+      "floor": "ground",
+      "xy": [
+        306.0,
+        139.0
+      ]
+    },
+    "ground-corridor-636-292": {
+      "floor": "ground",
+      "xy": [
+        318.0,
+        146.0
+      ]
+    },
+    "ground-corridor-675-330": {
+      "floor": "ground",
+      "xy": [
+        337.5,
+        165.0
+      ]
+    },
+    "ground-corridor-686-344": {
+      "floor": "ground",
+      "xy": [
+        343.0,
+        172.0
+      ]
+    },
+    "ground-corridor-623-459": {
+      "floor": "ground",
+      "xy": [
+        311.5,
+        229.5
+      ]
+    },
+    "ground-corridor-641-457": {
+      "floor": "ground",
+      "xy": [
+        320.5,
+        228.5
+      ]
+    },
+    "ground-corridor-683-454": {
+      "floor": "ground",
+      "xy": [
+        341.5,
+        227.0
+      ]
+    },
+    "ground-corridor-669-502": {
+      "floor": "ground",
+      "xy": [
+        334.5,
+        251.0
+      ]
+    },
+    "ground-corridor-670-492": {
+      "floor": "ground",
+      "xy": [
+        335.0,
+        246.0
+      ]
+    },
+    "ground-corridor-683-480": {
+      "floor": "ground",
+      "xy": [
+        341.5,
+        240.0
+      ]
+    },
+    "ground-corridor-670-510": {
+      "floor": "ground",
+      "xy": [
+        335.0,
+        255.0
+      ]
+    },
+    "ground-corridor-678-516": {
+      "floor": "ground",
+      "xy": [
+        339.0,
+        258.0
+      ]
+    },
+    "ground-corridor-690-515": {
+      "floor": "ground",
+      "xy": [
+        345.0,
+        257.5
+      ]
+    },
+    "ground-corridor-690-507": {
+      "floor": "ground",
+      "xy": [
+        345.0,
+        253.5
+      ]
+    },
+    "ground-corridor-707-446": {
+      "floor": "ground",
+      "xy": [
+        353.5,
+        223.0
+      ]
+    },
+    "ground-corridor-715-435": {
+      "floor": "ground",
+      "xy": [
+        357.5,
+        217.5
+      ]
+    },
+    "ground-corridor-724-396": {
+      "floor": "ground",
+      "xy": [
+        362.0,
+        198.0
+      ]
+    },
+    "ground-corridor-690-489": {
+      "floor": "ground",
+      "xy": [
+        345.0,
+        244.5
+      ]
+    },
+    "ground-corridor-707-364": {
+      "floor": "ground",
+      "xy": [
+        353.5,
+        182.0
+      ]
+    },
+    "ground-corridor-722-375": {
+      "floor": "ground",
+      "xy": [
+        361.0,
+        187.5
+      ]
+    },
+    "ground-corridor-720-305": {
+      "floor": "ground",
+      "xy": [
+        360.0,
+        152.5
+      ]
+    },
+    "ground-corridor-730-312": {
+      "floor": "ground",
+      "xy": [
+        365.0,
+        156.0
+      ]
+    },
+    "ground-corridor-733-362": {
+      "floor": "ground",
+      "xy": [
+        366.5,
+        181.0
+      ]
+    },
+    "ground-corridor-732-322": {
+      "floor": "ground",
+      "xy": [
+        366.0,
+        161.0
+      ]
+    },
+    "ground-corridor-753-402": {
+      "floor": "ground",
+      "xy": [
+        376.5,
+        201.0
+      ]
+    },
+    "ground-corridor-787-402": {
+      "floor": "ground",
+      "xy": [
+        393.5,
+        201.0
+      ]
+    },
+    "ground-corridor-757-309": {
+      "floor": "ground",
+      "xy": [
+        378.5,
+        154.5
+      ]
+    },
+    "ground-corridor-760-303": {
+      "floor": "ground",
+      "xy": [
+        380.0,
+        151.5
+      ]
+    },
+    "ground-corridor-761-294": {
+      "floor": "ground",
+      "xy": [
+        380.5,
+        147.0
+      ]
+    },
+    "first-mycws-lounge-approach": {
+      "floor": "first",
+      "xy": [
+        375.0,
+        153.5
+      ]
+    },
+    "first-amakute-approach": {
+      "floor": "first",
+      "xy": [
+        142.5,
+        170.0
+      ]
+    },
+    "first-mst_golf-approach": {
+      "floor": "first",
+      "xy": [
+        306.0,
+        229.0
+      ]
+    },
+    "first-sociolla-approach": {
+      "floor": "first",
+      "xy": [
+        379.0,
+        175.0
+      ]
+    },
+    "f-anta": {
+      "floor": "first",
+      "xy": [
+        235.0,
+        103.0
+      ]
+    },
+    "first-tommy-hilfiger-approach": {
+      "floor": "first",
+      "xy": [
+        267.0,
+        173.0
+      ]
+    },
+    "first-thule-approach": {
+      "floor": "first",
+      "xy": [
+        143.0,
+        124.0
+      ]
+    },
+    "first-the-body-shop-approach": {
+      "floor": "first",
+      "xy": [
+        270.0,
+        165.0
+      ]
+    },
+    "first-steve-madden-approach": {
+      "floor": "first",
+      "xy": [
+        141.5,
+        163.5
+      ]
+    },
+    "first-staccato-approach": {
+      "floor": "first",
+      "xy": [
+        297.5,
+        217.0
+      ]
+    },
+    "first-skechers-approach": {
+      "floor": "first",
+      "xy": [
+        353.0,
+        110.0
+      ]
+    },
+    "f-puma": {
+      "floor": "first",
+      "xy": [
+        142.0,
+        102.0
+      ]
+    },
+    "first-project-soul-approach": {
+      "floor": "first",
+      "xy": [
+        256.0,
+        78.0
+      ]
+    },
+    "first-planet-sports-approach": {
+      "floor": "first",
+      "xy": [
+        359.0,
+        101.5
+      ]
+    },
+    "first-one-love-bespoke-approach": {
+      "floor": "first",
+      "xy": [
+        224.0,
+        132.0
+      ]
+    },
+    "first-new-era-approach": {
+      "floor": "first",
+      "xy": [
+        123.0,
+        125.0
+      ]
+    },
+    "first-new-balance-approach": {
+      "floor": "first",
+      "xy": [
+        353.0,
+        125.0
+      ]
+    },
+    "first-marks-and-spencer-approach": {
+      "floor": "first",
+      "xy": [
+        302.0,
+        101.5
+      ]
+    },
+    "first-maison-aura-approach": {
+      "floor": "first",
+      "xy": [
+        381.0,
+        204.0
+      ]
+    },
+    "first-levis-approach": {
+      "floor": "first",
+      "xy": [
+        125.0,
+        102.0
+      ]
+    },
+    "f-lego": {
+      "floor": "first",
+      "xy": [
+        224.0,
+        152.0
+      ]
+    },
+    "first-laxmi-tailors-approach": {
+      "floor": "first",
+      "xy": [
+        184.0,
+        103.0
+      ]
+    },
+    "f-lacoste": {
+      "floor": "first",
+      "xy": [
+        275.0,
+        173.0
+      ]
+    },
+    "first-loccitane-approach": {
+      "floor": "first",
+      "xy": [
+        270.0,
+        139.0
+      ]
+    },
+    "first-jd-sports-approach": {
+      "floor": "first",
+      "xy": [
+        220.0,
+        176.0
+      ]
+    },
+    "first-hush-puppies-approach": {
+      "floor": "first",
+      "xy": [
+        323.0,
+        199.0
+      ]
+    },
+    "first-havaianas-approach": {
+      "floor": "first",
+      "xy": [
+        254.5,
+        111.0
+      ]
+    },
+    "first-hnm-1f-approach": {
+      "floor": "first",
+      "xy": [
+        143.0,
+        180.0
+      ]
+    },
+    "first-giordano-approach": {
+      "floor": "first",
+      "xy": [
+        309.5,
+        149.0
+      ]
+    },
+    "f-forever": {
+      "floor": "first",
+      "xy": [
+        297.0,
+        101.5
+      ]
+    },
+    "first-footlocker-approach": {
+      "floor": "first",
+      "xy": [
+        176.0,
+        145.0
+      ]
+    },
+    "first-flying-tiger-approach": {
+      "floor": "first",
+      "xy": [
+        237.0,
+        173.0
+      ]
+    },
+    "first-everbest-studio-approach": {
+      "floor": "first",
+      "xy": [
+        309.5,
+        176.5
+      ]
+    },
+    "first-cuffed-approach": {
+      "floor": "first",
+      "xy": [
+        180.5,
+        136.0
+      ]
+    },
+    "f-crocs": {
+      "floor": "first",
+      "xy": [
+        355.0,
+        144.0
+      ]
+    },
+    "first-aldo-approach": {
+      "floor": "first",
+      "xy": [
+        291.5,
+        204.5
+      ]
+    },
+    "first-cnf-approach": {
+      "floor": "first",
+      "xy": [
+        378.0,
+        221.0
+      ]
+    },
+    "first-calvin-klein-approach": {
+      "floor": "first",
+      "xy": [
+        252.0,
+        173.0
+      ]
+    },
+    "first-converse-approach": {
+      "floor": "first",
+      "xy": [
+        203.0,
+        124.0
+      ]
+    },
+    "first-batik-keris-approach": {
+      "floor": "first",
+      "xy": [
+        382.0,
+        193.0
+      ]
+    },
+    "first-adidas-approach": {
+      "floor": "first",
+      "xy": [
+        160.0,
+        102.0
+      ]
+    },
+    "first-bags-city-approach": {
+      "floor": "first",
+      "xy": [
+        128.0,
+        158.0
+      ]
+    },
+    "first-birkenstock-approach": {
+      "floor": "first",
+      "xy": [
+        109.5,
+        142.0
+      ]
+    },
+    "first-asics-approach": {
+      "floor": "first",
+      "xy": [
+        196.0,
+        188.0
+      ]
+    },
+    "f-escalator": {
+      "floor": "first",
+      "xy": [
+        300.0,
+        160.0
+      ]
+    },
+    "first-north-toilets-approach": {
+      "floor": "first",
+      "xy": [
+        399.0,
+        212.5
+      ]
+    },
+    "first-west-toilets-approach": {
+      "floor": "first",
+      "xy": [
+        105.5,
+        175.5
+      ]
+    },
+    "first-south-toilets-approach": {
+      "floor": "first",
+      "xy": [
+        276.0,
+        50.5
+      ]
+    },
+    "first-south-lift-approach": {
+      "floor": "first",
+      "xy": [
+        276.0,
+        57.5
+      ]
+    },
+    "first-central-lift-approach": {
+      "floor": "first",
+      "xy": [
+        190.0,
+        206.0
+      ]
+    },
+    "first-east-lift-approach": {
+      "floor": "first",
+      "xy": [
+        113.0,
+        85.0
+      ]
+    },
+    "first-north-lift-approach": {
+      "floor": "first",
+      "xy": [
+        390.0,
+        151.0
+      ]
+    },
+    "first-south-escalator-approach": {
+      "floor": "first",
+      "xy": [
+        267.0,
+        95.0
+      ]
+    },
+    "first-central-escalator-approach": {
+      "floor": "first",
+      "xy": [
+        205.0,
+        180.0
+      ]
+    },
+    "f0": {
+      "floor": "first",
+      "xy": [
+        240.0,
+        160.0
+      ]
+    },
+    "first-corridor-201-284": {
+      "floor": "first",
+      "xy": [
+        100.5,
+        142.0
+      ]
+    },
+    "first-corridor-201-244": {
+      "floor": "first",
+      "xy": [
+        100.5,
+        122.0
+      ]
+    },
+    "first-corridor-202-234": {
+      "floor": "first",
+      "xy": [
+        101.0,
+        117.0
+      ]
+    },
+    "first-corridor-203-234": {
+      "floor": "first",
+      "xy": [
+        101.5,
+        117.0
+      ]
+    },
+    "first-corridor-203-296": {
+      "floor": "first",
+      "xy": [
+        101.5,
+        148.0
+      ]
+    },
+    "first-corridor-212-307": {
+      "floor": "first",
+      "xy": [
+        106.0,
+        153.5
+      ]
+    },
+    "first-corridor-223-318": {
+      "floor": "first",
+      "xy": [
+        111.5,
+        159.0
+      ]
+    },
+    "first-corridor-203-213": {
+      "floor": "first",
+      "xy": [
+        101.5,
+        106.5
+      ]
+    },
+    "first-corridor-204-204": {
+      "floor": "first",
+      "xy": [
+        102.0,
+        102.0
+      ]
+    },
+    "first-corridor-218-188": {
+      "floor": "first",
+      "xy": [
+        109.0,
+        94.0
+      ]
+    },
+    "first-corridor-219-169": {
+      "floor": "first",
+      "xy": [
+        109.5,
+        84.5
+      ]
+    },
+    "first-corridor-224-211": {
+      "floor": "first",
+      "xy": [
+        112.0,
+        105.5
+      ]
+    },
+    "first-corridor-250-208": {
+      "floor": "first",
+      "xy": [
+        125.0,
+        104.0
+      ]
+    },
+    "first-corridor-217-246": {
+      "floor": "first",
+      "xy": [
+        108.5,
+        123.0
+      ]
+    },
+    "first-corridor-243-250": {
+      "floor": "first",
+      "xy": [
+        121.5,
+        125.0
+      ]
+    },
+    "first-corridor-211-350": {
+      "floor": "first",
+      "xy": [
+        105.5,
+        175.0
+      ]
+    },
+    "first-corridor-213-348": {
+      "floor": "first",
+      "xy": [
+        106.5,
+        174.0
+      ]
+    },
+    "first-corridor-213-338": {
+      "floor": "first",
+      "xy": [
+        106.5,
+        169.0
+      ]
+    },
+    "first-corridor-219-321": {
+      "floor": "first",
+      "xy": [
+        109.5,
+        160.5
+      ]
+    },
+    "first-corridor-246-324": {
+      "floor": "first",
+      "xy": [
+        123.0,
+        162.0
+      ]
+    },
+    "first-corridor-250-326": {
+      "floor": "first",
+      "xy": [
+        125.0,
+        163.0
+      ]
+    },
+    "first-corridor-281-209": {
+      "floor": "first",
+      "xy": [
+        140.5,
+        104.5
+      ]
+    },
+    "first-corridor-252-320": {
+      "floor": "first",
+      "xy": [
+        126.0,
+        160.0
+      ]
+    },
+    "first-corridor-272-337": {
+      "floor": "first",
+      "xy": [
+        136.0,
+        168.5
+      ]
+    },
+    "first-corridor-282-354": {
+      "floor": "first",
+      "xy": [
+        141.0,
+        177.0
+      ]
+    },
+    "first-corridor-288-358": {
+      "floor": "first",
+      "xy": [
+        144.0,
+        179.0
+      ]
+    },
+    "first-corridor-280-333": {
+      "floor": "first",
+      "xy": [
+        140.0,
+        166.5
+      ]
+    },
+    "first-corridor-283-333": {
+      "floor": "first",
+      "xy": [
+        141.5,
+        166.5
+      ]
+    },
+    "first-corridor-296-213": {
+      "floor": "first",
+      "xy": [
+        148.0,
+        106.5
+      ]
+    },
+    "first-corridor-283-331": {
+      "floor": "first",
+      "xy": [
+        141.5,
+        165.5
+      ]
+    },
+    "first-corridor-284-332": {
+      "floor": "first",
+      "xy": [
+        142.0,
+        166.0
+      ]
+    },
+    "first-corridor-324-328": {
+      "floor": "first",
+      "xy": [
+        162.0,
+        164.0
+      ]
+    },
+    "first-corridor-354-318": {
+      "floor": "first",
+      "xy": [
+        177.0,
+        159.0
+      ]
+    },
+    "first-corridor-297-242": {
+      "floor": "first",
+      "xy": [
+        148.5,
+        121.0
+      ]
+    },
+    "first-corridor-328-372": {
+      "floor": "first",
+      "xy": [
+        164.0,
+        186.0
+      ]
+    },
+    "first-corridor-349-376": {
+      "floor": "first",
+      "xy": [
+        174.5,
+        188.0
+      ]
+    },
+    "first-corridor-363-375": {
+      "floor": "first",
+      "xy": [
+        181.5,
+        187.5
+      ]
+    },
+    "first-corridor-312-209": {
+      "floor": "first",
+      "xy": [
+        156.0,
+        104.5
+      ]
+    },
+    "first-corridor-320-209": {
+      "floor": "first",
+      "xy": [
+        160.0,
+        104.5
+      ]
+    },
+    "first-corridor-316-248": {
+      "floor": "first",
+      "xy": [
+        158.0,
+        124.0
+      ]
+    },
+    "first-corridor-350-249": {
+      "floor": "first",
+      "xy": [
+        175.0,
+        124.5
+      ]
+    },
+    "first-corridor-354-252": {
+      "floor": "first",
+      "xy": [
+        177.0,
+        126.0
+      ]
+    },
+    "first-corridor-340-210": {
+      "floor": "first",
+      "xy": [
+        170.0,
+        105.0
+      ]
+    },
+    "first-corridor-347-215": {
+      "floor": "first",
+      "xy": [
+        173.5,
+        107.5
+      ]
+    },
+    "first-corridor-360-209": {
+      "floor": "first",
+      "xy": [
+        180.0,
+        104.5
+      ]
+    },
+    "first-corridor-368-209": {
+      "floor": "first",
+      "xy": [
+        184.0,
+        104.5
+      ]
+    },
+    "first-corridor-354-290": {
+      "floor": "first",
+      "xy": [
+        177.0,
+        145.0
+      ]
+    },
+    "first-corridor-354-272": {
+      "floor": "first",
+      "xy": [
+        177.0,
+        136.0
+      ]
+    },
+    "first-corridor-378-250": {
+      "floor": "first",
+      "xy": [
+        189.0,
+        125.0
+      ]
+    },
+    "first-corridor-382-251": {
+      "floor": "first",
+      "xy": [
+        191.0,
+        125.5
+      ]
+    },
+    "first-corridor-380-318": {
+      "floor": "first",
+      "xy": [
+        190.0,
+        159.0
+      ]
+    },
+    "first-corridor-362-385": {
+      "floor": "first",
+      "xy": [
+        181.0,
+        192.5
+      ]
+    },
+    "first-corridor-362-402": {
+      "floor": "first",
+      "xy": [
+        181.0,
+        201.0
+      ]
+    },
+    "first-corridor-375-411": {
+      "floor": "first",
+      "xy": [
+        187.5,
+        205.5
+      ]
+    },
+    "first-corridor-390-371": {
+      "floor": "first",
+      "xy": [
+        195.0,
+        185.5
+      ]
+    },
+    "first-corridor-408-209": {
+      "floor": "first",
+      "xy": [
+        204.0,
+        104.5
+      ]
+    },
+    "first-corridor-432-206": {
+      "floor": "first",
+      "xy": [
+        216.0,
+        103.0
+      ]
+    },
+    "first-corridor-462-209": {
+      "floor": "first",
+      "xy": [
+        231.0,
+        104.5
+      ]
+    },
+    "first-corridor-466-211": {
+      "floor": "first",
+      "xy": [
+        233.0,
+        105.5
+      ]
+    },
+    "first-corridor-382-298": {
+      "floor": "first",
+      "xy": [
+        191.0,
+        149.0
+      ]
+    },
+    "first-corridor-382-258": {
+      "floor": "first",
+      "xy": [
+        191.0,
+        129.0
+      ]
+    },
+    "first-corridor-393-322": {
+      "floor": "first",
+      "xy": [
+        196.5,
+        161.0
+      ]
+    },
+    "first-corridor-429-327": {
+      "floor": "first",
+      "xy": [
+        214.5,
+        163.5
+      ]
+    },
+    "first-corridor-443-335": {
+      "floor": "first",
+      "xy": [
+        221.5,
+        167.5
+      ]
+    },
+    "first-corridor-444-336": {
+      "floor": "first",
+      "xy": [
+        222.0,
+        168.0
+      ]
+    },
+    "first-corridor-402-248": {
+      "floor": "first",
+      "xy": [
+        201.0,
+        124.0
+      ]
+    },
+    "first-corridor-410-365": {
+      "floor": "first",
+      "xy": [
+        205.0,
+        182.5
+      ]
+    },
+    "first-corridor-446-249": {
+      "floor": "first",
+      "xy": [
+        223.0,
+        124.5
+      ]
+    },
+    "first-corridor-455-256": {
+      "floor": "first",
+      "xy": [
+        227.5,
+        128.0
+      ]
+    },
+    "first-corridor-433-357": {
+      "floor": "first",
+      "xy": [
+        216.5,
+        178.5
+      ]
+    },
+    "first-corridor-437-350": {
+      "floor": "first",
+      "xy": [
+        218.5,
+        175.0
+      ]
+    },
+    "first-corridor-458-331": {
+      "floor": "first",
+      "xy": [
+        229.0,
+        165.5
+      ]
+    },
+    "first-corridor-444-311": {
+      "floor": "first",
+      "xy": [
+        222.0,
+        155.5
+      ]
+    },
+    "first-corridor-441-314": {
+      "floor": "first",
+      "xy": [
+        220.5,
+        157.0
+      ]
+    },
+    "first-corridor-477-277": {
+      "floor": "first",
+      "xy": [
+        238.5,
+        138.5
+      ]
+    },
+    "first-corridor-462-330": {
+      "floor": "first",
+      "xy": [
+        231.0,
+        165.0
+      ]
+    },
+    "first-corridor-479-314": {
+      "floor": "first",
+      "xy": [
+        239.5,
+        157.0
+      ]
+    },
+    "first-corridor-474-344": {
+      "floor": "first",
+      "xy": [
+        237.0,
+        172.0
+      ]
+    },
+    "first-corridor-483-228": {
+      "floor": "first",
+      "xy": [
+        241.5,
+        114.0
+      ]
+    },
+    "first-corridor-483-255": {
+      "floor": "first",
+      "xy": [
+        241.5,
+        127.5
+      ]
+    },
+    "first-corridor-479-285": {
+      "floor": "first",
+      "xy": [
+        239.5,
+        142.5
+      ]
+    },
+    "first-corridor-500-267": {
+      "floor": "first",
+      "xy": [
+        250.0,
+        133.5
+      ]
+    },
+    "first-corridor-540-270": {
+      "floor": "first",
+      "xy": [
+        270.0,
+        135.0
+      ]
+    },
+    "first-corridor-542-271": {
+      "floor": "first",
+      "xy": [
+        271.0,
+        135.5
+      ]
+    },
+    "first-corridor-483-317": {
+      "floor": "first",
+      "xy": [
+        241.5,
+        158.5
+      ]
+    },
+    "first-corridor-497-212": {
+      "floor": "first",
+      "xy": [
+        248.5,
+        106.0
+      ]
+    },
+    "first-corridor-499-209": {
+      "floor": "first",
+      "xy": [
+        249.5,
+        104.5
+      ]
+    },
+    "first-corridor-505-338": {
+      "floor": "first",
+      "xy": [
+        252.5,
+        169.0
+      ]
+    },
+    "first-corridor-502-170": {
+      "floor": "first",
+      "xy": [
+        251.0,
+        85.0
+      ]
+    },
+    "first-corridor-507-162": {
+      "floor": "first",
+      "xy": [
+        253.5,
+        81.0
+      ]
+    },
+    "first-corridor-512-162": {
+      "floor": "first",
+      "xy": [
+        256.0,
+        81.0
+      ]
+    },
+    "first-corridor-508-208": {
+      "floor": "first",
+      "xy": [
+        254.0,
+        104.0
+      ]
+    },
+    "first-corridor-534-338": {
+      "floor": "first",
+      "xy": [
+        267.0,
+        169.0
+      ]
+    },
+    "first-corridor-542-204": {
+      "floor": "first",
+      "xy": [
+        271.0,
+        102.0
+      ]
+    },
+    "first-corridor-539-163": {
+      "floor": "first",
+      "xy": [
+        269.5,
+        81.5
+      ]
+    },
+    "first-corridor-542-164": {
+      "floor": "first",
+      "xy": [
+        271.0,
+        82.0
+      ]
+    },
+    "first-corridor-543-190": {
+      "floor": "first",
+      "xy": [
+        271.5,
+        95.0
+      ]
+    },
+    "first-corridor-540-338": {
+      "floor": "first",
+      "xy": [
+        270.0,
+        169.0
+      ]
+    },
+    "first-corridor-550-338": {
+      "floor": "first",
+      "xy": [
+        275.0,
+        169.0
+      ]
+    },
+    "first-corridor-544-144": {
+      "floor": "first",
+      "xy": [
+        272.0,
+        72.0
+      ]
+    },
+    "first-corridor-544-115": {
+      "floor": "first",
+      "xy": [
+        272.0,
+        57.5
+      ]
+    },
+    "first-corridor-552-212": {
+      "floor": "first",
+      "xy": [
+        276.0,
+        106.0
+      ]
+    },
+    "first-corridor-589-217": {
+      "floor": "first",
+      "xy": [
+        294.5,
+        108.5
+      ]
+    },
+    "first-corridor-574-273": {
+      "floor": "first",
+      "xy": [
+        287.0,
+        136.5
+      ]
+    },
+    "first-corridor-584-283": {
+      "floor": "first",
+      "xy": [
+        292.0,
+        141.5
+      ]
+    },
+    "first-corridor-542-107": {
+      "floor": "first",
+      "xy": [
+        271.0,
+        53.5
+      ]
+    },
+    "first-corridor-543-101": {
+      "floor": "first",
+      "xy": [
+        271.5,
+        50.5
+      ]
+    },
+    "first-corridor-548-98": {
+      "floor": "first",
+      "xy": [
+        274.0,
+        49.0
+      ]
+    },
+    "first-corridor-551-101": {
+      "floor": "first",
+      "xy": [
+        275.5,
+        50.5
+      ]
+    },
+    "first-corridor-575-337": {
+      "floor": "first",
+      "xy": [
+        287.5,
+        168.5
+      ]
+    },
+    "first-corridor-584-330": {
+      "floor": "first",
+      "xy": [
+        292.0,
+        165.0
+      ]
+    },
+    "first-corridor-582-410": {
+      "floor": "first",
+      "xy": [
+        291.0,
+        205.0
+      ]
+    },
+    "first-corridor-576-391": {
+      "floor": "first",
+      "xy": [
+        288.0,
+        195.5
+      ]
+    },
+    "first-corridor-575-365": {
+      "floor": "first",
+      "xy": [
+        287.5,
+        182.5
+      ]
+    },
+    "first-corridor-580-343": {
+      "floor": "first",
+      "xy": [
+        290.0,
+        171.5
+      ]
+    },
+    "first-corridor-587-337": {
+      "floor": "first",
+      "xy": [
+        293.5,
+        168.5
+      ]
+    },
+    "first-corridor-591-430": {
+      "floor": "first",
+      "xy": [
+        295.5,
+        215.0
+      ]
+    },
+    "first-corridor-594-434": {
+      "floor": "first",
+      "xy": [
+        297.0,
+        217.0
+      ]
+    },
+    "first-corridor-584-320": {
+      "floor": "first",
+      "xy": [
+        292.0,
+        160.0
+      ]
+    },
+    "first-corridor-596-278": {
+      "floor": "first",
+      "xy": [
+        298.0,
+        139.0
+      ]
+    },
+    "first-corridor-599-347": {
+      "floor": "first",
+      "xy": [
+        299.5,
+        173.5
+      ]
+    },
+    "first-corridor-610-349": {
+      "floor": "first",
+      "xy": [
+        305.0,
+        174.5
+      ]
+    },
+    "first-corridor-613-355": {
+      "floor": "first",
+      "xy": [
+        306.5,
+        177.5
+      ]
+    },
+    "first-corridor-594-210": {
+      "floor": "first",
+      "xy": [
+        297.0,
+        105.0
+      ]
+    },
+    "first-corridor-599-226": {
+      "floor": "first",
+      "xy": [
+        299.5,
+        113.0
+      ]
+    },
+    "first-corridor-600-444": {
+      "floor": "first",
+      "xy": [
+        300.0,
+        222.0
+      ]
+    },
+    "first-corridor-601-447": {
+      "floor": "first",
+      "xy": [
+        300.5,
+        223.5
+      ]
+    },
+    "first-corridor-605-449": {
+      "floor": "first",
+      "xy": [
+        302.5,
+        224.5
+      ]
+    },
+    "first-corridor-613-457": {
+      "floor": "first",
+      "xy": [
+        306.5,
+        228.5
+      ]
+    },
+    "first-corridor-596-238": {
+      "floor": "first",
+      "xy": [
+        298.0,
+        119.0
+      ]
+    },
+    "first-corridor-612-292": {
+      "floor": "first",
+      "xy": [
+        306.0,
+        146.0
+      ]
+    },
+    "first-corridor-619-291": {
+      "floor": "first",
+      "xy": [
+        309.5,
+        145.5
+      ]
+    },
+    "first-corridor-639-226": {
+      "floor": "first",
+      "xy": [
+        319.5,
+        113.0
+      ]
+    },
+    "first-corridor-672-230": {
+      "floor": "first",
+      "xy": [
+        336.0,
+        115.0
+      ]
+    },
+    "first-corridor-688-235": {
+      "floor": "first",
+      "xy": [
+        344.0,
+        117.5
+      ]
+    },
+    "first-corridor-640-395": {
+      "floor": "first",
+      "xy": [
+        320.0,
+        197.5
+      ]
+    },
+    "first-corridor-642-400": {
+      "floor": "first",
+      "xy": [
+        321.0,
+        200.0
+      ]
+    },
+    "first-corridor-631-467": {
+      "floor": "first",
+      "xy": [
+        315.5,
+        233.5
+      ]
+    },
+    "first-corridor-649-469": {
+      "floor": "first",
+      "xy": [
+        324.5,
+        234.5
+      ]
+    },
+    "first-corridor-661-464": {
+      "floor": "first",
+      "xy": [
+        330.5,
+        232.0
+      ]
+    },
+    "first-corridor-662-463": {
+      "floor": "first",
+      "xy": [
+        331.0,
+        231.5
+      ]
+    },
+    "first-corridor-633-296": {
+      "floor": "first",
+      "xy": [
+        316.5,
+        148.0
+      ]
+    },
+    "first-corridor-673-321": {
+      "floor": "first",
+      "xy": [
+        336.5,
+        160.5
+      ]
+    },
+    "first-corridor-678-322": {
+      "floor": "first",
+      "xy": [
+        339.0,
+        161.0
+      ]
+    },
+    "first-corridor-651-433": {
+      "floor": "first",
+      "xy": [
+        325.5,
+        216.5
+      ]
+    },
+    "first-corridor-653-453": {
+      "floor": "first",
+      "xy": [
+        326.5,
+        226.5
+      ]
+    },
+    "first-corridor-700-469": {
+      "floor": "first",
+      "xy": [
+        350.0,
+        234.5
+      ]
+    },
+    "first-corridor-728-459": {
+      "floor": "first",
+      "xy": [
+        364.0,
+        229.5
+      ]
+    },
+    "first-corridor-687-301": {
+      "floor": "first",
+      "xy": [
+        343.5,
+        150.5
+      ]
+    },
+    "first-corridor-703-283": {
+      "floor": "first",
+      "xy": [
+        351.5,
+        141.5
+      ]
+    },
+    "first-corridor-682-330": {
+      "floor": "first",
+      "xy": [
+        341.0,
+        165.0
+      ]
+    },
+    "first-corridor-707-359": {
+      "floor": "first",
+      "xy": [
+        353.5,
+        179.5
+      ]
+    },
+    "first-corridor-720-389": {
+      "floor": "first",
+      "xy": [
+        360.0,
+        194.5
+      ]
+    },
+    "first-corridor-724-422": {
+      "floor": "first",
+      "xy": [
+        362.0,
+        211.0
+      ]
+    },
+    "first-corridor-724-449": {
+      "floor": "first",
+      "xy": [
+        362.0,
+        224.5
+      ]
+    },
+    "first-corridor-727-458": {
+      "floor": "first",
+      "xy": [
+        363.5,
+        229.0
+      ]
+    },
+    "first-corridor-697-255": {
+      "floor": "first",
+      "xy": [
+        348.5,
+        127.5
+      ]
+    },
+    "first-corridor-705-220": {
+      "floor": "first",
+      "xy": [
+        352.5,
+        110.0
+      ]
+    },
+    "first-corridor-703-275": {
+      "floor": "first",
+      "xy": [
+        351.5,
+        137.5
+      ]
+    },
+    "first-corridor-704-250": {
+      "floor": "first",
+      "xy": [
+        352.0,
+        125.0
+      ]
+    },
+    "first-corridor-709-288": {
+      "floor": "first",
+      "xy": [
+        354.5,
+        144.0
+      ]
+    },
+    "first-corridor-708-213": {
+      "floor": "first",
+      "xy": [
+        354.0,
+        106.5
+      ]
+    },
+    "first-corridor-717-298": {
+      "floor": "first",
+      "xy": [
+        358.5,
+        149.0
+      ]
+    },
+    "first-corridor-733-303": {
+      "floor": "first",
+      "xy": [
+        366.5,
+        151.5
+      ]
+    },
+    "first-corridor-750-450": {
+      "floor": "first",
+      "xy": [
+        375.0,
+        225.0
+      ]
+    },
+    "first-corridor-756-443": {
+      "floor": "first",
+      "xy": [
+        378.0,
+        221.5
+      ]
+    },
+    "first-corridor-736-332": {
+      "floor": "first",
+      "xy": [
+        368.0,
+        166.0
+      ]
+    },
+    "first-corridor-743-344": {
+      "floor": "first",
+      "xy": [
+        371.5,
+        172.0
+      ]
+    },
+    "first-corridor-752-350": {
+      "floor": "first",
+      "xy": [
+        376.0,
+        175.0
+      ]
+    },
+    "first-corridor-753-352": {
+      "floor": "first",
+      "xy": [
+        376.5,
+        176.0
+      ]
+    },
+    "first-corridor-747-299": {
+      "floor": "first",
+      "xy": [
+        373.5,
+        149.5
+      ]
+    },
+    "first-corridor-749-306": {
+      "floor": "first",
+      "xy": [
+        374.5,
+        153.0
+      ]
+    },
+    "first-corridor-766-295": {
+      "floor": "first",
+      "xy": [
+        383.0,
+        147.5
+      ]
+    },
+    "first-corridor-777-297": {
+      "floor": "first",
+      "xy": [
+        388.5,
+        148.5
+      ]
+    },
+    "first-corridor-779-302": {
+      "floor": "first",
+      "xy": [
+        389.5,
+        151.0
+      ]
+    },
+    "first-corridor-763-384": {
+      "floor": "first",
+      "xy": [
+        381.5,
+        192.0
+      ]
+    },
+    "first-corridor-763-386": {
+      "floor": "first",
+      "xy": [
+        381.5,
+        193.0
+      ]
+    },
+    "first-corridor-764-424": {
+      "floor": "first",
+      "xy": [
+        382.0,
+        212.0
+      ]
+    },
+    "first-corridor-765-408": {
+      "floor": "first",
+      "xy": [
+        382.5,
+        204.0
+      ]
+    },
+    "first-corridor-797-425": {
+      "floor": "first",
+      "xy": [
+        398.5,
+        212.5
+      ]
+    }
+  },
+  "edges": [
+    [
+      "f-anta",
+      "first-corridor-466-211"
+    ],
+    [
+      "f-crocs",
+      "first-corridor-709-288"
+    ],
+    [
+      "f-escalator",
+      "first-corridor-584-320"
+    ],
+    [
+      "f-forever",
+      "first-corridor-594-210"
+    ],
+    [
+      "f-forever",
+      "first-marks-and-spencer-approach"
+    ],
+    [
+      "f-lacoste",
+      "first-corridor-550-338"
+    ],
+    [
+      "f-lego",
+      "first-corridor-444-311"
+    ],
+    [
+      "f-puma",
+      "first-corridor-281-209"
+    ],
+    [
+      "f0",
+      "first-corridor-483-317"
+    ],
+    [
+      "first-adidas-approach",
+      "first-corridor-320-209"
+    ],
+    [
+      "first-aldo-approach",
+      "first-corridor-582-410"
+    ],
+    [
+      "first-amakute-approach",
+      "first-corridor-283-333"
+    ],
+    [
+      "first-asics-approach",
+      "first-corridor-390-371"
+    ],
+    [
+      "first-bags-city-approach",
+      "first-corridor-252-320"
+    ],
+    [
+      "first-batik-keris-approach",
+      "first-corridor-763-386"
+    ],
+    [
+      "first-birkenstock-approach",
+      "first-corridor-201-284"
+    ],
+    [
+      "first-calvin-klein-approach",
+      "first-corridor-505-338"
+    ],
+    [
+      "first-central-escalator-approach",
+      "first-corridor-410-365"
+    ],
+    [
+      "first-central-lift-approach",
+      "first-corridor-375-411"
+    ],
+    [
+      "first-cnf-approach",
+      "first-corridor-756-443"
+    ],
+    [
+      "first-converse-approach",
+      "first-corridor-402-248"
+    ],
+    [
+      "first-converse-approach",
+      "first-corridor-446-249"
+    ],
+    [
+      "first-corridor-201-244",
+      "first-corridor-201-284"
+    ],
+    [
+      "first-corridor-201-244",
+      "first-corridor-202-234"
+    ],
+    [
+      "first-corridor-201-284",
+      "first-corridor-203-296"
+    ],
+    [
+      "first-corridor-202-234",
+      "first-corridor-203-234"
+    ],
+    [
+      "first-corridor-203-213",
+      "first-corridor-203-234"
+    ],
+    [
+      "first-corridor-203-213",
+      "first-corridor-204-204"
+    ],
+    [
+      "first-corridor-203-213",
+      "first-corridor-224-211"
+    ],
+    [
+      "first-corridor-203-234",
+      "first-corridor-217-246"
+    ],
+    [
+      "first-corridor-203-296",
+      "first-corridor-212-307"
+    ],
+    [
+      "first-corridor-204-204",
+      "first-corridor-218-188"
+    ],
+    [
+      "first-corridor-211-350",
+      "first-corridor-213-348"
+    ],
+    [
+      "first-corridor-211-350",
+      "first-west-toilets-approach"
+    ],
+    [
+      "first-corridor-212-307",
+      "first-corridor-223-318"
+    ],
+    [
+      "first-corridor-213-338",
+      "first-corridor-213-348"
+    ],
+    [
+      "first-corridor-213-338",
+      "first-corridor-219-321"
+    ],
+    [
+      "first-corridor-217-246",
+      "first-corridor-243-250"
+    ],
+    [
+      "first-corridor-218-188",
+      "first-corridor-219-169"
+    ],
+    [
+      "first-corridor-219-169",
+      "first-east-lift-approach"
+    ],
+    [
+      "first-corridor-219-321",
+      "first-corridor-223-318"
+    ],
+    [
+      "first-corridor-223-318",
+      "first-corridor-246-324"
+    ],
+    [
+      "first-corridor-224-211",
+      "first-corridor-250-208"
+    ],
+    [
+      "first-corridor-243-250",
+      "first-new-era-approach"
+    ],
+    [
+      "first-corridor-246-324",
+      "first-corridor-250-326"
+    ],
+    [
+      "first-corridor-250-208",
+      "first-corridor-281-209"
+    ],
+    [
+      "first-corridor-250-208",
+      "first-levis-approach"
+    ],
+    [
+      "first-corridor-250-326",
+      "first-corridor-252-320"
+    ],
+    [
+      "first-corridor-250-326",
+      "first-corridor-272-337"
+    ],
+    [
+      "first-corridor-272-337",
+      "first-corridor-280-333"
+    ],
+    [
+      "first-corridor-272-337",
+      "first-corridor-282-354"
+    ],
+    [
+      "first-corridor-280-333",
+      "first-corridor-283-333"
+    ],
+    [
+      "first-corridor-281-209",
+      "first-corridor-296-213"
+    ],
+    [
+      "first-corridor-282-354",
+      "first-corridor-288-358"
+    ],
+    [
+      "first-corridor-283-331",
+      "first-corridor-284-332"
+    ],
+    [
+      "first-corridor-283-331",
+      "first-steve-madden-approach"
+    ],
+    [
+      "first-corridor-283-333",
+      "first-corridor-284-332"
+    ],
+    [
+      "first-corridor-284-332",
+      "first-corridor-324-328"
+    ],
+    [
+      "first-corridor-288-358",
+      "first-corridor-328-372"
+    ],
+    [
+      "first-corridor-288-358",
+      "first-hnm-1f-approach"
+    ],
+    [
+      "first-corridor-296-213",
+      "first-corridor-297-242"
+    ],
+    [
+      "first-corridor-296-213",
+      "first-corridor-312-209"
+    ],
+    [
+      "first-corridor-297-242",
+      "first-corridor-316-248"
+    ],
+    [
+      "first-corridor-297-242",
+      "first-thule-approach"
+    ],
+    [
+      "first-corridor-312-209",
+      "first-corridor-320-209"
+    ],
+    [
+      "first-corridor-316-248",
+      "first-corridor-350-249"
+    ],
+    [
+      "first-corridor-320-209",
+      "first-corridor-340-210"
+    ],
+    [
+      "first-corridor-324-328",
+      "first-corridor-354-318"
+    ],
+    [
+      "first-corridor-328-372",
+      "first-corridor-349-376"
+    ],
+    [
+      "first-corridor-340-210",
+      "first-corridor-347-215"
+    ],
+    [
+      "first-corridor-347-215",
+      "first-corridor-360-209"
+    ],
+    [
+      "first-corridor-349-376",
+      "first-corridor-363-375"
+    ],
+    [
+      "first-corridor-350-249",
+      "first-corridor-354-252"
+    ],
+    [
+      "first-corridor-354-252",
+      "first-corridor-354-272"
+    ],
+    [
+      "first-corridor-354-252",
+      "first-corridor-378-250"
+    ],
+    [
+      "first-corridor-354-272",
+      "first-corridor-354-290"
+    ],
+    [
+      "first-corridor-354-272",
+      "first-cuffed-approach"
+    ],
+    [
+      "first-corridor-354-290",
+      "first-corridor-354-318"
+    ],
+    [
+      "first-corridor-354-290",
+      "first-footlocker-approach"
+    ],
+    [
+      "first-corridor-354-318",
+      "first-corridor-380-318"
+    ],
+    [
+      "first-corridor-360-209",
+      "first-corridor-368-209"
+    ],
+    [
+      "first-corridor-362-385",
+      "first-corridor-362-402"
+    ],
+    [
+      "first-corridor-362-385",
+      "first-corridor-363-375"
+    ],
+    [
+      "first-corridor-362-402",
+      "first-corridor-375-411"
+    ],
+    [
+      "first-corridor-363-375",
+      "first-corridor-390-371"
+    ],
+    [
+      "first-corridor-368-209",
+      "first-corridor-408-209"
+    ],
+    [
+      "first-corridor-368-209",
+      "first-laxmi-tailors-approach"
+    ],
+    [
+      "first-corridor-378-250",
+      "first-corridor-382-251"
+    ],
+    [
+      "first-corridor-380-318",
+      "first-corridor-382-298"
+    ],
+    [
+      "first-corridor-380-318",
+      "first-corridor-393-322"
+    ],
+    [
+      "first-corridor-382-251",
+      "first-corridor-382-258"
+    ],
+    [
+      "first-corridor-382-251",
+      "first-corridor-402-248"
+    ],
+    [
+      "first-corridor-382-258",
+      "first-corridor-382-298"
+    ],
+    [
+      "first-corridor-390-371",
+      "first-corridor-410-365"
+    ],
+    [
+      "first-corridor-393-322",
+      "first-corridor-429-327"
+    ],
+    [
+      "first-corridor-408-209",
+      "first-corridor-432-206"
+    ],
+    [
+      "first-corridor-410-365",
+      "first-corridor-433-357"
+    ],
+    [
+      "first-corridor-429-327",
+      "first-corridor-443-335"
+    ],
+    [
+      "first-corridor-432-206",
+      "first-corridor-462-209"
+    ],
+    [
+      "first-corridor-433-357",
+      "first-corridor-437-350"
+    ],
+    [
+      "first-corridor-437-350",
+      "first-corridor-444-336"
+    ],
+    [
+      "first-corridor-437-350",
+      "first-jd-sports-approach"
+    ],
+    [
+      "first-corridor-441-314",
+      "first-corridor-444-311"
+    ],
+    [
+      "first-corridor-441-314",
+      "first-corridor-458-331"
+    ],
+    [
+      "first-corridor-443-335",
+      "first-corridor-444-336"
+    ],
+    [
+      "first-corridor-444-336",
+      "first-corridor-458-331"
+    ],
+    [
+      "first-corridor-446-249",
+      "first-corridor-455-256"
+    ],
+    [
+      "first-corridor-455-256",
+      "first-corridor-477-277"
+    ],
+    [
+      "first-corridor-455-256",
+      "first-one-love-bespoke-approach"
+    ],
+    [
+      "first-corridor-458-331",
+      "first-corridor-462-330"
+    ],
+    [
+      "first-corridor-462-209",
+      "first-corridor-466-211"
+    ],
+    [
+      "first-corridor-462-330",
+      "first-corridor-474-344"
+    ],
+    [
+      "first-corridor-462-330",
+      "first-corridor-479-314"
+    ],
+    [
+      "first-corridor-466-211",
+      "first-corridor-483-228"
+    ],
+    [
+      "first-corridor-474-344",
+      "first-flying-tiger-approach"
+    ],
+    [
+      "first-corridor-477-277",
+      "first-corridor-479-285"
+    ],
+    [
+      "first-corridor-477-277",
+      "first-corridor-483-255"
+    ],
+    [
+      "first-corridor-479-285",
+      "first-corridor-479-314"
+    ],
+    [
+      "first-corridor-479-285",
+      "first-corridor-500-267"
+    ],
+    [
+      "first-corridor-479-314",
+      "first-corridor-483-317"
+    ],
+    [
+      "first-corridor-483-228",
+      "first-corridor-483-255"
+    ],
+    [
+      "first-corridor-483-228",
+      "first-corridor-497-212"
+    ],
+    [
+      "first-corridor-483-317",
+      "first-corridor-505-338"
+    ],
+    [
+      "first-corridor-497-212",
+      "first-corridor-499-209"
+    ],
+    [
+      "first-corridor-499-209",
+      "first-corridor-502-170"
+    ],
+    [
+      "first-corridor-499-209",
+      "first-corridor-508-208"
+    ],
+    [
+      "first-corridor-500-267",
+      "first-corridor-540-270"
+    ],
+    [
+      "first-corridor-502-170",
+      "first-corridor-507-162"
+    ],
+    [
+      "first-corridor-505-338",
+      "first-corridor-534-338"
+    ],
+    [
+      "first-corridor-507-162",
+      "first-corridor-512-162"
+    ],
+    [
+      "first-corridor-508-208",
+      "first-corridor-542-204"
+    ],
+    [
+      "first-corridor-508-208",
+      "first-havaianas-approach"
+    ],
+    [
+      "first-corridor-512-162",
+      "first-corridor-539-163"
+    ],
+    [
+      "first-corridor-512-162",
+      "first-project-soul-approach"
+    ],
+    [
+      "first-corridor-534-338",
+      "first-corridor-540-338"
+    ],
+    [
+      "first-corridor-534-338",
+      "first-tommy-hilfiger-approach"
+    ],
+    [
+      "first-corridor-539-163",
+      "first-corridor-542-164"
+    ],
+    [
+      "first-corridor-540-270",
+      "first-corridor-542-271"
+    ],
+    [
+      "first-corridor-540-338",
+      "first-corridor-550-338"
+    ],
+    [
+      "first-corridor-540-338",
+      "first-the-body-shop-approach"
+    ],
+    [
+      "first-corridor-542-107",
+      "first-corridor-543-101"
+    ],
+    [
+      "first-corridor-542-107",
+      "first-corridor-544-115"
+    ],
+    [
+      "first-corridor-542-164",
+      "first-corridor-543-190"
+    ],
+    [
+      "first-corridor-542-164",
+      "first-corridor-544-144"
+    ],
+    [
+      "first-corridor-542-204",
+      "first-corridor-543-190"
+    ],
+    [
+      "first-corridor-542-204",
+      "first-corridor-552-212"
+    ],
+    [
+      "first-corridor-542-271",
+      "first-corridor-574-273"
+    ],
+    [
+      "first-corridor-542-271",
+      "first-loccitane-approach"
+    ],
+    [
+      "first-corridor-543-101",
+      "first-corridor-548-98"
+    ],
+    [
+      "first-corridor-543-190",
+      "first-south-escalator-approach"
+    ],
+    [
+      "first-corridor-544-115",
+      "first-corridor-544-144"
+    ],
+    [
+      "first-corridor-544-115",
+      "first-south-lift-approach"
+    ],
+    [
+      "first-corridor-548-98",
+      "first-corridor-551-101"
+    ],
+    [
+      "first-corridor-550-338",
+      "first-corridor-575-337"
+    ],
+    [
+      "first-corridor-551-101",
+      "first-south-toilets-approach"
+    ],
+    [
+      "first-corridor-552-212",
+      "first-corridor-589-217"
+    ],
+    [
+      "first-corridor-574-273",
+      "first-corridor-584-283"
+    ],
+    [
+      "first-corridor-575-337",
+      "first-corridor-584-330"
+    ],
+    [
+      "first-corridor-575-365",
+      "first-corridor-576-391"
+    ],
+    [
+      "first-corridor-575-365",
+      "first-corridor-580-343"
+    ],
+    [
+      "first-corridor-576-391",
+      "first-corridor-582-410"
+    ],
+    [
+      "first-corridor-580-343",
+      "first-corridor-587-337"
+    ],
+    [
+      "first-corridor-582-410",
+      "first-corridor-591-430"
+    ],
+    [
+      "first-corridor-584-283",
+      "first-corridor-584-320"
+    ],
+    [
+      "first-corridor-584-283",
+      "first-corridor-596-278"
+    ],
+    [
+      "first-corridor-584-320",
+      "first-corridor-584-330"
+    ],
+    [
+      "first-corridor-584-330",
+      "first-corridor-587-337"
+    ],
+    [
+      "first-corridor-587-337",
+      "first-corridor-599-347"
+    ],
+    [
+      "first-corridor-589-217",
+      "first-corridor-594-210"
+    ],
+    [
+      "first-corridor-589-217",
+      "first-corridor-599-226"
+    ],
+    [
+      "first-corridor-591-430",
+      "first-corridor-594-434"
+    ],
+    [
+      "first-corridor-594-434",
+      "first-corridor-600-444"
+    ],
+    [
+      "first-corridor-594-434",
+      "first-staccato-approach"
+    ],
+    [
+      "first-corridor-596-238",
+      "first-corridor-596-278"
+    ],
+    [
+      "first-corridor-596-238",
+      "first-corridor-599-226"
+    ],
+    [
+      "first-corridor-596-278",
+      "first-corridor-612-292"
+    ],
+    [
+      "first-corridor-599-226",
+      "first-corridor-639-226"
+    ],
+    [
+      "first-corridor-599-347",
+      "first-corridor-610-349"
+    ],
+    [
+      "first-corridor-600-444",
+      "first-corridor-601-447"
+    ],
+    [
+      "first-corridor-601-447",
+      "first-corridor-605-449"
+    ],
+    [
+      "first-corridor-605-449",
+      "first-corridor-613-457"
+    ],
+    [
+      "first-corridor-610-349",
+      "first-corridor-613-355"
+    ],
+    [
+      "first-corridor-612-292",
+      "first-corridor-619-291"
+    ],
+    [
+      "first-corridor-613-355",
+      "first-corridor-640-395"
+    ],
+    [
+      "first-corridor-613-355",
+      "first-everbest-studio-approach"
+    ],
+    [
+      "first-corridor-613-457",
+      "first-corridor-631-467"
+    ],
+    [
+      "first-corridor-613-457",
+      "first-mst_golf-approach"
+    ],
+    [
+      "first-corridor-619-291",
+      "first-corridor-633-296"
+    ],
+    [
+      "first-corridor-619-291",
+      "first-giordano-approach"
+    ],
+    [
+      "first-corridor-631-467",
+      "first-corridor-649-469"
+    ],
+    [
+      "first-corridor-633-296",
+      "first-corridor-673-321"
+    ],
+    [
+      "first-corridor-639-226",
+      "first-corridor-672-230"
+    ],
+    [
+      "first-corridor-640-395",
+      "first-corridor-642-400"
+    ],
+    [
+      "first-corridor-642-400",
+      "first-corridor-651-433"
+    ],
+    [
+      "first-corridor-642-400",
+      "first-hush-puppies-approach"
+    ],
+    [
+      "first-corridor-649-469",
+      "first-corridor-661-464"
+    ],
+    [
+      "first-corridor-651-433",
+      "first-corridor-653-453"
+    ],
+    [
+      "first-corridor-653-453",
+      "first-corridor-662-463"
+    ],
+    [
+      "first-corridor-661-464",
+      "first-corridor-662-463"
+    ],
+    [
+      "first-corridor-662-463",
+      "first-corridor-700-469"
+    ],
+    [
+      "first-corridor-672-230",
+      "first-corridor-688-235"
+    ],
+    [
+      "first-corridor-673-321",
+      "first-corridor-678-322"
+    ],
+    [
+      "first-corridor-678-322",
+      "first-corridor-682-330"
+    ],
+    [
+      "first-corridor-678-322",
+      "first-corridor-687-301"
+    ],
+    [
+      "first-corridor-682-330",
+      "first-corridor-707-359"
+    ],
+    [
+      "first-corridor-687-301",
+      "first-corridor-703-283"
+    ],
+    [
+      "first-corridor-688-235",
+      "first-corridor-697-255"
+    ],
+    [
+      "first-corridor-688-235",
+      "first-corridor-705-220"
+    ],
+    [
+      "first-corridor-697-255",
+      "first-corridor-703-275"
+    ],
+    [
+      "first-corridor-697-255",
+      "first-corridor-704-250"
+    ],
+    [
+      "first-corridor-700-469",
+      "first-corridor-728-459"
+    ],
+    [
+      "first-corridor-703-275",
+      "first-corridor-703-283"
+    ],
+    [
+      "first-corridor-703-283",
+      "first-corridor-709-288"
+    ],
+    [
+      "first-corridor-704-250",
+      "first-new-balance-approach"
+    ],
+    [
+      "first-corridor-705-220",
+      "first-skechers-approach"
+    ],
+    [
+      "first-corridor-707-359",
+      "first-corridor-720-389"
+    ],
+    [
+      "first-corridor-708-213",
+      "first-planet-sports-approach"
+    ],
+    [
+      "first-corridor-708-213",
+      "first-skechers-approach"
+    ],
+    [
+      "first-corridor-709-288",
+      "first-corridor-717-298"
+    ],
+    [
+      "first-corridor-717-298",
+      "first-corridor-733-303"
+    ],
+    [
+      "first-corridor-720-389",
+      "first-corridor-724-422"
+    ],
+    [
+      "first-corridor-724-422",
+      "first-corridor-724-449"
+    ],
+    [
+      "first-corridor-724-449",
+      "first-corridor-727-458"
+    ],
+    [
+      "first-corridor-727-458",
+      "first-corridor-728-459"
+    ],
+    [
+      "first-corridor-728-459",
+      "first-corridor-750-450"
+    ],
+    [
+      "first-corridor-733-303",
+      "first-corridor-736-332"
+    ],
+    [
+      "first-corridor-733-303",
+      "first-corridor-747-299"
+    ],
+    [
+      "first-corridor-736-332",
+      "first-corridor-743-344"
+    ],
+    [
+      "first-corridor-743-344",
+      "first-corridor-752-350"
+    ],
+    [
+      "first-corridor-747-299",
+      "first-corridor-749-306"
+    ],
+    [
+      "first-corridor-747-299",
+      "first-corridor-766-295"
+    ],
+    [
+      "first-corridor-749-306",
+      "first-mycws-lounge-approach"
+    ],
+    [
+      "first-corridor-750-450",
+      "first-corridor-756-443"
+    ],
+    [
+      "first-corridor-752-350",
+      "first-corridor-753-352"
+    ],
+    [
+      "first-corridor-753-352",
+      "first-corridor-763-384"
+    ],
+    [
+      "first-corridor-753-352",
+      "first-sociolla-approach"
+    ],
+    [
+      "first-corridor-756-443",
+      "first-corridor-764-424"
+    ],
+    [
+      "first-corridor-763-384",
+      "first-corridor-763-386"
+    ],
+    [
+      "first-corridor-763-386",
+      "first-corridor-765-408"
+    ],
+    [
+      "first-corridor-764-424",
+      "first-corridor-765-408"
+    ],
+    [
+      "first-corridor-764-424",
+      "first-corridor-797-425"
+    ],
+    [
+      "first-corridor-765-408",
+      "first-maison-aura-approach"
+    ],
+    [
+      "first-corridor-766-295",
+      "first-corridor-777-297"
+    ],
+    [
+      "first-corridor-777-297",
+      "first-corridor-779-302"
+    ],
+    [
+      "first-corridor-779-302",
+      "first-north-lift-approach"
+    ],
+    [
+      "first-corridor-797-425",
+      "first-north-toilets-approach"
+    ],
+    [
+      "g-chagee",
+      "ground-corridor-471-290"
+    ],
+    [
+      "g-cole",
+      "ground-corridor-448-326"
+    ],
+    [
+      "g-escalator",
+      "ground-corridor-566-317"
+    ],
+    [
+      "g-fore",
+      "ground-corridor-574-279"
+    ],
+    [
+      "g-lexus",
+      "ground-corridor-669-502"
+    ],
+    [
+      "g-metro",
+      "ground-corridor-690-280"
+    ],
+    [
+      "g0",
+      "ground-corridor-478-326"
+    ],
+    [
+      "ground-aigner-approach",
+      "ground-corridor-623-459"
+    ],
+    [
+      "ground-boss-approach",
+      "ground-corridor-686-344"
+    ],
+    [
+      "ground-bowie-approach",
+      "ground-corridor-568-395"
+    ],
+    [
+      "ground-central-escalator-approach",
+      "ground-corridor-364-365"
+    ],
+    [
+      "ground-central-lift-approach",
+      "ground-corridor-338-403"
+    ],
+    [
+      "ground-coach-approach",
+      "ground-corridor-536-326"
+    ],
+    [
+      "ground-corridor-135-162",
+      "ground-corridor-135-202"
+    ],
+    [
+      "ground-corridor-135-162",
+      "ground-corridor-136-127"
+    ],
+    [
+      "ground-corridor-135-202",
+      "ground-corridor-135-242"
+    ],
+    [
+      "ground-corridor-135-242",
+      "ground-corridor-135-282"
+    ],
+    [
+      "ground-corridor-135-282",
+      "ground-corridor-148-297"
+    ],
+    [
+      "ground-corridor-136-127",
+      "ground-corridor-174-127"
+    ],
+    [
+      "ground-corridor-148-297",
+      "ground-corridor-170-298"
+    ],
+    [
+      "ground-corridor-170-298",
+      "ground-corridor-210-298"
+    ],
+    [
+      "ground-corridor-170-298",
+      "ground-loft-approach"
+    ],
+    [
+      "ground-corridor-174-127",
+      "ground-corridor-176-128"
+    ],
+    [
+      "ground-corridor-176-128",
+      "ground-corridor-176-146"
+    ],
+    [
+      "ground-corridor-176-128",
+      "ground-corridor-192-126"
+    ],
+    [
+      "ground-corridor-176-146",
+      "ground-corridor-177-165"
+    ],
+    [
+      "ground-corridor-176-146",
+      "ground-east-lift-approach"
+    ],
+    [
+      "ground-corridor-177-165",
+      "ground-corridor-185-167"
+    ],
+    [
+      "ground-corridor-185-167",
+      "ground-corridor-225-167"
+    ],
+    [
+      "ground-corridor-192-126",
+      "ground-corridor-209-127"
+    ],
+    [
+      "ground-corridor-209-127",
+      "ground-east-toilets-approach"
+    ],
+    [
+      "ground-corridor-210-298",
+      "ground-corridor-239-297"
+    ],
+    [
+      "ground-corridor-225-167",
+      "ground-corridor-237-168"
+    ],
+    [
+      "ground-corridor-237-168",
+      "ground-corridor-239-184"
+    ],
+    [
+      "ground-corridor-239-184",
+      "ground-corridor-246-191"
+    ],
+    [
+      "ground-corridor-239-297",
+      "ground-corridor-249-257"
+    ],
+    [
+      "ground-corridor-239-297",
+      "ground-corridor-251-319"
+    ],
+    [
+      "ground-corridor-246-191",
+      "ground-corridor-253-198"
+    ],
+    [
+      "ground-corridor-246-191",
+      "ground-frederique-constant-approach"
+    ],
+    [
+      "ground-corridor-249-254",
+      "ground-corridor-249-257"
+    ],
+    [
+      "ground-corridor-249-254",
+      "ground-corridor-253-226"
+    ],
+    [
+      "ground-corridor-249-254",
+      "ground-molton-brown-approach"
+    ],
+    [
+      "ground-corridor-251-319",
+      "ground-corridor-254-323"
+    ],
+    [
+      "ground-corridor-253-198",
+      "ground-corridor-253-226"
+    ],
+    [
+      "ground-corridor-253-198",
+      "ground-corridor-261-195"
+    ],
+    [
+      "ground-corridor-253-226",
+      "ground-corridor-293-223"
+    ],
+    [
+      "ground-corridor-254-323",
+      "ground-corridor-259-326"
+    ],
+    [
+      "ground-corridor-254-323",
+      "ground-hnm-gf-approach"
+    ],
+    [
+      "ground-corridor-259-326",
+      "ground-corridor-272-352"
+    ],
+    [
+      "ground-corridor-259-326",
+      "ground-corridor-297-319"
+    ],
+    [
+      "ground-corridor-261-195",
+      "ground-corridor-301-194"
+    ],
+    [
+      "ground-corridor-272-352",
+      "ground-corridor-288-364"
+    ],
+    [
+      "ground-corridor-288-364",
+      "ground-corridor-302-365"
+    ],
+    [
+      "ground-corridor-293-223",
+      "ground-filosofia-approach"
+    ],
+    [
+      "ground-corridor-297-319",
+      "ground-corridor-309-316"
+    ],
+    [
+      "ground-corridor-301-194",
+      "ground-corridor-320-191"
+    ],
+    [
+      "ground-corridor-302-365",
+      "ground-corridor-317-368"
+    ],
+    [
+      "ground-corridor-309-316",
+      "ground-corridor-341-314"
+    ],
+    [
+      "ground-corridor-309-316",
+      "ground-wilson-approach"
+    ],
+    [
+      "ground-corridor-317-368",
+      "ground-corridor-329-369"
+    ],
+    [
+      "ground-corridor-320-191",
+      "ground-corridor-325-186"
+    ],
+    [
+      "ground-corridor-325-186",
+      "ground-corridor-333-184"
+    ],
+    [
+      "ground-corridor-325-186",
+      "ground-memo-paris-approach"
+    ],
+    [
+      "ground-corridor-329-369",
+      "ground-corridor-329-392"
+    ],
+    [
+      "ground-corridor-329-369",
+      "ground-corridor-352-368"
+    ],
+    [
+      "ground-corridor-329-392",
+      "ground-corridor-338-403"
+    ],
+    [
+      "ground-corridor-333-184",
+      "ground-corridor-356-183"
+    ],
+    [
+      "ground-corridor-341-314",
+      "ground-corridor-362-317"
+    ],
+    [
+      "ground-corridor-352-368",
+      "ground-corridor-364-365"
+    ],
+    [
+      "ground-corridor-356-183",
+      "ground-corridor-361-180"
+    ],
+    [
+      "ground-corridor-361-180",
+      "ground-corridor-368-184"
+    ],
+    [
+      "ground-corridor-362-317",
+      "ground-corridor-396-323"
+    ],
+    [
+      "ground-corridor-362-317",
+      "ground-sandro-approach"
+    ],
+    [
+      "ground-corridor-364-365",
+      "ground-corridor-383-359"
+    ],
+    [
+      "ground-corridor-368-184",
+      "ground-corridor-406-186"
+    ],
+    [
+      "ground-corridor-370-223",
+      "ground-filosofia-approach"
+    ],
+    [
+      "ground-corridor-370-223",
+      "ground-pandora-approach"
+    ],
+    [
+      "ground-corridor-383-359",
+      "ground-corridor-392-354"
+    ],
+    [
+      "ground-corridor-392-354",
+      "ground-corridor-405-330"
+    ],
+    [
+      "ground-corridor-392-354",
+      "ground-digimap-approach"
+    ],
+    [
+      "ground-corridor-396-323",
+      "ground-corridor-405-330"
+    ],
+    [
+      "ground-corridor-397-223",
+      "ground-corridor-416-220"
+    ],
+    [
+      "ground-corridor-397-223",
+      "ground-pandora-approach"
+    ],
+    [
+      "ground-corridor-405-330",
+      "ground-corridor-420-328"
+    ],
+    [
+      "ground-corridor-406-186",
+      "ground-corridor-424-190"
+    ],
+    [
+      "ground-corridor-406-186",
+      "ground-tissot-approach"
+    ],
+    [
+      "ground-corridor-416-220",
+      "ground-corridor-426-216"
+    ],
+    [
+      "ground-corridor-420-328",
+      "ground-corridor-448-326"
+    ],
+    [
+      "ground-corridor-420-328",
+      "ground-starbucks-approach"
+    ],
+    [
+      "ground-corridor-424-190",
+      "ground-corridor-426-206"
+    ],
+    [
+      "ground-corridor-424-190",
+      "ground-corridor-438-185"
+    ],
+    [
+      "ground-corridor-426-206",
+      "ground-corridor-426-216"
+    ],
+    [
+      "ground-corridor-426-216",
+      "ground-corridor-434-221"
+    ],
+    [
+      "ground-corridor-434-221",
+      "ground-corridor-443-223"
+    ],
+    [
+      "ground-corridor-438-185",
+      "ground-corridor-470-183"
+    ],
+    [
+      "ground-corridor-443-223",
+      "ground-corridor-451-223"
+    ],
+    [
+      "ground-corridor-448-326",
+      "ground-corridor-469-324"
+    ],
+    [
+      "ground-corridor-451-223",
+      "ground-corridor-452-224"
+    ],
+    [
+      "ground-corridor-452-224",
+      "ground-corridor-454-224"
+    ],
+    [
+      "ground-corridor-454-224",
+      "ground-corridor-468-232"
+    ],
+    [
+      "ground-corridor-468-232",
+      "ground-corridor-471-236"
+    ],
+    [
+      "ground-corridor-469-324",
+      "ground-corridor-471-290"
+    ],
+    [
+      "ground-corridor-469-324",
+      "ground-corridor-478-326"
+    ],
+    [
+      "ground-corridor-470-183",
+      "ground-corridor-484-177"
+    ],
+    [
+      "ground-corridor-471-236",
+      "ground-corridor-471-276"
+    ],
+    [
+      "ground-corridor-471-236",
+      "ground-corridor-491-231"
+    ],
+    [
+      "ground-corridor-471-276",
+      "ground-corridor-471-290"
+    ],
+    [
+      "ground-corridor-471-290",
+      "ground-kate-spade-approach"
+    ],
+    [
+      "ground-corridor-478-326",
+      "ground-corridor-488-326"
+    ],
+    [
+      "ground-corridor-484-177",
+      "ground-corridor-496-166"
+    ],
+    [
+      "ground-corridor-488-326",
+      "ground-corridor-528-326"
+    ],
+    [
+      "ground-corridor-488-326",
+      "ground-tumi-approach"
+    ],
+    [
+      "ground-corridor-491-231",
+      "ground-corridor-500-232"
+    ],
+    [
+      "ground-corridor-496-166",
+      "ground-corridor-497-153"
+    ],
+    [
+      "ground-corridor-496-166",
+      "ground-corridor-517-194"
+    ],
+    [
+      "ground-corridor-497-153",
+      "ground-corridor-499-151"
+    ],
+    [
+      "ground-corridor-499-151",
+      "ground-corridor-504-146"
+    ],
+    [
+      "ground-corridor-499-151",
+      "ground-south-escalator-approach"
+    ],
+    [
+      "ground-corridor-500-232",
+      "ground-corridor-533-240"
+    ],
+    [
+      "ground-corridor-504-146",
+      "ground-corridor-518-130"
+    ],
+    [
+      "ground-corridor-504-146",
+      "ground-marketing-gallery-apartment-approach"
+    ],
+    [
+      "ground-corridor-517-194",
+      "ground-corridor-540-204"
+    ],
+    [
+      "ground-corridor-517-76",
+      "ground-corridor-517-92"
+    ],
+    [
+      "ground-corridor-517-76",
+      "ground-south-toilets-approach"
+    ],
+    [
+      "ground-corridor-517-92",
+      "ground-corridor-518-130"
+    ],
+    [
+      "ground-corridor-517-92",
+      "ground-corridor-521-90"
+    ],
+    [
+      "ground-corridor-521-90",
+      "ground-south-lift-approach"
+    ],
+    [
+      "ground-corridor-528-326",
+      "ground-corridor-536-326"
+    ],
+    [
+      "ground-corridor-533-240",
+      "ground-corridor-553-223"
+    ],
+    [
+      "ground-corridor-536-326",
+      "ground-corridor-560-325"
+    ],
+    [
+      "ground-corridor-540-204",
+      "ground-corridor-553-222"
+    ],
+    [
+      "ground-corridor-553-222",
+      "ground-corridor-553-223"
+    ],
+    [
+      "ground-corridor-553-223",
+      "ground-corridor-574-230"
+    ],
+    [
+      "ground-corridor-560-325",
+      "ground-corridor-566-320"
+    ],
+    [
+      "ground-corridor-562-384",
+      "ground-corridor-564-344"
+    ],
+    [
+      "ground-corridor-562-384",
+      "ground-corridor-568-395"
+    ],
+    [
+      "ground-corridor-564-344",
+      "ground-corridor-569-329"
+    ],
+    [
+      "ground-corridor-566-317",
+      "ground-corridor-566-320"
+    ],
+    [
+      "ground-corridor-566-320",
+      "ground-corridor-576-322"
+    ],
+    [
+      "ground-corridor-569-329",
+      "ground-corridor-576-322"
+    ],
+    [
+      "ground-corridor-574-230",
+      "ground-corridor-576-262"
+    ],
+    [
+      "ground-corridor-574-230",
+      "ground-corridor-582-227"
+    ],
+    [
+      "ground-corridor-574-279",
+      "ground-corridor-576-277"
+    ],
+    [
+      "ground-corridor-576-262",
+      "ground-corridor-576-277"
+    ],
+    [
+      "ground-corridor-576-277",
+      "ground-corridor-580-285"
+    ],
+    [
+      "ground-corridor-576-322",
+      "ground-corridor-578-322"
+    ],
+    [
+      "ground-corridor-578-322",
+      "ground-corridor-580-302"
+    ],
+    [
+      "ground-corridor-578-322",
+      "ground-corridor-607-357"
+    ],
+    [
+      "ground-corridor-580-285",
+      "ground-corridor-580-302"
+    ],
+    [
+      "ground-corridor-580-285",
+      "ground-corridor-591-277"
+    ],
+    [
+      "ground-corridor-580-302",
+      "ground-frank-and-co-approach"
+    ],
+    [
+      "ground-corridor-582-227",
+      "ground-corridor-608-230"
+    ],
+    [
+      "ground-corridor-591-277",
+      "ground-corridor-612-278"
+    ],
+    [
+      "ground-corridor-607-357",
+      "ground-corridor-624-388"
+    ],
+    [
+      "ground-corridor-608-230",
+      "ground-corridor-646-249"
+    ],
+    [
+      "ground-corridor-612-278",
+      "ground-corridor-636-292"
+    ],
+    [
+      "ground-corridor-623-459",
+      "ground-corridor-641-457"
+    ],
+    [
+      "ground-corridor-624-388",
+      "ground-corridor-633-419"
+    ],
+    [
+      "ground-corridor-633-419",
+      "ground-corridor-635-431"
+    ],
+    [
+      "ground-corridor-635-431",
+      "ground-corridor-652-448"
+    ],
+    [
+      "ground-corridor-636-292",
+      "ground-corridor-675-330"
+    ],
+    [
+      "ground-corridor-641-457",
+      "ground-corridor-652-448"
+    ],
+    [
+      "ground-corridor-646-249",
+      "ground-corridor-686-277"
+    ],
+    [
+      "ground-corridor-652-448",
+      "ground-corridor-683-454"
+    ],
+    [
+      "ground-corridor-669-502",
+      "ground-corridor-670-492"
+    ],
+    [
+      "ground-corridor-669-502",
+      "ground-corridor-670-510"
+    ],
+    [
+      "ground-corridor-670-492",
+      "ground-corridor-683-480"
+    ],
+    [
+      "ground-corridor-670-510",
+      "ground-corridor-678-516"
+    ],
+    [
+      "ground-corridor-675-330",
+      "ground-corridor-686-344"
+    ],
+    [
+      "ground-corridor-678-516",
+      "ground-corridor-690-515"
+    ],
+    [
+      "ground-corridor-683-454",
+      "ground-corridor-683-480"
+    ],
+    [
+      "ground-corridor-683-454",
+      "ground-corridor-707-446"
+    ],
+    [
+      "ground-corridor-683-480",
+      "ground-corridor-690-489"
+    ],
+    [
+      "ground-corridor-686-277",
+      "ground-corridor-690-280"
+    ],
+    [
+      "ground-corridor-686-344",
+      "ground-corridor-707-364"
+    ],
+    [
+      "ground-corridor-690-280",
+      "ground-corridor-720-305"
+    ],
+    [
+      "ground-corridor-690-489",
+      "ground-corridor-690-507"
+    ],
+    [
+      "ground-corridor-690-507",
+      "ground-corridor-690-515"
+    ],
+    [
+      "ground-corridor-690-507",
+      "ground-denza-approach"
+    ],
+    [
+      "ground-corridor-707-364",
+      "ground-corridor-722-375"
+    ],
+    [
+      "ground-corridor-707-446",
+      "ground-corridor-715-435"
+    ],
+    [
+      "ground-corridor-715-435",
+      "ground-corridor-724-396"
+    ],
+    [
+      "ground-corridor-720-305",
+      "ground-corridor-730-312"
+    ],
+    [
+      "ground-corridor-722-375",
+      "ground-corridor-724-396"
+    ],
+    [
+      "ground-corridor-722-375",
+      "ground-corridor-733-362"
+    ],
+    [
+      "ground-corridor-724-396",
+      "ground-corridor-753-402"
+    ],
+    [
+      "ground-corridor-730-312",
+      "ground-corridor-732-322"
+    ],
+    [
+      "ground-corridor-730-312",
+      "ground-corridor-757-309"
+    ],
+    [
+      "ground-corridor-732-322",
+      "ground-corridor-733-362"
+    ],
+    [
+      "ground-corridor-753-402",
+      "ground-corridor-787-402"
+    ],
+    [
+      "ground-corridor-757-309",
+      "ground-corridor-760-303"
+    ],
+    [
+      "ground-corridor-760-303",
+      "ground-corridor-761-294"
+    ],
+    [
+      "ground-corridor-761-294",
+      "ground-north-lift-approach"
+    ],
+    [
+      "ground-corridor-787-402",
+      "ground-north-toilets-approach"
+    ]
+  ],
+  "connectors": [
+    {
+      "a": "g-escalator",
+      "b": "f-escalator",
+      "meters": 12,
+      "name": "East escalator (inferred pairing)",
+      "kind": "escalator",
+      "verified": false
+    },
+    {
+      "a": "ground-south-escalator-approach",
+      "b": "first-south-escalator-approach",
+      "meters": 12,
+      "name": "South escalator (inferred pairing)",
+      "kind": "escalator",
+      "verified": false
+    },
+    {
+      "a": "ground-central-escalator-approach",
+      "b": "first-central-escalator-approach",
+      "meters": 12,
+      "name": "Central escalator (inferred pairing)",
+      "kind": "escalator",
+      "verified": false
+    },
+    {
+      "a": "ground-south-lift-approach",
+      "b": "first-south-lift-approach",
+      "meters": 8,
+      "name": "South lift (inferred pairing)",
+      "kind": "lift",
+      "verified": false
+    },
+    {
+      "a": "ground-central-lift-approach",
+      "b": "first-central-lift-approach",
+      "meters": 8,
+      "name": "Central lift (inferred pairing)",
+      "kind": "lift",
+      "verified": false
+    },
+    {
+      "a": "ground-east-lift-approach",
+      "b": "first-east-lift-approach",
+      "meters": 8,
+      "name": "East lift (inferred pairing)",
+      "kind": "lift",
+      "verified": false
+    },
+    {
+      "a": "ground-north-lift-approach",
+      "b": "first-north-lift-approach",
+      "meters": 8,
+      "name": "North lift (inferred pairing)",
+      "kind": "lift",
+      "verified": false
+    }
+  ],
+  "entrances": {
+    "first:mycws-lounge": "first-mycws-lounge-approach",
+    "first:amakute": "first-amakute-approach",
+    "ground:fore": "g-fore",
+    "first:mst_golf": "first-mst_golf-approach",
+    "ground:wilson": "ground-wilson-approach",
+    "first:sociolla": "first-sociolla-approach",
+    "ground:chagee": "g-chagee",
+    "ground:loft": "ground-loft-approach",
+    "first:anta": "f-anta",
+    "ground:lexus": "g-lexus",
+    "ground:marketing-gallery-apartment": "ground-marketing-gallery-apartment-approach",
+    "ground:starbucks": "ground-starbucks-approach",
+    "ground:bowie": "ground-bowie-approach",
+    "ground:tumi": "ground-tumi-approach",
+    "first:tommy-hilfiger": "first-tommy-hilfiger-approach",
+    "ground:tissot": "ground-tissot-approach",
+    "first:thule": "first-thule-approach",
+    "first:the-body-shop": "first-the-body-shop-approach",
+    "first:steve-madden": "first-steve-madden-approach",
+    "first:staccato": "first-staccato-approach",
+    "first:skechers": "first-skechers-approach",
+    "ground:sandro": "ground-sandro-approach",
+    "first:puma": "f-puma",
+    "first:project-soul": "first-project-soul-approach",
+    "first:planet-sports": "first-planet-sports-approach",
+    "ground:pandora": "ground-pandora-approach",
+    "first:one-love-bespoke": "first-one-love-bespoke-approach",
+    "first:new-era": "first-new-era-approach",
+    "first:new-balance": "first-new-balance-approach",
+    "ground:molton-brown": "ground-molton-brown-approach",
+    "ground:metro": "g-metro",
+    "ground:memo-paris": "ground-memo-paris-approach",
+    "first:marks-and-spencer": "first-marks-and-spencer-approach",
+    "first:maison-aura": "first-maison-aura-approach",
+    "first:levis": "first-levis-approach",
+    "first:lego": "f-lego",
+    "first:laxmi-tailors": "first-laxmi-tailors-approach",
+    "first:lacoste": "f-lacoste",
+    "first:loccitane": "first-loccitane-approach",
+    "ground:kate-spade": "ground-kate-spade-approach",
+    "first:jd-sports": "first-jd-sports-approach",
+    "first:hush-puppies": "first-hush-puppies-approach",
+    "first:havaianas": "first-havaianas-approach",
+    "ground:hnm-gf": "ground-hnm-gf-approach",
+    "first:hnm-1f": "first-hnm-1f-approach",
+    "first:giordano": "first-giordano-approach",
+    "ground:frederique-constant": "ground-frederique-constant-approach",
+    "ground:frank-and-co": "ground-frank-and-co-approach",
+    "first:forever-new": "f-forever",
+    "first:footlocker": "first-footlocker-approach",
+    "first:flying-tiger": "first-flying-tiger-approach",
+    "ground:filosofia": "ground-filosofia-approach",
+    "first:everbest-studio": "first-everbest-studio-approach",
+    "ground:digimap": "ground-digimap-approach",
+    "ground:denza": "ground-denza-approach",
+    "first:cuffed": "first-cuffed-approach",
+    "first:crocs": "f-crocs",
+    "ground:aigner": "ground-aigner-approach",
+    "first:aldo": "first-aldo-approach",
+    "first:cnf": "first-cnf-approach",
+    "first:calvin-klein": "first-calvin-klein-approach",
+    "first:converse": "first-converse-approach",
+    "first:batik-keris": "first-batik-keris-approach",
+    "first:adidas": "first-adidas-approach",
+    "ground:cole-haan": "g-cole",
+    "first:bags-city": "first-bags-city-approach",
+    "first:birkenstock": "first-birkenstock-approach",
+    "ground:coach": "ground-coach-approach",
+    "ground:boss": "ground-boss-approach",
+    "first:asics": "first-asics-approach"
+  },
+  "facilities": [
+    {
+      "id": "ground:east-escalator",
+      "title": "East escalator (inferred)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Escalators",
+      "xy": [
+        281,
+        155
+      ],
+      "entrance": "g-escalator"
+    },
+    {
+      "id": "first:east-escalator",
+      "title": "East escalator (inferred)",
+      "floor": "first",
+      "unit": "",
+      "category": "Escalators",
+      "xy": [
+        300,
+        160
+      ],
+      "entrance": "f-escalator"
+    },
+    {
+      "id": "ground:east-toilets",
+      "title": "East lobby toilets (map symbol)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Toilets",
+      "xy": [
+        105,
+        71
+      ],
+      "entrance": "ground-east-toilets-approach"
+    },
+    {
+      "id": "ground:south-toilets",
+      "title": "South lobby toilets (map symbol)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Toilets",
+      "xy": [
+        272,
+        38
+      ],
+      "entrance": "ground-south-toilets-approach"
+    },
+    {
+      "id": "ground:north-toilets",
+      "title": "North side toilets (map symbol)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Toilets",
+      "xy": [
+        400,
+        207
+      ],
+      "entrance": "ground-north-toilets-approach"
+    },
+    {
+      "id": "ground:south-lift",
+      "title": "South lobby lift (map symbol)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Lifts",
+      "xy": [
+        265,
+        45
+      ],
+      "entrance": "ground-south-lift-approach"
+    },
+    {
+      "id": "ground:east-lift",
+      "title": "East lobby lift (map symbol)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Lifts",
+      "xy": [
+        96,
+        73
+      ],
+      "entrance": "ground-east-lift-approach"
+    },
+    {
+      "id": "ground:central-lift",
+      "title": "Central lift (map symbol)",
+      "floor": "ground",
+      "unit": "",
+      "category": "Lifts",
+      "xy": [
+        175,
+        202
+      ],
+      "entrance": "ground-central-lift-approach"
+    },
+    {
+      "id": "first:north-toilets",
+      "title": "North side toilets (map symbol)",
+      "floor": "first",
+      "unit": "",
+      "category": "Toilets",
+      "xy": [
+        403,
+        209
+      ],
+      "entrance": "first-north-toilets-approach"
+    },
+    {
+      "id": "first:west-toilets",
+      "title": "West side toilets (map symbol)",
+      "floor": "first",
+      "unit": "",
+      "category": "Toilets",
+      "xy": [
+        99,
+        193
+      ],
+      "entrance": "first-west-toilets-approach"
+    },
+    {
+      "id": "first:south-toilets",
+      "title": "South side toilets (map symbol)",
+      "floor": "first",
+      "unit": "",
+      "category": "Toilets",
+      "xy": [
+        287,
+        50
+      ],
+      "entrance": "first-south-toilets-approach"
+    },
+    {
+      "id": "first:south-lift",
+      "title": "South side lift (map symbol)",
+      "floor": "first",
+      "unit": "",
+      "category": "Lifts",
+      "xy": [
+        280,
+        57
+      ],
+      "entrance": "first-south-lift-approach"
+    },
+    {
+      "id": "first:central-lift",
+      "title": "Central lift (map symbol)",
+      "floor": "first",
+      "unit": "",
+      "category": "Lifts",
+      "xy": [
+        190,
+        206
+      ],
+      "entrance": "first-central-lift-approach"
+    },
+    {
+      "id": "first:east-lift",
+      "title": "East lobby lift (inferred)",
+      "floor": "first",
+      "category": "Lifts",
+      "xy": [
+        113,
+        85
+      ],
+      "unit": "",
+      "entrance": "first-east-lift-approach"
+    },
+    {
+      "id": "ground:north-lift",
+      "title": "North side lift (inferred)",
+      "floor": "ground",
+      "category": "Lifts",
+      "xy": [
+        387,
+        147
+      ],
+      "unit": "",
+      "entrance": "ground-north-lift-approach"
+    },
+    {
+      "id": "first:north-lift",
+      "title": "North side lift (inferred)",
+      "floor": "first",
+      "category": "Lifts",
+      "xy": [
+        390,
+        151
+      ],
+      "unit": "",
+      "entrance": "first-north-lift-approach"
+    },
+    {
+      "id": "ground:south-escalator",
+      "title": "South escalator (inferred)",
+      "floor": "ground",
+      "category": "Escalators",
+      "xy": [
+        247,
+        73
+      ],
+      "unit": "",
+      "entrance": "ground-south-escalator-approach"
+    },
+    {
+      "id": "first:south-escalator",
+      "title": "South escalator (inferred)",
+      "floor": "first",
+      "category": "Escalators",
+      "xy": [
+        260,
+        93
+      ],
+      "unit": "",
+      "entrance": "first-south-escalator-approach"
+    },
+    {
+      "id": "ground:central-escalator",
+      "title": "Central escalator (inferred)",
+      "floor": "ground",
+      "category": "Escalators",
+      "xy": [
+        180,
+        177
+      ],
+      "unit": "",
+      "entrance": "ground-central-escalator-approach"
+    },
+    {
+      "id": "first:central-escalator",
+      "title": "Central escalator (inferred)",
+      "floor": "first",
+      "category": "Escalators",
+      "xy": [
+        205,
+        180
+      ],
+      "unit": "",
+      "entrance": "first-central-escalator-approach"
+    }
+  ],
+  "unsupported": {
+    "ground:redback": "MPH/exterior access is separated from the mall corridor in the supplied plan; a connecting walkway is not established.",
+    "first:autoschoon": "MSCP parking access is outside the mapped indoor corridor. The service/parking entrance is not established."
+  },
+  "excluded_areas": [
+    {
+      "floor": "ground",
+      "name": "Oval east atrium",
+      "ring": [
+        [
+          194.0,
+          171.5
+        ],
+        [
+          193.9662727737441,
+          170.91118790807104
+        ],
+        [
+          193.86517234682105,
+          170.32379431604522
+        ],
+        [
+          193.69694227901346,
+          169.73923430653576
+        ],
+        [
+          193.46198785129036,
+          169.15891613580607
+        ],
+        [
+          193.16087508944747,
+          168.58423784116076
+        ],
+        [
+          192.79432940050174,
+          168.01658387294628
+        ],
+        [
+          192.36323382512455,
+          167.45732175929334
+        ],
+        [
+          191.86862691031547,
+          166.9077988116187
+        ],
+        [
+          191.31170020745594,
+          166.36933887883697
+        ],
+        [
+          190.69379540175396,
+          165.84323915808818
+        ],
+        [
+          190.0164010800072,
+          165.33076706968131
+        ],
+        [
+          189.28114914447178,
+          164.83315720376459
+        ],
+        [
+          188.48981088145774,
+          164.35160834609087
+        ],
+        [
+          187.64429269415632,
+          163.88728059003643
+        ],
+        [
+          186.7466315099391,
+          163.44129254183554
+        ],
+        [
+          185.79898987322304,
+          163.01471862576136
+        ],
+        [
+          184.80365073571647,
+          162.60858649574038
+        ],
+        [
+          183.76301195658198,
+          162.22387455964736
+        ],
+        [
+          182.67958052578797,
+          161.86150962223246
+        ],
+        [
+          181.55596652454915,
+          161.5223646523691
+        ],
+        [
+          180.39487683741027,
+          161.20725667999682
+        ],
+        [
+          179.19910863112818,
+          160.91694482781963
+        ],
+        [
+          177.97154261604737,
+          160.65212848251895
+        ],
+        [
+          176.71513610622242,
+          160.41344560986454
+        ],
+        [
+          175.43291589498222,
+          160.20147121780383
+        ],
+        [
+          174.12797096312534,
+          160.01671597121344
+        ],
+        [
+          172.80344503729157,
+          159.8596249616653
+        ],
+        [
+          171.4625290164522,
+          159.73057663516101
+        ],
+        [
+          170.10845328474988,
+          159.62988188042254
+        ],
+        [
+          168.74447992922796,
+          159.55778327993357
+        ],
+        [
+          167.37389488116787,
+          159.51445452553799
+        ],
+        [
+          166.0,
+          159.5
+        ],
+        [
+          164.62610511883213,
+          159.51445452553799
+        ],
+        [
+          163.25552007077204,
+          159.55778327993357
+        ],
+        [
+          161.89154671525012,
+          159.62988188042254
+        ],
+        [
+          160.5374709835478,
+          159.73057663516101
+        ],
+        [
+          159.19655496270843,
+          159.8596249616653
+        ],
+        [
+          157.87202903687466,
+          160.01671597121344
+        ],
+        [
+          156.56708410501778,
+          160.20147121780383
+        ],
+        [
+          155.28486389377758,
+          160.41344560986454
+        ],
+        [
+          154.02845738395263,
+          160.65212848251895
+        ],
+        [
+          152.80089136887182,
+          160.91694482781963
+        ],
+        [
+          151.60512316258973,
+          161.20725667999682
+        ],
+        [
+          150.44403347545085,
+          161.5223646523691
+        ],
+        [
+          149.32041947421203,
+          161.86150962223246
+        ],
+        [
+          148.23698804341802,
+          162.22387455964736
+        ],
+        [
+          147.19634926428353,
+          162.60858649574038
+        ],
+        [
+          146.20101012677696,
+          163.01471862576136
+        ],
+        [
+          145.2533684900609,
+          163.44129254183554
+        ],
+        [
+          144.35570730584368,
+          163.88728059003643
+        ],
+        [
+          143.51018911854226,
+          164.35160834609087
+        ],
+        [
+          142.71885085552822,
+          164.83315720376459
+        ],
+        [
+          141.9835989199928,
+          165.33076706968131
+        ],
+        [
+          141.30620459824604,
+          165.84323915808818
+        ],
+        [
+          140.68829979254406,
+          166.36933887883697
+        ],
+        [
+          140.13137308968453,
+          166.9077988116187
+        ],
+        [
+          139.63676617487545,
+          167.45732175929334
+        ],
+        [
+          139.20567059949826,
+          168.01658387294628
+        ],
+        [
+          138.83912491055253,
+          168.58423784116076
+        ],
+        [
+          138.53801214870964,
+          169.15891613580607
+        ],
+        [
+          138.30305772098654,
+          169.73923430653576
+        ],
+        [
+          138.13482765317895,
+          170.32379431604522
+        ],
+        [
+          138.0337272262559,
+          170.91118790807104
+        ],
+        [
+          138.0,
+          171.5
+        ],
+        [
+          138.0337272262559,
+          172.08881209192896
+        ],
+        [
+          138.13482765317895,
+          172.67620568395478
+        ],
+        [
+          138.30305772098654,
+          173.26076569346424
+        ],
+        [
+          138.53801214870964,
+          173.84108386419393
+        ],
+        [
+          138.83912491055253,
+          174.41576215883924
+        ],
+        [
+          139.20567059949826,
+          174.98341612705372
+        ],
+        [
+          139.63676617487545,
+          175.54267824070666
+        ],
+        [
+          140.13137308968453,
+          176.0922011883813
+        ],
+        [
+          140.68829979254406,
+          176.63066112116303
+        ],
+        [
+          141.30620459824604,
+          177.15676084191182
+        ],
+        [
+          141.9835989199928,
+          177.66923293031869
+        ],
+        [
+          142.71885085552822,
+          178.16684279623541
+        ],
+        [
+          143.51018911854226,
+          178.64839165390913
+        ],
+        [
+          144.35570730584368,
+          179.11271940996357
+        ],
+        [
+          145.2533684900609,
+          179.55870745816446
+        ],
+        [
+          146.20101012677696,
+          179.98528137423864
+        ],
+        [
+          147.19634926428353,
+          180.39141350425962
+        ],
+        [
+          148.23698804341802,
+          180.77612544035264
+        ],
+        [
+          149.32041947421203,
+          181.13849037776754
+        ],
+        [
+          150.44403347545085,
+          181.4776353476309
+        ],
+        [
+          151.60512316258973,
+          181.79274332000296
+        ],
+        [
+          152.80089136887182,
+          182.08305517218014
+        ],
+        [
+          154.02845738395263,
+          182.34787151748105
+        ],
+        [
+          155.28486389377758,
+          182.58655439013546
+        ],
+        [
+          156.56708410501778,
+          182.79852878219617
+        ],
+        [
+          157.87202903687466,
+          182.98328402878633
+        ],
+        [
+          159.19655496270843,
+          183.1403750383347
+        ],
+        [
+          160.5374709835478,
+          183.26942336483899
+        ],
+        [
+          161.89154671525012,
+          183.37011811957746
+        ],
+        [
+          163.25552007077204,
+          183.44221672006643
+        ],
+        [
+          164.62610511883213,
+          183.48554547446201
+        ],
+        [
+          166.0,
+          183.5
+        ],
+        [
+          167.37389488116696,
+          183.48554547446201
+        ],
+        [
+          168.74447992922796,
+          183.44221672006643
+        ],
+        [
+          170.10845328474988,
+          183.37011811957746
+        ],
+        [
+          171.4625290164522,
+          183.26942336483899
+        ],
+        [
+          172.80344503729157,
+          183.1403750383347
+        ],
+        [
+          174.12797096312534,
+          182.98328402878633
+        ],
+        [
+          175.43291589498222,
+          182.79852878219617
+        ],
+        [
+          176.71513610622242,
+          182.58655439013546
+        ],
+        [
+          177.97154261604737,
+          182.34787151748105
+        ],
+        [
+          179.19910863112818,
+          182.08305517218014
+        ],
+        [
+          180.39487683741027,
+          181.79274332000296
+        ],
+        [
+          181.55596652454915,
+          181.4776353476309
+        ],
+        [
+          182.67958052578797,
+          181.13849037776754
+        ],
+        [
+          183.76301195658198,
+          180.77612544035264
+        ],
+        [
+          184.80365073571647,
+          180.39141350425962
+        ],
+        [
+          185.79898987322304,
+          179.98528137423864
+        ],
+        [
+          186.7466315099391,
+          179.55870745816446
+        ],
+        [
+          187.64429269415632,
+          179.11271940996357
+        ],
+        [
+          188.48981088145774,
+          178.64839165390913
+        ],
+        [
+          189.28114914447178,
+          178.16684279623541
+        ],
+        [
+          190.0164010800072,
+          177.66923293031869
+        ],
+        [
+          190.69379540175396,
+          177.15676084191182
+        ],
+        [
+          191.31170020745594,
+          176.63066112116303
+        ],
+        [
+          191.86862691031547,
+          176.0922011883813
+        ],
+        [
+          192.36323382512455,
+          175.54267824070666
+        ],
+        [
+          192.79432940050174,
+          174.98341612705372
+        ],
+        [
+          193.16087508944747,
+          174.41576215883924
+        ],
+        [
+          193.46198785129036,
+          173.84108386419393
+        ],
+        [
+          193.69694227901346,
+          173.26076569346424
+        ],
+        [
+          193.86517234682105,
+          172.67620568395478
+        ],
+        [
+          193.9662727737441,
+          172.08881209192896
+        ],
+        [
+          194.0,
+          171.5
+        ]
+      ]
+    },
+    {
+      "floor": "ground",
+      "name": "Oval atrium",
+      "ring": [
+        [
+          310.74615775982386,
+          195.72474820842916
+        ],
+        [
+          310.2453271412038,
+          194.3927505233923
+        ],
+        [
+          309.7174055445263,
+          193.07426119348156
+        ],
+        [
+          309.1636647791582,
+          191.77245657497969
+        ],
+        [
+          308.5854388551043,
+          190.49047282923573
+        ],
+        [
+          307.984120769264,
+          189.23139836738238
+        ],
+        [
+          307.36115914957475,
+          187.9982664100806
+        ],
+        [
+          306.71805476514265,
+          186.79404768022468
+        ],
+        [
+          306.05635691076,
+          185.62164324621074
+        ],
+        [
+          305.37765967451503,
+          184.48387753301301
+        ],
+        [
+          304.6835980974972,
+          183.38349151789032
+        ],
+        [
+          303.97584423483806,
+          182.3231361271342
+        ],
+        [
+          303.2561031275852,
+          181.3053658497587
+        ],
+        [
+          302.5261086951068,
+          180.33263258350757
+        ],
+        [
+          301.78761955793175,
+          179.4072797280211
+        ],
+        [
+          301.04241480107453,
+          178.5315365393784
+        ],
+        [
+          300.2922896880673,
+          177.70751275962886
+        ],
+        [
+          299.53905133600955,
+          176.9371935342313
+        ],
+        [
+          298.78451436206933,
+          176.2224346296743
+        ],
+        [
+          298.030496511905,
+          175.5649579627629
+        ],
+        [
+          297.2788142805608,
+          174.96634745237498
+        ],
+        [
+          296.53127853637415,
+          174.42804520366428
+        ],
+        [
+          295.7896901584277,
+          173.9513480338963
+        ],
+        [
+          295.05583569807885,
+          173.5374043483081
+        ],
+        [
+          294.3314830750015,
+          173.187211373493
+        ],
+        [
+          293.6183773181102,
+          172.90161275500287
+        ],
+        [
+          292.91823636163423,
+          172.68129652492348
+        ],
+        [
+          292.23274690646303,
+          172.52679344435256
+        ],
+        [
+          291.56356035673514,
+          172.43847572474206
+        ],
+        [
+          290.9122888414627,
+          172.4165561312151
+        ],
+        [
+          290.28050133077113,
+          172.46108746999278
+        ],
+        [
+          289.66971985611224,
+          172.57196246117934
+        ],
+        [
+          289.0814158435556,
+          172.74891399720866
+        ],
+        [
+          288.51700656899726,
+          172.99151578633234
+        ],
+        [
+          287.977851743816,
+          173.2991833795898
+        ],
+        [
+          287.46525023920975,
+          173.67117557880175
+        ],
+        [
+          286.9804369571021,
+          174.10659622217742
+        ],
+        [
+          286.52457985515446,
+          174.60439634324797
+        ],
+        [
+          286.0987771330534,
+          175.16337669791886
+        ],
+        [
+          285.70405458685275,
+          175.782190653557
+        ],
+        [
+          285.34136313773917,
+          176.4593474331396
+        ],
+        [
+          285.0115765411824,
+          177.19321570667415
+        ],
+        [
+          284.7154892819783,
+          177.98202752120855
+        ],
+        [
+          284.4538146602702,
+          178.82388255999143
+        ],
+        [
+          284.22718307314085,
+          179.7167527204957
+        ],
+        [
+          284.0361404959338,
+          180.65848700030057
+        ],
+        [
+          283.8811471669517,
+          181.64681667903648
+        ],
+        [
+          283.76257647869926,
+          182.67936078394138
+        ],
+        [
+          283.6807140783502,
+          183.75363182582834
+        ],
+        [
+          283.63575717959714,
+          184.86704179165912
+        ],
+        [
+          283.6278140875477,
+          186.01690837930545
+        ],
+        [
+          283.65690393780585,
+          187.20046145943934
+        ],
+        [
+          283.72295665037404,
+          188.41484974902528
+        ],
+        [
+          283.8258130984829,
+          189.65714768030466
+        ],
+        [
+          283.96522549193924,
+          190.92436244874975
+        ],
+        [
+          284.14085797407563,
+          192.21344122298683
+        ],
+        [
+          284.35228743085963,
+          193.52127849933999
+        ],
+        [
+          284.5990045102117,
+          194.8447235832578
+        ],
+        [
+          284.8804148490759,
+          196.18058817961173
+        ],
+        [
+          285.19584050529863,
+          197.52565407358173
+        ],
+        [
+          285.5445215908458,
+          198.87668088361607
+        ],
+        [
+          285.92561810244075,
+          200.2304138677935
+        ],
+        [
+          286.33821194520783,
+          201.58359176478038
+        ],
+        [
+          286.781309144441,
+          202.93295465050042
+        ],
+        [
+          287.25384224017614,
+          204.27525179157087
+        ],
+        [
+          287.75467285879586,
+          205.60724947660688
+        ],
+        [
+          288.2825944554737,
+          206.92573880651844
+        ],
+        [
+          288.83633522084176,
+          208.22754342502034
+        ],
+        [
+          289.4145611448957,
+          209.50952717076427
+        ],
+        [
+          290.015879230736,
+          210.76860163261762
+        ],
+        [
+          290.63884085042525,
+          212.0017335899194
+        ],
+        [
+          291.28194523485735,
+          213.20595231977535
+        ],
+        [
+          291.94364308924,
+          214.37835675378932
+        ],
+        [
+          292.62234032548497,
+          215.51612246698699
+        ],
+        [
+          293.3164019025028,
+          216.61650848210968
+        ],
+        [
+          294.0241557651619,
+          217.6768638728658
+        ],
+        [
+          294.7438968724148,
+          218.69463415024137
+        ],
+        [
+          295.4738913048932,
+          219.66736741649243
+        ],
+        [
+          296.2123804420682,
+          220.5927202719789
+        ],
+        [
+          296.95758519892547,
+          221.4684634606216
+        ],
+        [
+          297.70771031193266,
+          222.29248724037114
+        ],
+        [
+          298.46094866399045,
+          223.06280646576874
+        ],
+        [
+          299.21548563793067,
+          223.7775653703257
+        ],
+        [
+          299.9695034880949,
+          224.43504203723717
+        ],
+        [
+          300.7211857194392,
+          225.03365254762505
+        ],
+        [
+          301.4687214636258,
+          225.57195479633577
+        ],
+        [
+          302.2103098415723,
+          226.04865196610373
+        ],
+        [
+          302.9441643019211,
+          226.46259565169188
+        ],
+        [
+          303.6685169249985,
+          226.81278862650703
+        ],
+        [
+          304.38162268188967,
+          227.09838724499713
+        ],
+        [
+          305.08176363836577,
+          227.31870347507652
+        ],
+        [
+          305.7672530935369,
+          227.4732065556475
+        ],
+        [
+          306.4364396432648,
+          227.56152427525794
+        ],
+        [
+          307.0877111585373,
+          227.5834438687849
+        ],
+        [
+          307.71949866922887,
+          227.53891253000722
+        ],
+        [
+          308.33028014388765,
+          227.42803753882066
+        ],
+        [
+          308.91858415644435,
+          227.25108600279134
+        ],
+        [
+          309.4829934310027,
+          227.00848421366766
+        ],
+        [
+          310.022148256184,
+          226.7008166204102
+        ],
+        [
+          310.53474976079025,
+          226.32882442119825
+        ],
+        [
+          311.01956304289786,
+          225.89340377782258
+        ],
+        [
+          311.4754201448455,
+          225.3956036567521
+        ],
+        [
+          311.9012228669466,
+          224.83662330208114
+        ],
+        [
+          312.2959454131472,
+          224.217809346443
+        ],
+        [
+          312.65863686226083,
+          223.54065256686042
+        ],
+        [
+          312.98842345881746,
+          222.80678429332585
+        ],
+        [
+          313.2845107180217,
+          222.01797247879148
+        ],
+        [
+          313.54618533972973,
+          221.17611744000862
+        ],
+        [
+          313.77281692685915,
+          220.28324727950434
+        ],
+        [
+          313.96385950406614,
+          219.3415129996995
+        ],
+        [
+          314.1188528330483,
+          218.35318332096352
+        ],
+        [
+          314.23742352130074,
+          217.32063921605868
+        ],
+        [
+          314.31928592164974,
+          216.24636817417166
+        ],
+        [
+          314.36424282040286,
+          215.13295820834088
+        ],
+        [
+          314.37218591245227,
+          213.98309162069455
+        ],
+        [
+          314.34309606219415,
+          212.79953854056066
+        ],
+        [
+          314.27704334962596,
+          211.58515025097478
+        ],
+        [
+          314.17418690151703,
+          210.34285231969534
+        ],
+        [
+          314.03477450806076,
+          209.07563755125025
+        ],
+        [
+          313.85914202592437,
+          207.78655877701317
+        ],
+        [
+          313.64771256914037,
+          206.47872150066007
+        ],
+        [
+          313.4009954897883,
+          205.15527641674223
+        ],
+        [
+          313.1195851509241,
+          203.81941182038827
+        ],
+        [
+          312.80415949470137,
+          202.47434592641827
+        ],
+        [
+          312.4554784091542,
+          201.12331911638393
+        ],
+        [
+          312.0743818975592,
+          199.76958613220654
+        ],
+        [
+          311.66178805479217,
+          198.4164082352196
+        ],
+        [
+          311.218690855559,
+          197.0670453494996
+        ],
+        [
+          310.74615775982386,
+          195.72474820842916
+        ]
+      ]
+    },
+    {
+      "floor": "ground",
+      "name": "Linear east atrium",
+      "ring": [
+        [
+          135,
+          105
+        ],
+        [
+          153,
+          105
+        ],
+        [
+          161,
+          103
+        ],
+        [
+          165,
+          100
+        ],
+        [
+          165,
+          94
+        ],
+        [
+          194,
+          94
+        ],
+        [
+          204,
+          97
+        ],
+        [
+          209,
+          101
+        ],
+        [
+          209,
+          105
+        ],
+        [
+          204,
+          110
+        ],
+        [
+          198,
+          111
+        ],
+        [
+          144,
+          111
+        ],
+        [
+          138,
+          109
+        ]
+      ]
+    },
+    {
+      "floor": "ground",
+      "name": "Void atrium",
+      "ring": [
+        [
+          217,
+          100
+        ],
+        [
+          219,
+          95
+        ],
+        [
+          223,
+          94
+        ],
+        [
+          237,
+          96
+        ],
+        [
+          252,
+          100
+        ],
+        [
+          265,
+          104
+        ],
+        [
+          267,
+          109
+        ],
+        [
+          266,
+          119
+        ],
+        [
+          253,
+          116
+        ],
+        [
+          239,
+          113
+        ],
+        [
+          222,
+          111
+        ],
+        [
+          217,
+          108
+        ]
+      ]
+    },
+    {
+      "floor": "ground",
+      "name": "Linear atrium",
+      "ring": [
+        [
+          297,
+          121
+        ],
+        [
+          300,
+          119
+        ],
+        [
+          315,
+          125
+        ],
+        [
+          330,
+          135
+        ],
+        [
+          345,
+          146
+        ],
+        [
+          356,
+          157
+        ],
+        [
+          361,
+          166
+        ],
+        [
+          360,
+          170
+        ],
+        [
+          356,
+          173
+        ],
+        [
+          349,
+          170
+        ],
+        [
+          337,
+          160
+        ],
+        [
+          326,
+          148
+        ],
+        [
+          315,
+          139
+        ],
+        [
+          299,
+          133
+        ],
+        [
+          296,
+          130
+        ]
+      ]
+    },
+    {
+      "floor": "first",
+      "name": "Mini atrium",
+      "ring": [
+        [
+          144.0,
+          116.0
+        ],
+        [
+          143.98072729928253,
+          115.55839093105328
+        ],
+        [
+          143.92295562675508,
+          115.11784573703403
+        ],
+        [
+          143.82682415943646,
+          114.6794257299016
+        ],
+        [
+          143.69256448645183,
+          114.24418710185478
+        ],
+        [
+          143.52050005111278,
+          113.81317838087057
+        ],
+        [
+          143.3110453717154,
+          113.38743790470994
+        ],
+        [
+          143.06470504292838,
+          112.96799131947
+        ],
+        [
+          142.78207252018046,
+          112.55584910871426
+        ],
+        [
+          142.4638286899749,
+          112.1520041591275
+        ],
+        [
+          142.11074022957382,
+          111.75742936856614
+        ],
+        [
+          141.72365776000424,
+          111.37307530226099
+        ],
+        [
+          141.3035137968409,
+          110.99986790282355
+        ],
+        [
+          140.8513205036902,
+          110.63870625956815
+        ],
+        [
+          140.36816725380368,
+          110.29046044252709
+        ],
+        [
+          139.8552180056795,
+          109.95596940637688
+        ],
+        [
+          139.31370849898485,
+          109.63603896932091
+        ],
+        [
+          138.74494327755247,
+          109.33143987180551
+        ],
+        [
+          138.1502925466184,
+          109.0429059197354
+        ],
+        [
+          137.53118887187884,
+          108.77113221667423
+        ],
+        [
+          136.88912372831373,
+          108.51677348927706
+        ],
+        [
+          136.22564390709158,
+          108.28044250999756
+        ],
+        [
+          135.5423477892159,
+          108.0627086208649
+        ],
+        [
+          134.84088149488434,
+          107.8640963618891
+        ],
+        [
+          134.12293491784158,
+          107.6850842073984
+        ],
+        [
+          133.39023765427555,
+          107.52610341335276
+        ],
+        [
+          132.64455483607162,
+          107.38753697841003
+        ],
+        [
+          131.88768287845232,
+          107.26971872124909
+        ],
+        [
+          131.12144515225827,
+          107.17293247637099
+        ],
+        [
+          130.34768759128565,
+          107.09741141031691
+        ],
+        [
+          129.5682742452732,
+          107.04333745995018
+        ],
+        [
+          128.7850827892389,
+          107.01084089415349
+        ],
+        [
+          128.0,
+          107.0
+        ],
+        [
+          127.21491721076131,
+          107.01084089415349
+        ],
+        [
+          126.43172575472704,
+          107.04333745995018
+        ],
+        [
+          125.65231240871412,
+          107.09741141031691
+        ],
+        [
+          124.87855484774195,
+          107.17293247637099
+        ],
+        [
+          124.11231712154768,
+          107.26971872124909
+        ],
+        [
+          123.35544516392861,
+          107.38753697841003
+        ],
+        [
+          122.60976234572445,
+          107.52610341335276
+        ],
+        [
+          121.87706508215865,
+          107.6850842073984
+        ],
+        [
+          121.15911850511543,
+          107.8640963618891
+        ],
+        [
+          120.45765221078409,
+          108.0627086208649
+        ],
+        [
+          119.77435609290842,
+          108.28044250999756
+        ],
+        [
+          119.11087627168627,
+          108.51677348927706
+        ],
+        [
+          118.46881112812116,
+          108.77113221667423
+        ],
+        [
+          117.8497074533816,
+          109.0429059197354
+        ],
+        [
+          117.25505672244776,
+          109.33143987180551
+        ],
+        [
+          116.68629150101515,
+          109.63603896932091
+        ],
+        [
+          116.14478199432074,
+          109.95596940637688
+        ],
+        [
+          115.6318327461961,
+          110.29046044252709
+        ],
+        [
+          115.1486794963098,
+          110.63870625956815
+        ],
+        [
+          114.69648620315934,
+          110.99986790282355
+        ],
+        [
+          114.27634223999576,
+          111.37307530226099
+        ],
+        [
+          113.8892597704264,
+          111.75742936856614
+        ],
+        [
+          113.53617131002488,
+          112.1520041591275
+        ],
+        [
+          113.21792747981931,
+          112.55584910871426
+        ],
+        [
+          112.93529495707162,
+          112.96799131947
+        ],
+        [
+          112.68895462828459,
+          113.38743790470994
+        ],
+        [
+          112.47949994888722,
+          113.81317838087057
+        ],
+        [
+          112.3074355135484,
+          114.24418710185478
+        ],
+        [
+          112.17317584056354,
+          114.6794257299016
+        ],
+        [
+          112.07704437324492,
+          115.11784573703403
+        ],
+        [
+          112.01927270071724,
+          115.55839093105328
+        ],
+        [
+          112.0,
+          116.0
+        ],
+        [
+          112.01927270071724,
+          116.44160906894672
+        ],
+        [
+          112.07704437324492,
+          116.88215426296597
+        ],
+        [
+          112.17317584056354,
+          117.3205742700984
+        ],
+        [
+          112.3074355135484,
+          117.75581289814522
+        ],
+        [
+          112.47949994888722,
+          118.18682161912943
+        ],
+        [
+          112.68895462828459,
+          118.61256209529006
+        ],
+        [
+          112.93529495707162,
+          119.03200868053
+        ],
+        [
+          113.21792747981931,
+          119.44415089128574
+        ],
+        [
+          113.53617131002488,
+          119.8479958408725
+        ],
+        [
+          113.8892597704264,
+          120.24257063143386
+        ],
+        [
+          114.27634223999576,
+          120.62692469773901
+        ],
+        [
+          114.69648620315934,
+          121.00013209717645
+        ],
+        [
+          115.14867949630957,
+          121.36129374043185
+        ],
+        [
+          115.6318327461961,
+          121.70953955747291
+        ],
+        [
+          116.14478199432074,
+          122.04403059362312
+        ],
+        [
+          116.68629150101515,
+          122.36396103067909
+        ],
+        [
+          117.25505672244776,
+          122.66856012819449
+        ],
+        [
+          117.8497074533816,
+          122.9570940802646
+        ],
+        [
+          118.46881112812116,
+          123.22886778332577
+        ],
+        [
+          119.11087627168627,
+          123.48322651072294
+        ],
+        [
+          119.77435609290842,
+          123.71955749000244
+        ],
+        [
+          120.45765221078409,
+          123.9372913791351
+        ],
+        [
+          121.15911850511543,
+          124.1359036381109
+        ],
+        [
+          121.87706508215865,
+          124.3149157926016
+        ],
+        [
+          122.60976234572445,
+          124.47389658664724
+        ],
+        [
+          123.35544516392861,
+          124.61246302158997
+        ],
+        [
+          124.11231712154768,
+          124.73028127875091
+        ],
+        [
+          124.87855484774195,
+          124.82706752362901
+        ],
+        [
+          125.65231240871412,
+          124.90258858968309
+        ],
+        [
+          126.43172575472704,
+          124.95666254004982
+        ],
+        [
+          127.21491721076131,
+          124.98915910584651
+        ],
+        [
+          128.0,
+          125.0
+        ],
+        [
+          128.78508278923846,
+          124.98915910584651
+        ],
+        [
+          129.5682742452732,
+          124.95666254004982
+        ],
+        [
+          130.34768759128565,
+          124.90258858968309
+        ],
+        [
+          131.12144515225827,
+          124.82706752362901
+        ],
+        [
+          131.88768287845232,
+          124.73028127875091
+        ],
+        [
+          132.64455483607162,
+          124.61246302158997
+        ],
+        [
+          133.39023765427555,
+          124.47389658664724
+        ],
+        [
+          134.12293491784158,
+          124.3149157926016
+        ],
+        [
+          134.84088149488434,
+          124.1359036381109
+        ],
+        [
+          135.5423477892159,
+          123.9372913791351
+        ],
+        [
+          136.22564390709158,
+          123.71955749000244
+        ],
+        [
+          136.88912372831373,
+          123.48322651072294
+        ],
+        [
+          137.53118887187884,
+          123.22886778332577
+        ],
+        [
+          138.1502925466184,
+          122.9570940802646
+        ],
+        [
+          138.74494327755247,
+          122.66856012819449
+        ],
+        [
+          139.31370849898485,
+          122.36396103067909
+        ],
+        [
+          139.8552180056795,
+          122.04403059362312
+        ],
+        [
+          140.36816725380368,
+          121.70953955747291
+        ],
+        [
+          140.8513205036902,
+          121.36129374043185
+        ],
+        [
+          141.3035137968409,
+          121.00013209717645
+        ],
+        [
+          141.72365776000424,
+          120.62692469773901
+        ],
+        [
+          142.11074022957382,
+          120.24257063143386
+        ],
+        [
+          142.4638286899749,
+          119.8479958408725
+        ],
+        [
+          142.78207252018046,
+          119.44415089128574
+        ],
+        [
+          143.06470504292838,
+          119.03200868053
+        ],
+        [
+          143.3110453717154,
+          118.61256209529006
+        ],
+        [
+          143.52050005111278,
+          118.18682161912943
+        ],
+        [
+          143.69256448645183,
+          117.75581289814522
+        ],
+        [
+          143.82682415943646,
+          117.3205742700984
+        ],
+        [
+          143.92295562675508,
+          116.88215426296597
+        ],
+        [
+          143.98072729928253,
+          116.44160906894672
+        ],
+        [
+          144.0,
+          116.0
+        ]
+      ]
+    }
+  ]
+}

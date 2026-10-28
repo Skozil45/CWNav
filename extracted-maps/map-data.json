@@ -1,0 +1,4740 @@
+{
+  "settings": {
+    "title": "Shopping mall",
+    "hoverTooltip": true,
+    "deeplinking": true,
+    "sidebar": true,
+    "rightSidebar": false,
+    "toggleSidebar": true,
+    "thumbnails": true,
+    "sidebarClosed": false,
+    "ordered": true,
+    "orderBy": "title",
+    "portrait": 480,
+    "maxZoom": 4,
+    "mapWidth": 1000,
+    "mapHeight": 600,
+    "filters": true,
+    "filtersOpened": false,
+    "layer": "ground",
+    "location": null,
+    "css": ".mapplic-thumbnail > img {\ntfilter: grayscale(100%);\ntopacity: 0.5;\n}\n\n.mapplic-dir-item:hover .mapplic-thumbnail img,\n.mapplic-dir-item.mapplic-active .mapplic-thumbnail img {\ntfilter: grayscale(0%);\ntopacity: 1;\n}\n\n.mapplic-action-phone, .mapplic-popup-link {\n    display: none !important;\n}\n\n.mapplic-thumbnail > img {\n    object-fit: contain;\n}\n\n.mapplic-popup-image > img {\n    object-fit: contain;\n    padding: 8px;\n    box-sizing: border-box;\n}\n\n.mapplic-popup-image {\n    flex-basis: 60%;\n    flex-grow: 0;\n}\n\n.mapplic-tooltip {\n    max-width: calc(500px) !important;\n}\n.mapplic-dir {\n    height: 51vh;\n    border: solid 1px #cccccc;\n    border-radius: 10px;\n    background-color: var(--mapplic-bg-default);\n    border-color: var(--mapplic-border-faint);\n    box-shadow: 0 4px 8px #00000005;\n}\n\n@media only screen and (max-width: 480px) {\n  .mapplic-tooltip {\n        max-width: calc(250px) !important;\n        flex-direction: column;\n    }\n    .mapplic-tooltip-mini .mapplic-popup-image {\n        display: flex !important;\n        width: 100%;\n    }\n}",
+    "primaryColor": "#1476FF",
+    "fullscreen": "bottom-left",
+    "layerSwitcher": "top-right",
+    "resetButton": "bottom-right",
+    "zoomButtons": "bottom-right",
+    "zoom": true,
+    "geo": false,
+    "groupBy": true,
+    "filtersAlwaysVisible": true,
+    "csvEnabled": false,
+    "moreText": "Visit",
+    "mouseWheel": true,
+    "legend": false,
+    "collapsibleGroups": false,
+    "directoryCounts": false,
+    "imageAsThumb": true,
+    "filterByLayer": false
+  },
+  "layers": [
+    {
+      "id": "layer3",
+      "name": "4th Floor",
+      "file": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-4F.svg",
+      "switchReset": true
+    },
+    {
+      "id": "layer2",
+      "name": "3rd Floor",
+      "file": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-3F.svg",
+      "switchReset": true
+    },
+    {
+      "id": "layer1",
+      "name": "2nd Floor",
+      "switchReset": true,
+      "file": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-2F.svg"
+    },
+    {
+      "id": "first",
+      "name": "1st Floor",
+      "file": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-1F.svg",
+      "switchReset": true
+    },
+    {
+      "id": "ground",
+      "name": "Ground Floor",
+      "file": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-GF-1.svg",
+      "disable": false,
+      "switchReset": true
+    },
+    {
+      "id": "underground",
+      "name": "Lower Ground",
+      "file": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/CWS-Directory-LG.svg",
+      "switchReset": true
+    }
+  ],
+  "samples": [
+    {
+      "style": "store",
+      "id": "def",
+      "link": "https://host.mapplic.com",
+      "color": "#333",
+      "hide": false,
+      "phone": "(248) 762-0356",
+      "type": "hidden"
+    }
+  ],
+  "locations": [
+    {
+      "id": "permata-bank",
+      "title": "ATM Bank Permata",
+      "coord": [
+        0.819,
+        0.5714
+      ],
+      "layer": "underground",
+      "about": "Banking & Services",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Permata-Bank.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Permata-Bank.jpg",
+      "desc": "<b>Unit Booth A</b>",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "mycws-lounge",
+      "title": "MyCWS Lounge",
+      "coord": [
+        0.8623,
+        0.5385
+      ],
+      "layer": "first",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSCF0327.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSCF0327.jpg",
+      "about": "Services",
+      "desc": "<p data-pm-slice=\"1 1 []\">The MyCWS Lounge is an exclusive space for Platinum and Gold Members to relax and enjoy special weekday rewards, conveniently located on the 1st floor of Ciputra World Surabaya.</p>",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "java-pottery",
+      "title": "Java Pottery",
+      "coord": [
+        0.7824,
+        0.6237
+      ],
+      "layer": "layer2",
+      "about": "Entertainment",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Java-Pottery.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Java-Pottery.jpg",
+      "desc": "Unit 69",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "loc1",
+      "title": "Happy Train",
+      "coord": [
+        0.3047,
+        0.5205
+      ],
+      "layer": "layer1",
+      "about": "Entertainment",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Happy-Train.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Happy-Train.jpg",
+      "desc": "<b>Unit 79A</b>",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "3sty",
+      "title": "3sty",
+      "coord": [
+        0.5744,
+        0.6118
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/3STY.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/3STY.jpg",
+      "desc": "<b>Unit TS-O</b>",
+      "color": "#ffad50",
+      "group": [
+        "group2"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "vip-mahjong",
+      "title": "VIP Mahjong",
+      "coord": [
+        0.8275,
+        0.652
+      ],
+      "layer": "layer2",
+      "about": "Entertainment",
+      "color": "#7600ff",
+      "type": "dot",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/VIP-Mahjong.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/VIP-Mahjong.jpg",
+      "desc": "<b>Unit 76</b>",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "lolypoly",
+      "title": "Lolypoly",
+      "coord": [
+        0.365,
+        0.5344
+      ],
+      "layer": "layer1",
+      "about": "Gadget & Electronics",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Loly-Poly.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Loly-Poly.jpg",
+      "desc": "<b>Unit 119</b><div><p data-pm-slice=\"1 1 []\">Lolypoly is a popular Indonesian retail brand specializing in trendy and protective smartphone and gadget accessories.</p></div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "kitar",
+      "title": "Kitar",
+      "coord": [
+        0.5437,
+        0.4303
+      ],
+      "layer": "layer1",
+      "about": "Gadget & Electronics",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kitar.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kitar.jpg",
+      "desc": "<b>Unit 113</b><div>Kitar is an innovative tech-driven recommerce platform and second-hand mobile phone retailer founded in 2024 that specializes in recycling and reselling certified pre-owned smartphones.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "proofed",
+      "coord": [
+        0.6284,
+        0.4948
+      ],
+      "layer": "layer2",
+      "title": "Proofed",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Proofed.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Proofed.jpg",
+      "desc": "<b>Unit 81D</b><div>Proofed in Surabaya is a popular bakery specialty food brand famous for its viral Dubai Chewy Cookie and egg tarts.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "jete_3f",
+      "title": "Jete",
+      "coord": [
+        0.5271,
+        0.4121
+      ],
+      "layer": "layer2",
+      "about": "Gadget & Electronics",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Jete-3F.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Jete-3F.jpg",
+      "desc": "<b>Unit 17A</b><div>JETE is a technology and lifestyle brand providing various gadgets, audio devices, and mobile accessories designed for convenience, connectivity, and everyday digital needs.<b></b></div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "renjana",
+      "title": "Renjana",
+      "coord": [
+        0.6051,
+        0.4787
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Renjana.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Renjana.jpg",
+      "desc": "<b>Unit 81F</b><div>Renjana cashew is a premium Indonesian snack brand based in Surabaya that specializes in large, oven-roasted, flour-coated whole cashew nuts and almonds.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "yangs-braised-chicken",
+      "title": "Yang's Braised Chicken",
+      "coord": [
+        0.4968,
+        0.6396
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSCF3020.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSCF3020.jpg",
+      "desc": "<b>Unit TS-16</b><div>Yang's Braised Chicken is a 100% halal certified, authentic Chinese comfort food franchise originating from Jinan, Shandong, China.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "pempek-bangsawan",
+      "title": "Pempek Bangsawan",
+      "coord": [
+        0.4958,
+        0.6186
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Pempek-Bangsawan.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Pempek-Bangsawan.jpg",
+      "desc": "<b>Unit TS-15</b><div><p data-pm-slice=\"1 1 []\">Pempek Bangsawan by Tjek Entis serves authentic Palembang-style pempek, crafted with quality ingredients and traditional flavors.</p></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "bakwan-amaho",
+      "coord": [
+        0.3606,
+        0.6042
+      ],
+      "layer": "layer2",
+      "title": "Bakwan Amaho",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Bakwan-Amaho.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Bakwan-Amaho.jpg",
+      "desc": "<b>Unit TS-A</b>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "amakute",
+      "title": "Amakute Sweets",
+      "coord": [
+        0.3805,
+        0.5745
+      ],
+      "layer": "first",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Amakute.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Amakute.jpg",
+      "desc": "<b>Unit 106</b><div>Amakuté Sweets is a popular dessert and specialty matcha brand in Surabaya known for its soft, chewy Japanese-style mochi and rich ceremonial-grade matcha drinks.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "gramedia",
+      "title": "Gramedia",
+      "coord": [
+        0.771,
+        0.5855
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Gramedia.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Gramedia.jpg",
+      "desc": "<b>Unit 67-68</b><div><p>Gramedia is a leading Indonesian bookstore offering a diverse selection of books, stationery, educational products, office supplies, and lifestyle essentials for readers, learners, and creative minds of all ages.</p></div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "dimtteok",
+      "title": "Dim Tteok",
+      "coord": [
+        0.5323,
+        0.5976
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Dim-Tteok.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Dim-Tteok.jpg",
+      "desc": "<b>Unit TS-M</b><div>Dim Tteok brings Korean-inspired street food and flavorful bites exclusively to Teras Sungkono, Ciputra World Surabaya.<b></b></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "Pisang-Kopong",
+      "title": "Pisang Kopong",
+      "coord": [
+        0.522,
+        0.6112
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Pisang-Kopong.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Pisang-Kopong.jpg",
+      "desc": "<b>Unit TS-L</b><div>Pisang Kopong is a unique take on traditional Indonesian fried bananas, featuring a hollow, airy center and an exceptionally crispy outer crust.<b></b></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "koko-tebu",
+      "title": "Koko Tebu",
+      "coord": [
+        0.5168,
+        0.6172
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Kokotebu.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Kokotebu.jpg",
+      "desc": "<b>Unit TS-K</b><div>Koko Tebu is a popular drink brand that serves 100% pure, freshly pressed sugarcane juice without any artificial sweeteners or added sugar. Located at Teras Sungkono, Ciputra World Surabaya</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ],
+      "disable": false
+    },
+    {
+      "id": "fei-mao",
+      "title": "Fei Mao",
+      "coord": [
+        0.5582,
+        0.5733
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Fei-Mao.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Fei-Mao.jpg",
+      "desc": "<b>Unit TS-17</b><div>Fei Mao is a popular, modern kopitiam-style in Surabaya that specializes in comforting Chinese-influenced street food, hearty noodle dishes, and traditional coffee shop beverages.</div>",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ],
+      "type": "dot",
+      "disable": false
+    },
+    {
+      "id": "fruitopia",
+      "title": "Fruitopia",
+      "coord": [
+        0.5381,
+        0.5928
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Fruitopia.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Fruitopia.jpg",
+      "desc": "<b>Unit TS-N</b><div>Fruitopia is a fresh juice and smoothie stand that offers healthy, fruit-based beverages located at Teras Sungkono, Ciputra World Surabaya.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "hiroki",
+      "title": "Hiroki",
+      "coord": [
+        0.4817,
+        0.6219
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Hiroki.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Hiroki.jpg",
+      "desc": "<b>Unit TS-12</b><div>Hiroki is a halal Japanese-inspired eatery in Surabaya, serving a selection of grilled specialties, street food, rice bowls, steaks, and refreshing beverages. Located at Teras Sungkono, Ciputra World Surabaya.<b></b></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "baso-sapi-srengenge",
+      "title": "Baso Sapi Srengenge",
+      "coord": [
+        0.3289,
+        0.7067
+      ],
+      "layer": "layer2",
+      "color": "#ffad00",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Bakso-sapi-Srengenge.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Bakso-sapi-Srengenge.jpg",
+      "desc": "<b>Unit TS-09</b><div>Baso Sapi Srengenge is a popular meatball restaurant in Surabaya famous for its large, meaty, and juicy beef meatballs.</div>",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "chocochips-boutique",
+      "title": "Chocochips",
+      "coord": [
+        0.5823,
+        0.3541
+      ],
+      "layer": "layer1",
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Chocochips.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Chocochips.jpg",
+      "desc": "<b>Unit 70</b><div>Chocochips is a feminine, chic, and elegant fashion brand that empowers women to express their confidence and strength through timeless, carefully designed pieces that blend quality, comfort, and sophistication.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "fitlink",
+      "title": "Fitlink",
+      "coord": [
+        0.3102,
+        0.4099
+      ],
+      "layer": "layer1",
+      "about": "Beauty & Wellness",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/07/Fitlink.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/07/Fitlink.jpg",
+      "color": "#ffff00",
+      "group": [
+        "group4"
+      ],
+      "desc": "<b>Unit 103A</b><div>Fitlink massage chair is a popular network of automated self-service massage lounges located in Ciputra World Surabaya.</div>",
+      "type": "dot"
+    },
+    {
+      "id": "fore",
+      "title": "Fore",
+      "coord": [
+        0.6276,
+        0.4527
+      ],
+      "layer": "ground",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Fore.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Fore.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ],
+      "desc": "<b>Unit 37A</b><div>Fore Coffee is a popular Indonesian specialty coffee chain founded in 2018, known for its high-quality drinks, app-based ordering, and affordable prices.</div>"
+    },
+    {
+      "id": "just_yoga",
+      "title": "Just Yoga",
+      "coord": [
+        0.3424,
+        0.2724
+      ],
+      "layer": "layer1",
+      "about": "Fitness & Sports Centre",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Just-Yoga.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Just-Yoga.jpg",
+      "desc": "<b>Unit 86-87</b><div>Just Yoga is a leading premium and boutique yoga academy in Indonesia, renowned for its personalized programs and signature infrared hot yoga classes.</div>",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "mst_golf",
+      "title": "MST Golf",
+      "coord": [
+        0.7054,
+        0.8324
+      ],
+      "layer": "first",
+      "about": "Sportswear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/MST-Golf-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/MST-Golf-1.jpg",
+      "desc": "<b>Unit 3-6</b><div><span data-start=\"371\" data-end=\"383\">MST Golf</span> is a premier golf retailer offering premium golf equipment, apparel, footwear, and accessories from leading global brands, complemented by expert advice and professional fitting services.<b></b></div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "takoyaqta",
+      "title": "TakoyaQta",
+      "coord": [
+        0.3731,
+        0.621
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/TakoyaQta.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/TakoyaQta.jpg",
+      "desc": "<b>Unit TS-D</b><div>Takoyaqta is a Surabaya-based chain serving fresh Japanese takoyaki with fillings like octopus, beef, and cheese, topped with signature sauces and bonito flakes.<b></b></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kara_kara_matcha",
+      "title": "Kara Kara Matcha",
+      "coord": [
+        0.3835,
+        0.6256
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kara-Kara-Matcha.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kara-Kara-Matcha.jpg",
+      "desc": "<b>Unit TS-F</b><div>Kara Kara Matcha is widely recognized for its high-quality, authentic matcha offerings, characterized by rich umami flavors and smooth, fresh taste profiles.</div>",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "kkado_express",
+      "title": "Kkado Chicken Express / Binh Bowl",
+      "coord": [
+        0.3193,
+        0.5595
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Binh-Bowl-Kkado-Express.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Binh-Bowl-Kkado-Express.jpg",
+      "desc": "<b>Unit TS-02</b><div>Kkado Chicken Express &amp; Binh Bowl bring authentic Korean and Vietnamese cuisine, featuring crispy fried chicken, Pho, Banh Mi, and other regional favorites.<b></b></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "wild_donuts",
+      "title": "Wild Donuts",
+      "coord": [
+        0.3049,
+        0.5578
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wild-Donuts-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wild-Donuts-1.jpg",
+      "desc": "<b>Unit TS-01</b><div><div class=\"qMYqUG_convSearchResultHighlightRoot\"><div class=\"\" data-turn-id-container=\"request-WEB:742f6118-c61e-41b5-b42d-1ec2da9e9e36-8\" data-is-intersecting=\"true\"><section class=\"text-token-text-primary w-full focus:outline-none has-data-writing-block:pointer-events-none [&amp;:has([data-writing-block])&gt;*]:pointer-events-auto R6Vx5W_threadScrollVars scroll-mb-[calc(var(--scroll-root-safe-area-inset-bottom,0px)+var(--thread-response-height))] scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]\" dir=\"auto\" data-turn-id=\"request-WEB:742f6118-c61e-41b5-b42d-1ec2da9e9e36-8\" data-turn-id-container=\"request-WEB:742f6118-c61e-41b5-b42d-1ec2da9e9e36-8\" data-testid=\"conversation-turn-18\" data-scroll-anchor=\"false\" data-turn=\"assistant\"><div class=\"text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)\"><div data-conversation-screenshot-content=\"\" class=\"[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn\"><div class=\"flex max-w-full flex-col gap-4 grow\"><div data-message-author-role=\"assistant\" data-message-id=\"f7f7e24c-a2c7-464a-a6a0-f54ae5013e62\" dir=\"auto\" data-message-model-slug=\"gpt-5-5\" class=\"min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1\" data-turn-start-message=\"true\" tabindex=\"0\"><div class=\"flex w-full flex-col gap-1 empty:hidden\"><div class=\"markdown prose dark:prose-invert wrap-break-word w-full light markdown-new-styling\"><p data-start=\"551\" data-end=\"696\" data-is-last-node=\"\" data-is-only-node=\"\">Wild Donuts brings a fun selection of freshly made donuts, featuring soft textures and irresistible flavors.</p></div></div></div></div><div class=\"z-0 flex min-h-[46px] justify-start\"></div><div class=\"mt-3 w-full empty:hidden\"><div class=\"text-center\"></div></div></div></div></section></div></div><div aria-hidden=\"true\" class=\"pointer-events-none -mt-px h-px translate-y-[calc(var(--scroll-root-safe-area-inset-bottom)-14*var(--spacing))]\"></div></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "maimo_resto",
+      "title": "Maimo Resto",
+      "coord": [
+        0.3298,
+        0.7346
+      ],
+      "layer": "layer2",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Maimo-Resto.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Maimo-Resto.jpg",
+      "desc": "<b>Unit TS-10</b><div>Maimo Resto is a popular dining spot in Surabaya specializing in authentic Manadonese cuisine, with a signature focus on fresh tuna and seafood.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "gg_coffee",
+      "title": "GG Coffee",
+      "coord": [
+        0.4357,
+        0.658
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/GG-Coffee.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/GG-Coffee.jpg",
+      "desc": "<b>Unit TS-J</b><div>GG Coffee &amp; Tea (often styled as Green &amp; Grind) is a popular, specialty cafe brand in Indonesia known for its wide variety of high-quality coffee, matcha, and refreshing teas</div>",
+      "type": "dot",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "wilson",
+      "title": "Wilson",
+      "coord": [
+        0.3929,
+        0.489
+      ],
+      "layer": "ground",
+      "color": "#ff0000",
+      "about": "Sportswear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wilson.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wilson.jpg",
+      "desc": "<b>Unit 79-80</b><div><span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Wilson Sporting Goods</span> is a globally recognized sports equipment brand known for its high-performance gear used across tennis, paddle and more. With a legacy of innovation and craftsmanship, Wilson is trusted by professional athletes and sports enthusiasts worldwide.<b></b></div>",
+      "group": [
+        "group1"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "sociolla",
+      "title": "Sociolla",
+      "coord": [
+        0.8685,
+        0.5794
+      ],
+      "layer": "first",
+      "color": "#ff0000",
+      "about": "Beauty & Wellness",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sociolla.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sociolla.jpg",
+      "desc": "<b>Unit 53</b><div>Sociolla is Indonesia's trusted and most complete shopping destination offering authentic beauty products e.g. make up, skin care, hair care, fragrance and beauty tools.</div>",
+      "group": [
+        "group1"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "charlies_macaroni",
+      "title": "Charlie's Macaroni",
+      "coord": [
+        0.3991,
+        0.6307
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Charlies-Macaroni.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Charlies-Macaroni.jpg",
+      "desc": "<b>Unit TS-H</b><div>Charlie's Macaroni is a popular snack and food concept known for its fun, customizable, and next-level macaroni and cheese.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "dum_dum",
+      "title": "Dum Dum Thai Drink",
+      "coord": [
+        0.3996,
+        0.6209
+      ],
+      "layer": "layer2",
+      "color": "#ffad00",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Dum-Dum.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Dum-Dum.jpg",
+      "desc": "<b>Unit TS-G</b><div>Dum Dum Thai Drinks serves creamy, authentic Thai beverages, best known for its rich and refreshing Thai Tea.<b></b></div>",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "chagee",
+      "title": "CHAGEE",
+      "coord": [
+        0.5784,
+        0.4807
+      ],
+      "layer": "ground",
+      "color": "#ffad00",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Chagee-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Chagee-1.jpg",
+      "desc": "<span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit 39</span><div style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Experience the modern tea culture at <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">CHAGEE</span>, where premium tea craftsmanship meets contemporary lifestyle. Located at <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Ciputra World Surabaya</span>, CHAGEE offers a refined selection of freshly brewed tea beverages inspired by authentic Asian tea traditions, served in a stylish and modern setting.</div>",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kwetiaw_aho",
+      "title": "Kwetiau AHO",
+      "coord": [
+        0.3282,
+        0.5831
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Kwetiaw-AHO.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Kwetiaw-AHO.jpg",
+      "desc": "<b>Unit TS-03</b><div>Kwetiau AHo 28 is a legendary Indonesian-Chinese culinary brand established in 1977 in Mangga Besar, Jakarta, renowned for its authentic Pontianak-style stir-fried and gravy (siram) flat rice noodles.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "teazzi",
+      "title": "Teazzi",
+      "coord": [
+        0.5137,
+        0.4103
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/07/Teazzi.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/07/Teazzi.jpg",
+      "desc": "<b>Unit 17B</b><div>Teazzi is a viral, premium Taiwanese tea boutique (established 2014) offering authentic tea, bubble tea, and fruit teas, known for using high-quality tea leaves and offering, creamy, roast-forward flavors.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "loft",
+      "title": "Loft Tea House",
+      "coord": [
+        0.2428,
+        0.4315
+      ],
+      "layer": "ground",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Loft.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Loft.jpg",
+      "desc": "<span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit 52</span><div><span data-start=\"188\" data-end=\"206\">Loft Tea House</span> is a modern tea house offering a curated selection of premium teas, handcrafted beverages, and light bites in a stylish and relaxing setting at <span class=\"hover:entity-accent entity-underline inline cursor-pointer align-baseline\">Ciputra World Surabaya</span>.<b><br></b><div><span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\"><br></span></div></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "pop-waffle",
+      "title": "Pop Waffle",
+      "coord": [
+        0.3586,
+        0.6122
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pop-Waffle.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pop-Waffle.jpg",
+      "desc": "<span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit TS-B</span><div><span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Pop Waffle is a pioneer of Korean-style waffle skewers, serving uniquely shaped waffle balls cooked and served on a stick for a fun, modern snack experience.</span></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "chubby",
+      "title": "Chubby",
+      "coord": [
+        0.4685,
+        0.6231
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Chubby.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Chubby.jpg",
+      "desc": "<span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit TS-11</span><div><span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\"><p data-start=\"165\" data-end=\"342\" style=\"\"><span data-start=\"165\" data-end=\"183\" style=\"\">Chubby Chicken</span> is a Taiwanese fried chicken street snack, known as the “king of XXL fried chicken,” featuring thick, boneless chicken breast fillets coated in crispy batter.</p></span></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kim-yello",
+      "title": "Kim Yello",
+      "coord": [
+        0.3862,
+        0.6159
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "color": "#ffad00",
+      "type": "dot",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kim-Yello.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kim-Yello.jpg",
+      "desc": "<span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit TS-E</span><div><span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\"><span data-start=\"834\" data-end=\"847\" style=\"\">Kim Yello</span> is a healthy kimbap brand offering premium Korean rolls with balanced ingredients and customizable options.</span></div>",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "nasgor-69",
+      "title": "Nasgor 69",
+      "coord": [
+        0.3284,
+        0.6802
+      ],
+      "layer": "layer2",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Nasgor-69.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Nasgor-69.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "about": "Food & Beverage",
+      "desc": "<span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit TS-08</span><div><span style=\"--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\"><span data-start=\"873\" data-end=\"891\" style=\"\">Nasi Goreng 69</span> is an Indonesian restaurant known for its signature fried rice and noodle dishes, offering rich flavors and generous portions.</span></div>",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "anta",
+      "title": "Anta",
+      "coord": [
+        0.5282,
+        0.2966
+      ],
+      "layer": "first",
+      "about": "Sportswear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Anta.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Anta.jpg",
+      "desc": "<b>Unit 23-25</b><div><span data-start=\"1018\" data-end=\"1059\">ANTA</span> is an international sportswear brand recognized for its innovation and quality craftsmanship. Offering a wide range of apparel, footwear, and accessories, ANTA supports both peak performance and contemporary active lifestyles.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "ftl-gym",
+      "title": "FTL GYM",
+      "coord": [
+        0.3077,
+        0.6877
+      ],
+      "layer": [
+        "layer3"
+      ],
+      "about": "Fitness & Sports Centre",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/FTL-Gym.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/FTL-Gym.jpg",
+      "desc": "<b>Unit 21</b><div>FTL Gym (Faster Than Light) is a premier 24-hour fitness center in Indonesia offering modern equipment, extensive group classes (LesMills, Dance, Zumba), and specialized Pilates Reformer studios</div>",
+      "type": "dot",
+      "color": "#ffff00",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "crunchaus",
+      "title": "Crunchaus",
+      "coord": [
+        0.3651,
+        0.3318
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Crunchaus-Update-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Crunchaus-Update-scaled-1.jpg",
+      "desc": "<span style=\"--tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / .5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; font-weight: bolder; scrollbar-color: rgb(212, 212, 216) rgba(0, 0, 0, 0);\">Unit 127A</span><div>Crunchaus is a healthy food brand specializing in fresh, nutritious salads and wraps, crafted for a light and wholesome dining experience.</div>",
+      "type": "dot",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "nasi-campur-tambak-bayan",
+      "title": "Nasi Campur Tambak Bayan",
+      "coord": [
+        0.7246,
+        0.2596
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "Unit 27<div><div>Nasi Campur Tambak Bayan Surabaya is a legendary Indonesian rice dish from the city of Surabaya, East Java. It is a combination of rice, meat, vegetables, and spices with condiments.</div></div>",
+      "group": [
+        "group2"
+      ],
+      "color": "#ffad00",
+      "type": "dot",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Nasi-Campur-Tambak-Bayan.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Nasi-Campur-Tambak-Bayan.jpg"
+    },
+    {
+      "id": "lexus",
+      "title": "Lexus",
+      "coord": [
+        0.7119,
+        0.8285
+      ],
+      "layer": [
+        "ground"
+      ],
+      "color": "#00adff",
+      "type": "dot",
+      "about": "Car Dealership",
+      "desc": "<b>Unit 1</b><div>Lexus is the luxury vehicle division of Toyota Motor Corporation. Lexus is known for its reliability, comfort, and commitment to the Omotenashi philosophy of exceptional customer care.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lexus.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lexus.jpg",
+      "group": [
+        "group5"
+      ]
+    },
+    {
+      "id": "autoschoon",
+      "title": "Autoschoon",
+      "coord": [
+        0.6502,
+        0.1136
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Autobridal",
+      "desc": "<b>Unit MSCP</b><div>Autoschoon is a premium car care, detailing, and tuning service located in the Ciputra World Surabaya car park area (Level 1A). It’s known locally for high‐quality automotive services including professional car washes, interior and exterior detailing, etc.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Autoschoon-L1-U.MSCP_-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Autoschoon-L1-U.MSCP_-scaled-1.jpg",
+      "color": "#00adff",
+      "type": "dot",
+      "group": [
+        "group5"
+      ]
+    },
+    {
+      "id": "zap-clinic",
+      "title": "ZAP Clinic",
+      "coord": [
+        0.465,
+        0.4202
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 110</b><div>ZAP Clinic is a prominent, trusted beauty clinic network in Indonesia, specializing in laser-based facial and body rejuvenation treatments, hair removal, and skin care for over 13 years.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_9566-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_9566-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "twins-model",
+      "title": "Twins Model",
+      "coord": [
+        0.5188,
+        0.2713
+      ],
+      "layer": [
+        "layer3"
+      ],
+      "about": "Other Services",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Twins-Model.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Twins-Model.jpg",
+      "desc": "<b>Unit 22</b><div><div>Twin's Model is a leading modeling school and agency in Surabaya, focused on developing young talents through training in catwalk, posing, and confidence for both photoshoots and runway.</div></div>",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "the-hope",
+      "title": "The Hope Community Church",
+      "coord": [
+        0.7964,
+        0.1224
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Hall & Worship",
+      "desc": "<b>Unit Mezzanine</b><div>The Hope Community Church is a Christian church offering regular worship services, community gatherings, and spiritual programs for all ages at Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/The-Hope.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/The-Hope.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "soiree",
+      "title": "Soi.ree",
+      "coord": [
+        0.4909,
+        0.4102
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 111</b><div><div>Soi.ree Korean Beauty Bar at Ciputra World Surabaya is a specialized beauty salon offering eyebrow and lip embroidery, eyelash extensions, and nail art using authentic Korean products.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Soiree.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Soiree.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "rockstar-academy",
+      "title": "Rockstar Academy",
+      "coord": [
+        0.4305,
+        0.4102
+      ],
+      "layer": "layer3",
+      "about": "Fitness & Sports Centre",
+      "desc": "<b>Unit 2, 15, 23</b><div>Rockstar Academy is a leading sports and performing arts academy offering structured classes in gymnastics, sports, dance, and martial arts especially for babies and kids.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Rockstar-Academy.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Rockstar-Academy.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "nextgen-multi-purpose-hall",
+      "title": "Nextgen / Multi Purpose Hall",
+      "coord": [
+        0.2445,
+        0.369
+      ],
+      "layer": "layer3",
+      "about": "Hall, Fitness & Sports Centre",
+      "desc": "<b>Unit 16</b><div>Nextgen Sports Academy is a premier basketball academy and training facility in Indonesia for children aged 4-18 years old. It provides professional coaching, focusing on skill development, physical fitness, and mental toughness.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Multi-Purpose-Hall-L4-U.15-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Multi-Purpose-Hall-L4-U.15-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "new-life-ballroom",
+      "title": "New Life Ballroom",
+      "coord": [
+        0.5214,
+        0.6046
+      ],
+      "layer": [
+        "layer3"
+      ],
+      "about": "Hall & Worship",
+      "desc": "<b>Unit 5-12</b><div>New Life Ballroom is an elegant event venue offering a spacious setting, modern facilities, and refined ambiance, ideal for weddings, corporate events, and special celebrations at Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/New-Life-Ballroom-L4-U.6-12-1-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/New-Life-Ballroom-L4-U.6-12-1-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "my-bca",
+      "title": "My BCA",
+      "coord": [
+        0.8607,
+        0.5108
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Banking & Services",
+      "desc": "<b>Unit 45</b><div>Bank Central Asia (BCA) is the largest private bank in Indonesia, providing extensive financial services including corporate banking, consumer credit, and digital banking through mobile apps.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/My-BCA-L2-U.45-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/My-BCA-L2-U.45-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "marketing-gallery-apartment",
+      "title": "Marketing Gallery Apartment, SOHO, Office Tower",
+      "coord": [
+        0.5684,
+        0.1871
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Banking & Services",
+      "desc": "<b>Unit 63-66</b><div>The Marketing Gallery of Ciputra World Surabaya offers consultation and information for apartment residences, SOHO units, and office tower spaces within the integrated Ciputra World Surabaya complex.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Marketing-Gallery.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Marketing-Gallery.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "klinstan",
+      "title": "Klinstan",
+      "coord": [
+        0.8083,
+        0.5523
+      ],
+      "layer": [
+        "underground"
+      ],
+      "about": "Footwear",
+      "desc": "<b>Unit Booth C</b><div>Klinstan is a professional premium shoe and bag laundry and care service provider in Indonesia.&nbsp;</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Klinstan.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Klinstan.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "immigration-lounge",
+      "title": "Immigration Lounge",
+      "coord": [
+        0.3969,
+        0.2943
+      ],
+      "layer": [
+        "layer3"
+      ],
+      "about": "Banking & Services",
+      "desc": "<b>Unit 17</b><div><div>Immigration Lounge is an exclusive immigration service located on the 4th floor of Ciputra World Surabaya, offering a comfortable and efficient passport application experience, including weekend services for added convenience.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Imigration-Lounge.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Imigration-Lounge.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "hanwha-life",
+      "title": "Hanwha Life",
+      "coord": [
+        0.7544,
+        0.6804
+      ],
+      "layer": "layer1",
+      "about": "Banking & Services",
+      "desc": "<b>Unit 51</b><div>Established in 1946, Hanwha Life is a leading South Korean life insurance company and also the first and longest-standing in the nation.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hanwa.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hanwa.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "dua-sisi-valas",
+      "title": "Dua Sisi Valas",
+      "coord": [
+        0.438,
+        0.4637
+      ],
+      "layer": [
+        "underground"
+      ],
+      "about": "Banking & Services",
+      "desc": "<b>Unit 15</b><div>Dua Sisi Valas is a trusted foreign exchange service offering competitive currency rates and convenient transactions for customers requiring international currency exchange.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Dua-Sisi-Valas-LG-U.15-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Dua-Sisi-Valas-LG-U.15-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "ciputra-learning-growth",
+      "title": "Ciputra Growth Center",
+      "coord": [
+        0.4561,
+        0.2617
+      ],
+      "layer": "layer3",
+      "about": "Banking & Services",
+      "desc": "<b>Unit 19</b><div>Ciputra Growth Center is a subsidiary of PT. Ciputra International and PT. Tunas Andalan Pratama, which was formed with the Vision to Build the Future of Indonesian Family through Innovative Protection.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ciputra-Life-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ciputra-Life-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "cinema-xxi",
+      "title": "Cinema XXI",
+      "coord": [
+        0.7339,
+        0.6357
+      ],
+      "layer": [
+        "layer3"
+      ],
+      "about": "Cinema",
+      "desc": "<b>Unit 1</b><div>Cinema XXI is a leading cinema brand in Indonesia, offering a premium movie experience with modern facilities such as The Premiere.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cinema-XXI-L4-U.1-2-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cinema-XXI-L4-U.1-2-scaled-1.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "christopher-salon",
+      "title": "Christopher Salon",
+      "coord": [
+        0.552,
+        0.2377
+      ],
+      "layer": "layer1",
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 18-19</b><div><div>Christopher Salon is a hair salon that has quality staff who have passed training and exams by our experienced team of Technical Educators.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Christopher-Salon.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Christopher-Salon.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "best-church",
+      "title": "Best Church",
+      "coord": [
+        0.7762,
+        0.8079
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Hall & worship",
+      "desc": "<b>Unit 1</b><div>BEST Church (Blessing in the SpiriT) is a vibrant, contemporary Christian church founded in 2006, by Pastor Fengky Maukar, focusing on transforming character and spiritual growth.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSCF4333.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSCF4333.jpg",
+      "color": "#ffff00",
+      "group": [
+        "group4"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "ballroom-89",
+      "title": "Ballroom Eighty 9",
+      "coord": [
+        0.684,
+        0.3136
+      ],
+      "layer": [
+        "layer3"
+      ],
+      "about": "Hall & Worship",
+      "desc": "<b>Unit 3</b><div>Located at Ciputra World Surabaya, Ballroom Eighty 9 is a multipurpose function hall that is intended to accomodate various event types.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ballroom-89.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ballroom-89.jpg",
+      "color": "#ffff00",
+      "type": "dot",
+      "group": [
+        "group4"
+      ]
+    },
+    {
+      "id": "surfs",
+      "title": "Surfs",
+      "coord": [
+        0.8108,
+        0.3026
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "desc": "Unit 38-39<div>Surfs Indonesia is an inline skating academy and recreational skating space located at Ciputra World Surabaya.</div>",
+      "about": "Games & Playground",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Surfs.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Surfs.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "pokemon-mezastar",
+      "title": "Pokemon Mezastar",
+      "coord": [
+        0.3745,
+        0.4028
+      ],
+      "layer": "layer2",
+      "about": "Entertainment",
+      "desc": "<b>Unit 116</b><div><div>Pokémon Mezastar is an interactive arcade game experience where players collect, battle, and trade Pokémon, combining digital gameplay with physical tags for an immersive adventure.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pokemon-Mezastar.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pokemon-Mezastar.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "playtopia",
+      "title": "Playtopia",
+      "coord": [
+        0.2396,
+        0.2674
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Entertainment",
+      "desc": "<b>Unit 96</b><div>Playtopia is a fun and safe children’s play destination, offering a clean, comfortable environment with a variety of engaging activities for an unforgettable experience.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Playtopia.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Playtopia.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "jiggle-jungle-ride",
+      "title": "Jiggle Jungle Ride",
+      "coord": [
+        0.8183,
+        0.5485
+      ],
+      "layer": "layer1",
+      "about": "Entertainment",
+      "desc": "Unit 67C",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Jiggle-Jungle-Ride.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Jiggle-Jungle-Ride.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "happy-time-bowling-and-vr",
+      "title": "Happy Time Bowling & VR",
+      "coord": [
+        0.3726,
+        0.4775
+      ],
+      "layer": "layer1",
+      "about": "Entertainment",
+      "desc": "<b>Unit 100-102</b><div><div>Happy Time is a popular indoor family entertainment center and playground located in Ciputra World Surabaya. It features a large indoor play area, alongside family-friendly attractions like bowling, ice skating, and VR rides.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_8323.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_8323.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "happy-time",
+      "title": "Happy Time",
+      "coord": [
+        0.3744,
+        0.6305
+      ],
+      "layer": "layer1",
+      "about": "Entertainment",
+      "desc": "<b>Unit 77-79</b><div><div>Happy Time is a popular indoor family entertainment center and playground located in Ciputra World Surabaya. It features a large indoor play area, alongside family-friendly attractions like bowling, ice skating, and VR rides.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Happy-Time-Lt.-2-U.-77-79-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Happy-Time-Lt.-2-U.-77-79-scaled-1.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "funifun",
+      "title": "Funifun!",
+      "coord": [
+        0.8748,
+        0.5857
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Entertainment",
+      "desc": "<b>Unit 46-48</b><div><div>FuniFun! is a popular indoor entertainment center and arcade brand in Indonesia, known for its extensive range of claw machines and family-friendly playground activities.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Funifun.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Funifun.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "fun-world",
+      "title": "Fun World",
+      "coord": [
+        0.8441,
+        0.4254
+      ],
+      "layer": "layer2",
+      "about": "Entertainment",
+      "desc": "<b>Unit 51-53</b><div>Funworld is a major chain of family entertainment centers and video arcades based primarily in Indonesia, featuring arcade games, sports games, bowling, and amusement rides.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Fun-World-L3-U.51-53-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Fun-World-L3-U.51-53-scaled-1.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "amazing-express",
+      "title": "Amazing Express",
+      "coord": [
+        0.2768,
+        0.4209
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Games & Playground",
+      "desc": "Unit 122-124",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Amazing-Express.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Amazing-Express.jpg",
+      "color": "#7600ff",
+      "type": "dot",
+      "group": [
+        "group3"
+      ]
+    },
+    {
+      "id": "yoshinoya",
+      "title": "Yoshinoya",
+      "coord": [
+        0.8395,
+        0.1565
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 40-41</b><div>Yoshinoya is a renowned Japanese dining brand known for its signature beef bowls, offering quick, flavorful meals crafted with authentic recipes and quality ingredients.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Yoshinoya-L3-U.40-41-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Yoshinoya-L3-U.40-41-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "xo-suki-signature",
+      "title": "XO Suki Signature",
+      "coord": [
+        0.4654,
+        0.4204
+      ],
+      "layer": "layer2",
+      "color": "#ffad00",
+      "type": "dot",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 107, 120-121</b><div>XO Suki is a popular, high-quality restaurant chain in Indonesia, specializing in Chinese-style suki, BBQ, and Dim Sum.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/XO-Suki.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/XO-Suki.jpg",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "woofelgo",
+      "title": "Woofelgo",
+      "coord": [
+        0.7734,
+        0.3938
+      ],
+      "layer": "layer2",
+      "color": "#ffad00",
+      "type": "dot",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 50B</b><div><div>Woofelgo is a popular, affordable egg waffle (eggette) brand originating from Bali, it offers crispy-outside, soft-inside waffles with various sweet and savory fillings.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Woofelgo.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Woofelgo.jpg",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "ventea",
+      "title": "Ventea",
+      "coord": [
+        0.693,
+        0.2944
+      ],
+      "layer": "layer2",
+      "color": "#ffad00",
+      "type": "dot",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 50I</b><div>Ven Tea offers a refreshing selection of tea-based beverages, crafted with quality ingredients and modern flavors for an enjoyable everyday treat.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ventea-L3-U.50I.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ventea-L3-U.50I.jpg",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "us-pizza",
+      "title": "US Pizza",
+      "coord": [
+        0.3556,
+        0.2505
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 98A</b><div><div>US Pizza is a popular halal-certified pizza chain in Asia, offering American-style pizzas with unique, locally inspired toppings and stretchy cheese.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_2395.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_2395.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "tous-les-jours",
+      "title": "Tous Les Jours",
+      "coord": [
+        0.7203,
+        0.5009
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 62-63</b><div>Tous les Jours is a popular South Korean-owned bakery franchise specializing in French-Asian inspired baked goods, including breads, pastries, and cakes.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tous-Les-Jours.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tous-Les-Jours.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "suteki",
+      "title": "Suteki",
+      "coord": [
+        0.3302,
+        0.6346
+      ],
+      "layer": "layer2",
+      "desc": "<b>Unit TS-06</b><div><div>Suteki is a sushi eatery offering affordable fusion cuisine. The ingredients used are fresh and enjoyable when consumed.</div></div>",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Suteki.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/05/Suteki.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "sushi-tei",
+      "title": "Sushi Tei",
+      "coord": [
+        0.848,
+        0.7951
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 1</b><div><div>Sushi Tei is a Japanese restaurant chain founded in 1994, known for its high-quality sashimi, sushi, and teppanyaki, often featuring a modern fusion twist.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sushi-Tei-L3-U.1-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sushi-Tei-L3-U.1-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "starbucks",
+      "title": "Starbucks",
+      "coord": [
+        0.5041,
+        0.6273
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 11</b><div>Starbucks is a globally recognized coffeehouse offering premium coffee, handcrafted beverages, and a welcoming café atmosphere for a relaxing break at Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/STARBUCKS-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/STARBUCKS-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "srirasa",
+      "title": "Srirasa",
+      "coord": [
+        0.5555,
+        0.4302
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 15</b><div><div>Srirasa is a popular Indonesian restaurant in Surabaya, famous for its signature Ayam Goreng Tretes. Located in Ciputra World Surabaya, the restaurant is highly regarded for its tender chicken.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Srirasa.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Srirasa.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "sour-sally",
+      "title": "Sour Sally",
+      "coord": [
+        0.3656,
+        0.3515
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 127B</b><div><div>Sour Sally is Indonesia's leading healthy froyo franchise, famous for its signature Black Sakura and White Skim treats.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sour-Sally.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sour-Sally.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "solaria",
+      "title": "Solaria",
+      "coord": [
+        0.5999,
+        0.1842
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 20-21</b><div>Solaria is a local Indonesian brand restaurant founded in 1995. Solaria is a family restaurant with a casual dining concept by serving a typical home-cooked food menu.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Solaria-L3-U.20-21.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Solaria-L3-U.20-21.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "somay-little-menteng",
+      "title": "Somay Little Menteng",
+      "coord": [
+        0.7017,
+        0.2942
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 50H</b><div>Somay Little Menteng serves classic Indonesian siomay, featuring freshly prepared dumplings with savory peanut sauce for a comforting and flavorful bite.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Siomay-Little-Menteng-L3-U.50H.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Siomay-Little-Menteng-L3-U.50H.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "shuyi",
+      "title": "Shuyi",
+      "coord": [
+        0.5428,
+        0.4798
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 16</b><div>Shuyi Grass Jelly &amp; Tea is a popular Chinese tea chain founded in 2007 that specializes in grass jelly-based drinks, milk teas, and fruit teas.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shuyi.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shuyi.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "shigeru",
+      "title": "Shigeru",
+      "coord": [
+        0.7977,
+        0.3112
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 47</b><div><div>Shigeru is a popular Japanese deli offering affordable, halal, ready-to-eat favorites, including sushi, sashimi, tempura, bento, and more.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shigeru.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shigeru.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "shake-shake-in-a-tub-lg",
+      "title": "Shake Shake in a Tub",
+      "coord": [
+        0.7538,
+        0.4646
+      ],
+      "layer": [
+        "underground"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 23</b><div><div>Shake Shake In A Tub is a popular, Halal-certified Singaporean snack brand specializing in interactive finger foods, such as seasoned fries and popcorn chicken served in tubs.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shake-Shake-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shake-Shake-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "shake-shake-in-a-tub-lt3",
+      "title": "Shake Shake in a Tub",
+      "coord": [
+        0.6478,
+        0.4774
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 81A</b><div><div>Shake Shake In A Tub is a popular, Halal-certified Singaporean snack brand specializing in interactive finger foods, such as seasoned fries and popcorn chicken served in tubs.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shake-Shake-Lt.3.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Shake-Shake-Lt.3.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "rejuve",
+      "title": "Rejuve",
+      "coord": [
+        0.7888,
+        0.7429
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "desc": "<b>Unit 75B</b><div>Rejuve is a leading Indonesian brand specializing in 100% cold-pressed juices, smoothies, nut milks, and healthy snacks.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Rejuve-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Rejuve-1.jpg",
+      "color": "#ffad00",
+      "about": "Food & Beverage",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "redback",
+      "title": "Redback",
+      "coord": [
+        0.1486,
+        0.4939
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>MPH Lobby</b><div>Redback is a specialty coffee brand serving freshly brewed coffee and espresso-based drinks crafted from quality beans for coffee enthusiasts at Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Redback.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Redback.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "puyo",
+      "title": "Puyo",
+      "coord": [
+        0.6473,
+        0.4525
+      ],
+      "layer": "layer2",
+      "desc": "<b>Unit 81C</b><div><div>Puyo Silky Dessert is well-known for its mouth-watering soft silky pudding.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Puyo.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Puyo.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ],
+      "about": "Food & Beverage"
+    },
+    {
+      "id": "porong-wei",
+      "title": "Porong Wei",
+      "coord": [
+        0.7451,
+        0.823
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 5A</b><div>Porong Wei is a legendary authentic Chinese restaurant group based in Surabaya, Indonesia, serving Fuzhou cuisine since 1960. Famous for its Ote-Ote, and also provides frozen food options.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Porong-Wei-L3-U.5A-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Porong-Wei-L3-U.5A-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "penyetan-cok",
+      "title": "Penyetan Cok",
+      "coord": [
+        0.3293,
+        0.6577
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit TS-07</b><div><div>Penyetan Cok is a popular Indonesian restaurant chain known for its extensive variety of penyetan paired with many types of spicy sambal.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Penyetan-Cok-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Penyetan-Cok-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "pentol-darurat",
+      "title": "Pentol Darurat",
+      "coord": [
+        0.8166,
+        0.273
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 46A</b><div><div>Pentol Darurat is a popular Surabaya-based street food culinary brand known for its savory, chewy meatball snacks (pentol) served with intense chili sauces.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pentol-Darurat.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pentol-Darurat.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "pempek-farina",
+      "title": "Pempek Farina",
+      "coord": [
+        0.8468,
+        0.2296
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 50F</b><div>Pempek Farina is a renowned, legendary Indonesian snack brand from Surabaya, specializing in authentic Palembang pempek served with a signature, rich spicy-sweet cuko sauce.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pempek-Farina-L3-U.50F-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pempek-Farina-L3-U.50F-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "paradise-dynasty",
+      "title": "Paradise Dynasty",
+      "coord": [
+        0.6751,
+        0.7923
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 7</b><div>Capturing the finest points of the Chinese bygone eras through tasteful luxury, Paradise Dynasty serves both Northern and Southern Chinese cuisine, innovated to satisfy contemporary taste-buds and made by signature recipes!</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Paradise-Dynasty-L3-U.7-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Paradise-Dynasty-L3-U.7-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "pang-waffle",
+      "coord": [
+        0.8024,
+        0.3426
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "title": "Pang Waffle",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 49B</b><div>Pang Waffle is a popular Thai street food chain in Indonesia known for its unique waffle shape that resembles a \"Crocs\" sandal.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pang-Waffle.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pang-Waffle.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "pancious",
+      "title": "Pancious",
+      "coord": [
+        0.7569,
+        0.6652
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 58</b><div>Pancious is a casual dining restaurant who is dedicated to bringing you the best and value-for-money pancake experience.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pancious-L3-U.58-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pancious-L3-U.58-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "o-deli",
+      "title": "O'Deli",
+      "coord": [
+        0.7705,
+        0.3121
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 48B</b><div>O'Deli Bakery is a popular, affordable bakery chain in Surabaya, known for its soft, freshly baked bread, aesthetic cakes, and varied snacks.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/O-Deli.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/O-Deli.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "my-kopi-o",
+      "title": "My Kopi O!",
+      "coord": [
+        0.6431,
+        0.6736
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 8</b><div>My Kopi-O! is an Indonesian coffeehouse chain founded in Surabaya, known for its mix of Asian colonial, modern dining, and casual bistro concepts.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/My-Kopi-O-L3-U.8-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/My-Kopi-O-L3-U.8-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "mooi-ondomohen",
+      "title": "Mooi Ondomohen",
+      "coord": [
+        0.1593,
+        0.4167
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 93-95</b><div><div>Mooi Ondomohen is a modern heritage dining destination at Ciputra World Surabaya, offering a curated selection of Indonesian, Asian, and local Surabaya favorites in a comfortable setting.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Mooi-Ondomohen-L3-U.93-95-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Mooi-Ondomohen-L3-U.93-95-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "montato",
+      "title": "Montato",
+      "coord": [
+        0.7785,
+        0.3874
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 50C</b><div>Montato is a booth concept outlet that sells japanese giant potato, our ingredients are developed and created to always put innovation in mind</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Montato-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Montato-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "moncheri",
+      "title": "Moncheri",
+      "coord": [
+        0.5121,
+        0.4196
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 112, 117</b><div><div>Mon Chéri Ice Cream is a dessert brand offering a variety of artisanal ice creams and sweet treats, known for its rich flavors, creamy textures, and delightful indulgent creations.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSC02490-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSC02490-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "mister-donut",
+      "title": "Mister Donut",
+      "coord": [
+        0.873,
+        0.5833
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 55</b><div><div>Mister Donut is a globally recognized donut brand, originally founded in the United States in 1956 and now headquartered in Japan, offering a delightful selection of donuts, and coffee.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Mister-Donut.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Mister-Donut.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "masterr-singapore-ice-cream",
+      "title": "Masterr Singapore Ice Cream",
+      "coord": [
+        0.614,
+        0.2816
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 78</b><div><div>Masterr Singapore Ice Cream is a dessert brand specializing in traditional Singaporean-style ice cream sandwiches.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Masterr-Singapore.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/10/Masterr-Singapore.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "madampai-madampaf",
+      "title": "Madampai Madampaf",
+      "coord": [
+        0.6138,
+        0.2575
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 77</b><div>Madam Pai is a popular bakery specialty shop in Surabaya, Indonesia, best known for its crispy Macau-style Portuguese egg tarts and other pastry variations.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Madam-Pai-Puff-L3-u.77-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Madam-Pai-Puff-L3-u.77-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "luuca",
+      "title": "Luuca",
+      "coord": [
+        0.3032,
+        0.3329
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 128B</b><div><div>Luuca is an Indonesian premium soft-serve ice cream brand that offers Italian-inspired, high-quality, creamy desserts at affordable prices.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Luuca.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Luuca.jpg",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "lincafe",
+      "title": "Lincafe",
+      "coord": [
+        0.5504,
+        0.2578
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 18-19</b><div>Lincafe is an Indonesian specialty restaurant offering a refined dining experience, set in an aesthetic, luxurious, and elegantly designed space.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lincafe.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lincafe.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kushiro",
+      "title": "Kushiro",
+      "coord": [
+        0.348,
+        0.4572
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 112</b><div>Kushiro is a Japanese Cuisine Restaurant that serves premium ingredients with authentic taste of various dishes.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kushiro-Sushi-L3-U.112-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kushiro-Sushi-L3-U.112-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kuliner-aneka-rujak",
+      "title": "Kuliner Aneka Rujak",
+      "coord": [
+        0.7245,
+        0.1898
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 30</b><div><div>Kuliner Aneka Rujak is a go-to spot for traditional East Javanese street food at Ciputra World Surabaya, best known for its signature selections such as Rujak Cingur, Rujak Tolet, and Rujak Manis.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kuliner-Aneka-Rujak-L3-U.30-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kuliner-Aneka-Rujak-L3-U.30-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kopi-kenangan",
+      "title": "Kopi Kenangan",
+      "coord": [
+        0.776,
+        0.462
+      ],
+      "layer": [
+        "underground"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 25</b><div>Kopi Kenangan is a popular coffee destination offering signature milk coffee, freshly brewed beverages, and modern café favorites for a refreshing break while shopping at Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Kopi-Kenangan.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Kopi-Kenangan.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "koi-cafe",
+      "title": "Koi Cafe",
+      "coord": [
+        0.6813,
+        0.4976
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 71</b><div>Koi The is a popular Taiwanese bubble tea chain. Renowned for its premium, freshly brewed teas, and signature milk teas.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Koi-The-L2-U.71-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Koi-The-L2-U.71-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kfc",
+      "title": "KFC",
+      "coord": [
+        0.8157,
+        0.1514
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 38-39</b><div>KFC (Kentucky Fried Chicken) is a global fast-food restaurant chain specializing in fried chicken, founded by Colonel Harland Sanders in 1930.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/KFC-L3-U.38-39-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/KFC-L3-U.38-39-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kedai-si-mbok",
+      "title": "Kedai Si Mbok",
+      "coord": [
+        0.329,
+        0.6094
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit TS-05</b><div><div>Kedai Si Mbok is a charming local eatery serving authentic Indonesian comfort dishes, prepared with home-style recipes and rich, familiar flavors in a warm, inviting setting.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kedai-Si-Mbok-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kedai-Si-Mbok-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "kanalu",
+      "title": "Kanalu",
+      "coord": [
+        0.3034,
+        0.3537
+      ],
+      "layer": "layer2",
+      "desc": "<b>Unit 128A</b><div>Kanalu is a popular culinary brand known as the first to offer specialized nori tacos and crispy rice snacks.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kanalu.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kanalu.jpg",
+      "about": "Food & Beverage",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "house-of-wok",
+      "title": "House of WOK",
+      "coord": [
+        0.7239,
+        0.8284
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 5B</b><div>House of Wok is a family-friendly dining destination offering Asian fusion cuisine, featuring Chinese and Asian specialties in generous portions, thoughtfully prepared with a halal-certified menu.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/House-of-Wok-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/House-of-Wok-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "honey-pok",
+      "title": "Honey Pok",
+      "coord": [
+        0.8165,
+        0.2847
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 46B</b><div>Honey Pok is a popular Indonesian crispy snack brand, known for its 100% chicken breast snacks coated in special flour and served with various seasonings.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Honey-Pok-L3-U.46B-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Honey-Pok-L3-U.46B-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "hokben",
+      "title": "Hokben",
+      "coord": [
+        0.8576,
+        0.1814
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 43</b><div><div>Hokben is a well-known Indonesian fast-food brand serving Japanese-inspired cuisine since 1985, offering bento boxes, rice bowls, and signature fried favorites.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hokben.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hokben.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "hapsari",
+      "coord": [
+        0.8182,
+        0.6187
+      ],
+      "layer": [
+        "underground"
+      ],
+      "title": "Hapsari",
+      "about": "Food & Beverage",
+      "desc": "<b>Booth D</b><div>Hapsari Original is a popular legend food brand in Surabaya, Indonesia, famous for its savory chicken siomay (dumplings) and sweet pastry snacks like pisang bolen.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hapsari.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hapsari.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "hanaichi-teppan-house",
+      "title": "Hanaichi Teppan House",
+      "coord": [
+        0.7451,
+        0.6122
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 59</b><div><div>Hanaichi Teppan House offers a casual Japanese dining experience, serving freshly prepared teppanyaki dishes, and flavorful favorites crafted for quick and satisfying meals.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSC02740-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSC02740-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "haagen-dazs",
+      "title": "Haagen Dazs",
+      "coord": [
+        0.6921,
+        0.4727
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Haagen-Dazs.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Haagen-Dazs.jpg",
+      "desc": "<b>Unit 61</b><div><div>Häagen-Dazs is a premium ice cream brand known for its rich, dense texture and high-quality ingredients, crafted for an indulgent dessert experience.</div></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "gracious-soy-kingdom",
+      "title": "Gracious Soy Kingdom",
+      "coord": [
+        0.4195,
+        0.6252
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit TS-I</b><div>Gracious Soy Kingdom is a popular Surabaya-based, health-focused, vegan-friendly eatery specializing in premium, non-GMO soybean products.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Gracious.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Gracious.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "gore-gore",
+      "title": "Gore Gore",
+      "coord": [
+        0.5587,
+        0.5971
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit TS-18</b><div>Gore Gore is a popular Indonesian street food vendor, specializing in fried fish dumplings (batagor) with savory peanut sauce.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Gore-Gore.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/09/Gore-Gore.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "excelso",
+      "title": "Excelso",
+      "coord": [
+        0.7256,
+        0.5545
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 60</b><div>Excelso is a leading Indonesian coffee brand offering a modern café experience, featuring single-origin beans, specialty blends, and signature beverages.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Excelso-L3-U.60-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Excelso-L3-U.60-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "ega-pastry-and-bakery",
+      "title": "Ega Pastry & Bakery",
+      "coord": [
+        0.375,
+        0.6101
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit TS-C</b><div>Ega Pastry is a Surabaya-based, homemade pastry brand known for its signature banana bolen.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ega-Pastry-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Ega-Pastry-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "doner-kebab",
+      "title": "Doner Kebab",
+      "coord": [
+        0.798,
+        0.1543
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 37</b><div>Doner Kebab is a Turkish kebab chain serving authentic, vertically grilled meats, wrapped in flatbread or pockets with fresh vegetables and signature sauces.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Doner-Kebab-L3-U.37-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Doner-Kebab-L3-U.37-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "domo-domo",
+      "title": "Domo Domo",
+      "coord": [
+        0.3704,
+        0.2848
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 98B</b><div>Domo Domo is a Japanese-inspired, premium matcha bar and dessert cafe in Indonesia, known for its mochi skewers and matcha drinks.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Domo-Domo-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Domo-Domo-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "dneven",
+      "title": "D'Neven",
+      "coord": [
+        0.6476,
+        0.4649
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Dneven.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Dneven.jpg",
+      "desc": "<b>Unit 81B</b><div><div>D'neven is a premium spiku (Indonesian layer cake) specialist based in Surabaya.</div></div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "dcrepes",
+      "title": "D'Crepes",
+      "coord": [
+        0.7605,
+        0.3125
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 48A</b><div>D'Crepes is a popular Indonesian snack chain established in 1996 that pioneered crispy, thin crepes in the country.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/D-Crepes-L3-U.48A-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/D-Crepes-L3-U.48A-scaled-1.jpg",
+      "group": [
+        "group2"
+      ],
+      "color": "#ffad00",
+      "type": "dot"
+    },
+    {
+      "id": "cincau-station",
+      "title": "Cincau Station",
+      "coord": [
+        0.7948,
+        0.3579
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 50A</b><div>Cincau Station is a popular Surabaya-based beverage brand established in 2005 that specializes in fresh, natural green grass jelly drinks.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cincau-Station-L3-U.50A-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cincau-Station-L3-U.50A-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "chatramue",
+      "title": "Chatramue",
+      "coord": [
+        0.7413,
+        0.5256
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 65</b><div>ChaTraMue is Thailand's original and most famous tea brand, established in 1945, widely recognized for its authentic Thai milk tea.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Chatramue.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Chatramue.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "chatime",
+      "title": "Chatime",
+      "coord": [
+        0.7386,
+        0.4639
+      ],
+      "layer": "underground",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 22</b><div>Chatime is a leading Taiwanese global franchise teahouse chain founded in 2005 that specializes in bubble tea and various brewed beverages.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSC02478-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/DSC02478-scaled-1.jpg",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "carnaby",
+      "title": "Carnaby",
+      "coord": [
+        0.3928,
+        0.4406
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 110, 116-117</b><div>Carnaby Kitchen is a vibrant café for family gatherings and casual hangouts, offering a cozy setting and a diverse menu of Indonesian, Western, and Arabian dishes.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Carnaby-L3-U.110-111-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Carnaby-L3-U.110-111-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "carls-jr",
+      "title": "Carl's Jr",
+      "coord": [
+        0.8687,
+        0.653
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Carls-Jr-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Carls-Jr-1.jpg",
+      "desc": "<b>Unit 56-57</b><div>Carl’s Jr is a major American fast-food restaurant chain known for its 100% chargrilled angus beef burgers, hand-breaded chicken tenders, and hand-scooped ice cream shakes.</div>",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "bowie",
+      "title": "Bowie",
+      "coord": [
+        0.6285,
+        0.7063
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 3-6</b><div><div>Bowie is a contemporary restaurant and bar offering a curated menu of international flavors and refreshing beverages for a stylish dining experience at Ciputra World Surabaya.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Bowie-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Bowie-scaled-1.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "be-on-3",
+      "title": "Be On 3",
+      "coord": [
+        0.2526,
+        0.5119
+      ],
+      "layer": "layer2",
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 92</b><div>Be On 3 is the first non-halal food court in Surabaya, located on the 3rd floor of Ciputra World Surabaya. It specializes in pork-based dishes and oriental cuisine.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Be-On-3.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Be-On-3.jpg",
+      "color": "#ffad00",
+      "type": "dot",
+      "group": [
+        "group2"
+      ]
+    },
+    {
+      "id": "bakwan-goreng-pecindilan",
+      "title": "Bakwan Goreng Pecindilan",
+      "coord": [
+        0.8161,
+        0.2189
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Food & Beverage",
+      "desc": "<b>Unit 45</b><div><div>Bakwan Goreng Pecindilan is a legendary Surabaya delicacy since 1993, featuring crispy fried meatballs filled with a savory mix of pork and shrimp or chicken and shrimp.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Bakwan-Pecindilan-L3-U.45-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Bakwan-Pecindilan-L3-U.45-scaled-1.jpg",
+      "color": "#ffad00",
+      "group": [
+        "group2"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "xiaomi",
+      "title": "Xiaomi",
+      "coord": [
+        0.6536,
+        0.706
+      ],
+      "layer": "layer1",
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 2B</b><div>Xiaomi founded in April 2010 as a consumer electronics and smart manufacturing company with smartphones and smart hardware connected by an IoT platform at its core.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ],
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Xiaomi.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Xiaomi.jpg"
+    },
+    {
+      "id": "wilio",
+      "title": "Wilio",
+      "coord": [
+        0.644,
+        0.6661
+      ],
+      "layer": "layer1",
+      "about": "Baby, Kids, Maternity",
+      "desc": "<b>Unit 3</b><div>Wilio is a new concept of multibrand store of footwear and apparel for juniors with age group Preschool to Gradeschool. Wilio’s concept dwells in a child-like imagination during a treasure hunt.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wilio.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wilio.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "watsons",
+      "title": "Watsons",
+      "coord": [
+        0.7258,
+        0.5386
+      ],
+      "layer": "layer1",
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 56-57, 59-60</b><div><div>Watsons is a Hong Kong health care and beauty care chain store in Asia and Europe. It offers a wide range of skincare, cosmetics, and health products, with a strong presence in Indonesia.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Watsons.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Watsons.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "wacoal",
+      "title": "Wacoal",
+      "coord": [
+        0.7645,
+        0.5705
+      ],
+      "layer": "layer1",
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 62</b><div><div>Wacoal is a Japanese lingerie brand founded in 1946, known for its high-quality innerwear that combines comfort, innovation, and elegant design.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wacoal-L2-U.62-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Wacoal-L2-U.62-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "urban-republic",
+      "title": "Urban Republic",
+      "coord": [
+        0.5118,
+        0.4788
+      ],
+      "layer": "layer1",
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 95</b><div>Urban Republic stands at the forefront of mobile retail, bringing together the latest in smartphones, audio gadgets, and accessories under one roof.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Urban-Republic.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Urban-Republic.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "urban-and-co",
+      "title": "Urban & Co",
+      "coord": [
+        0.6861,
+        0.2179
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 26-27</b><div><div>Urban &amp; Co is a popular Indonesian fashion brand specializing in women's shoes, bags, and apparel. All of its products feature simple yet elegant and luxurious designs.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Urban-Co.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Urban-Co.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "tumi",
+      "title": "Tumi",
+      "coord": [
+        0.5667,
+        0.5981
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Travel & Luggage",
+      "desc": "<b>Unit 8-9</b><div>TUMI is a globally recognized luxury brand known for its high-performance travel bags, luggage, and business accessories, combining innovative design with exceptional durability and refined craftsmanship.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tumi.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tumi.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "tommy-hilfiger",
+      "title": "Tommy Hilfiger",
+      "coord": [
+        0.6141,
+        0.6293
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 8A</b><div><div>Tommy Hilfiger is one of the world’s leading designer lifestyle brands creating a platform that inspires the modern American spirit, while committing to wasting nothing and welcoming all.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tommy-Hilfiger.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tommy-Hilfiger.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "tissot",
+      "title": "Tissot",
+      "coord": [
+        0.4863,
+        0.2872
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Jewelry, Watches, & Accessories",
+      "desc": "<b>Unit 61</b><div>Tissot is a Swiss luxury watch brand founded in 1853 in Le Locle. Known for its high precision and innovation, Tissot is part of the Swatch Group, offering durable, Swiss Made quality watches.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tissot-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Tissot-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "thule",
+      "title": "Thule",
+      "coord": [
+        0.365,
+        0.4419
+      ],
+      "layer": "first",
+      "about": "Travel & Luggage",
+      "desc": "<b>Unit 108-109</b><div>Thule is a Swedish company established in 1942 that designs and sells premium, high-quality outdoor and transportation products, such as roof racks, bike carriers, roof boxes, strollers, and backpacks.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ],
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Thule.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Thule-1.jpg"
+    },
+    {
+      "id": "the-body-shop",
+      "title": "The Body Shop",
+      "coord": [
+        0.622,
+        0.53
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 17-18</b><div><div>The Body Shop is a global beauty brand founded in 1976 by Dame Anita Roddick in the UK, specializing in ethically produced, natural-inspired skincare, body care, and cosmetics.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/The-Body-Shop.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/The-Body-Shop.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "stroberi",
+      "title": "Stroberi",
+      "coord": [
+        0.4607,
+        0.4631
+      ],
+      "layer": [
+        "underground"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 16-17</b><div>Stroberi is a popular lifestyle store featuring a wide range of fashion accessories, bags, beauty essentials, and trendy items designed to complement everyday style.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Stroberi-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Stroberi-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "steve-madden",
+      "title": "Steve Madden",
+      "coord": [
+        0.3665,
+        0.5037
+      ],
+      "layer": "first",
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 110</b><div>Established in 1990, Steve Madden has become synonymous with bold, trendsetting footwear and accessories.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Steve-Madden.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Steve-Madden.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "staccato",
+      "title": "Staccato",
+      "coord": [
+        0.656,
+        0.7341
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 7A</b><div>Staccato is a premium footwear brand from Hong Kong known for its feminine, Italian-inspired designs, featuring metallic details and pointed-toe silhouettes.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Staccato.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Staccato.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "smiggle",
+      "title": "Smiggle",
+      "coord": [
+        0.6159,
+        0.4995
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Baby, Kids, Maternity",
+      "desc": "<b>Unit 7-8</b><div>Smiggle is a playful lifestyle brand offering colorful and fun school essentials, gifts, and accessories, known for its vibrant, creative, and trend-driven designs.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Smiggle-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Smiggle-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "skechers",
+      "title": "Skechers",
+      "coord": [
+        0.8513,
+        0.3649
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 45-48</b><div>Skechers is an American footwear brand founded in 1992, known for comfortable, innovative lifestyle and performance shoes, offering versatile designs that blend casual style with everyday functionality.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Skechers.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Skechers.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "scoop",
+      "title": "Scoop",
+      "coord": [
+        0.7537,
+        0.5467
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Lifestyle & Home Appliance",
+      "desc": "<b>Unit 66</b><div>Scoop is a retail brand in Indonesia specializing in cute, trendy stationery, unique lifestyle accessories, home decor, and gifts.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Scoop-L3-U.66-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Scoop-L3-U.66-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "sandro",
+      "title": "Sandro",
+      "coord": [
+        0.443,
+        0.4842
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 81-82</b><div>Sandro is a Parisian brand, a leader in the accessible luxury segment, known for its men’s and women’s collections that are both refined and quirky.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sandro.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Sandro.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "samsung",
+      "title": "Samsung",
+      "coord": [
+        0.4504,
+        0.4718
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 97-98</b><div><div>Samsung Experience Store is a specialized retail location where customers can explore, test, and purchase the latest Samsung Galaxy smartphones, tablets, wearables, and accessories.</div></div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Samsung.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Samsung.jpg",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "puma",
+      "title": "Puma",
+      "coord": [
+        0.3668,
+        0.3043
+      ],
+      "layer": "first",
+      "about": "Sportswear",
+      "desc": "<b>Unit 93</b><div>Puma is relentlessly pushing sports and culture forward by creating the fastest products for the world’s fastest athletes. Since 1948, Puma has drawn strength and credibility from its heritage in sports.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Puma.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Puma.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "project-soul",
+      "title": "Project Soul",
+      "coord": [
+        0.5927,
+        0.2301
+      ],
+      "layer": "first",
+      "about": "Eyewear",
+      "desc": "<b>Unit 28-30</b><div>The eyes are windows to the soul. That is why glasses are no longer just a necessity, but a statement – a medium that conveys who the person is. The 'project' in project: soul serves as a double entendre; let our projects help you project your soul.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Project-Soul.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Project-Soul.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "planet-sports",
+      "title": "Planet Sports",
+      "coord": [
+        0.8162,
+        0.2648
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Sportswear",
+      "desc": "<b>Unit 38-43</b><div><div>Planet Sports is Indonesia's largest multi-brand sports and lifestyle specialty retail chain. It offers a wide range of sports and lifestyle equipment from the world's best brands.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Planet-Sports.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ],
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Planet-Sports.jpg"
+    },
+    {
+      "id": "payless",
+      "title": "Payless",
+      "coord": [
+        0.591,
+        0.6018
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Footwear",
+      "desc": "<b>Unit 72</b><div>Payless is the largest specialty family footwear retailer, offering a trend-right and comprehensive range of everyday and special occasion shoes and accessory items at affordable prices.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Payless.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Payless.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "pandora",
+      "coord": [
+        0.4585,
+        0.3988
+      ],
+      "layer": [
+        "ground"
+      ],
+      "title": "Pandora",
+      "about": "Jewelry, Watches, & Accessories",
+      "desc": "<b>Unit 72</b><div>Pandora is the world's largest jewellery brand, specialising in the design, crafting and made from high-quality materials. Each piece is created to inspire self-expression, allowing people to share their stories through meaningful jewellery.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ],
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pandora.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Pandora.jpg"
+    },
+    {
+      "id": "owl",
+      "title": "O.W.L",
+      "coord": [
+        0.4381,
+        0.4209
+      ],
+      "layer": "layer1",
+      "about": "Eyewear",
+      "desc": "<b>Unit 109</b><div>O.W.L is a premium, Korean-designed eyewear brand founded in 2014, offering fashionable prescription glasses, sunglasses, and frames.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/OWL.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/OWL.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "optik-seis",
+      "title": "Optik Seis",
+      "coord": [
+        0.3969,
+        0.4214
+      ],
+      "layer": "layer1",
+      "about": "Eyewear",
+      "desc": "<b>Unit 107</b><div><div>Optik Seis is a one-stop fashion eyewear center that has been catering to anyone who’s longing to see better and be seen better.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Optik-Seis.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Optik-Seis.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "optik-melawai",
+      "title": "Optik Melawai",
+      "coord": [
+        0.3762,
+        0.4201
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Eyewear",
+      "desc": "<b>Unit 106</b><div>Optik Melawai is one of Indonesia’s leading optical retail chains, founded in 1981 in Jakarta. The brand offers eyewear, sunglasses, contact lenses, and professional eye examination services.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Optik-Melawai.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Optik-Melawai.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "oppo",
+      "title": "Oppo",
+      "coord": [
+        0.4154,
+        0.4745
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 99</b><div>OPPO Experience Store offers visitors the opportunity to explore and try the latest OPPO products and innovative technologies in a comprehensive retail environment.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Oppo.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Oppo.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "one-love-bespoke",
+      "title": "One Love Bespoke",
+      "coord": [
+        0.5137,
+        0.4405
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Jewelry, Watches, & Accessories",
+      "desc": "<b>Unit 116</b><div>OneLove Bespoke is a specialized jewelry brand based in Ciputra World Surabaya, focusing on custom-made engagement rings, wedding bands, and tailored jewelry.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/ONE-LOVE-BESPOKE-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/ONE-LOVE-BESPOKE-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "notre",
+      "title": "Notre",
+      "coord": [
+        0.554,
+        0.2784
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 16-17</b><div><div>Notre is a fashion brand that offers a collection of classy, fashionable, and simple clothing with modern designs. Notre is located in Ciputra World Surabaya.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Notre-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Notre-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "new-era",
+      "title": "New Era",
+      "coord": [
+        0.3269,
+        0.4334
+      ],
+      "layer": "first",
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 105-107</b><div>New Era is the world’s premier headwear manufacturer, best known as the exclusive manufacturer of the official on-field caps for Major League Baseball (MLB) and the National Football League (NFL).</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/New-Era-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/New-Era-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "new-balance",
+      "title": "New Balance",
+      "coord": [
+        0.8509,
+        0.4239
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Sportswear",
+      "desc": "<b>Unit 49-50</b><div>New Balance is a renowned American footwear and apparel brand based in Boston. Known for blending performance technology with lifestyle fashion, it specializes in high-quality running shoes, sneakers, and apparel.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/New-Balance.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/New-Balance.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "multi-toys",
+      "title": "Multi Toys",
+      "coord": [
+        0.2084,
+        0.3634
+      ],
+      "layer": "layer1",
+      "about": "Toys, Hobbies, Collectibles",
+      "desc": "<b>Unit 83-85</b><div>Multi Toys, established in 2000, is a leading toy retailer in Indonesia, specializing in collectibles from movies, animations, and comics.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Multi-Toys.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Multi-Toys.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "mothercare",
+      "title": "Mothercare",
+      "coord": [
+        0.6351,
+        0.6005
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Baby, Kids, Maternity",
+      "desc": "<b>Unit 5-6</b><div><div>Mothercare is a leading global specialist retailer for parents, babies, and young children. It offers a wide range of maternity clothing, baby clothes, nursery furniture, strollers, car seats, and toys.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Mothercare-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Mothercare-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "molton-brown",
+      "title": "Molton Brown",
+      "coord": [
+        0.3591,
+        0.4236
+      ],
+      "layer": "ground",
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 77</b><div>Molton Brown is an iconic British luxury fragrance house established in London. The brand is famous for its high-quality fragrances, shower gels, hand washes, and lotions, featuring sustainable ingredients and cruelty-free formulas.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Molton-Brown-2.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Molton-Brown-2.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "metro",
+      "title": "Metro",
+      "coord": [
+        0.7574,
+        0.2992
+      ],
+      "layer": "ground",
+      "about": "Department Store",
+      "desc": "<b>Unit 21-25</b><div>METRO Dept. Store is an integrated partner and family-friendly destination in Indonesia, providing high-end curated fashion with over 100 emerging brands.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Metro.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/08/Metro.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "memo-paris",
+      "title": "Memo Paris",
+      "coord": [
+        0.4061,
+        0.2894
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 58-59</b><div>Memo Paris is a French luxury fragrance brand founded by John and Clara Molloy, specializing in artistic fragrances inspired by travel memories to exotic destinations around the world.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Memo-Paris.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Memo-Paris.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "maysole",
+      "title": "Maysole",
+      "coord": [
+        0.6943,
+        0.4062
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 69A</b><div>MaySole Orthotics provides custom-made orthotic insoles and foot care services designed to correct structural foot imbalances and relieve joint pain.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Maysole-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Maysole-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "marks-and-spencer",
+      "title": "Marks & Spencer",
+      "coord": [
+        0.6854,
+        0.2635
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 35-37</b><div><div>Marks &amp; Spencer (M&amp;S) is a prominent British retailer, founded in 1884 and headquartered in London, England. Specializing in apparel, home goods, and luxury food items.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Marks-Spencer.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Marks-Spencer.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "maison-aura",
+      "title": "Maison Aura",
+      "coord": [
+        0.8681,
+        0.684
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 57</b><div>Maison Aura is a prominent luxury perfume retailer in Indonesia specializing in curated niche, designer, and Middle Eastern scents.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Maison-Aura-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Maison-Aura-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "levis",
+      "title": "Levi's",
+      "coord": [
+        0.3311,
+        0.3048
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 92</b><div><div>Levi’s is an iconic American brand founded in 1853 by Levi Strauss, known for inventing blue jeans in 1873 and becoming a global leader in denim and apparel.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Levis-1-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Levis-1-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "leo-y-alle",
+      "title": "Leo Y Alle",
+      "coord": [
+        0.3548,
+        0.4015
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Jewelry, Watches, & Accessories",
+      "desc": "<b>Unit 105</b><div><div>Leo y Alle is a luxury jewelry brand specializing in natural and lab-grown diamonds set in 18K gold, offering finely crafted collections with elegant design. Located in Ciputra World Surabaya</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Leo-Y-Alle.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Leo-Y-Alle.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "lego",
+      "title": "Lego",
+      "coord": [
+        0.4973,
+        0.5052
+      ],
+      "layer": "first",
+      "about": "Toys, Hobbies, Collectibles",
+      "desc": "<b>Unit 117-119</b><div><div>Lego is a popular brand of construction toys consisting of interlocking plastic bricks, gears, and minifigures, allowing for creative, modular building.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lego.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lego.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "laxmi-tailors",
+      "title": "Laxmi Tailors",
+      "coord": [
+        0.4477,
+        0.3182
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 96-97</b><div>Laxmi Tailors is a renowned, long-standing Indonesian bespoke tailoring house established in 1949, specializing in high-quality custom-fit menswear, including suits, jackets, and batik.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Laxmi.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Laxmi.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "larusso",
+      "title": "Larusso",
+      "coord": [
+        0.6451,
+        0.2911
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 28-30</b><div>Established in 1978, Larusso is a leading brand in the retail sector, specializing in menswear. Larusso offers a wide range of products including shirts, hoodies, and trousers.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Larusso.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Larusso.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "lacoste",
+      "title": "Lacoste",
+      "coord": [
+        0.6383,
+        0.6295
+      ],
+      "layer": "first",
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 8B</b><div>Lacoste is a French lifestyle brand, known for its iconic polo shirts, clothing, footwear and accessories that combine sporty elegance with casual sophistication.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lacoste.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Lacoste.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "loccitane",
+      "title": "L'Occitane",
+      "coord": [
+        0.6213,
+        0.4817
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 16</b><div><div>L'Occitane is a renowned French beauty brand offering natural, high-end skincare, body care, and hair care products inspired by Mediterranean traditions.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Loccitane-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Loccitane-1.jpg",
+      "color": "#ff0000",
+      "group": [
+        "group1"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "kidz-station",
+      "title": "Kidz Station",
+      "coord": [
+        0.6055,
+        0.4378
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Baby, Kids, Maternity",
+      "desc": "<b>Unit 9-15</b><div><div>Kidz Station is the most explorative toy store that offers a unique experience for play where parents &amp; kids can team up together.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kidz-Station-2.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kidz-Station-2.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "kate-spade",
+      "title": "Kate Spade",
+      "coord": [
+        0.5156,
+        0.4853
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 85</b><div>Kate Spade New York is an American accessible luxury brand. The brand offers a joyful, feminine aesthetic across handbags, clothing, popularizing a polished yet witty New York style.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kate-Spade.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Kate-Spade.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "jete",
+      "title": "Jete",
+      "coord": [
+        0.4842,
+        0.4631
+      ],
+      "layer": [
+        "underground"
+      ],
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 18</b><div><div>JETE is a technology and lifestyle brand providing various gadgets, audio devices, and mobile accessories designed for convenience, connectivity, and everyday digital needs.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Jete.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Jete.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "jd-sports",
+      "title": "JD Sports",
+      "coord": [
+        0.5203,
+        0.6707
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Sportswear",
+      "desc": "<b>Unit 11-12</b><div>JD Sports is a leading British multinational omni-channel retailer specializing in branded sports-fashion, footwear, apparel, and accessories</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/JD-Sports-2.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/JD-Sports-2.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "iqos",
+      "title": "IQOS",
+      "coord": [
+        0.68,
+        0.5163
+      ],
+      "layer": [
+        "layer2"
+      ],
+      "about": "Lifestyle",
+      "desc": "<b>Unit 82</b><div>IQOS is a smoke-free alternative to traditional cigarettes that uses heat-not-burn technology to warm real tobacco instead of burning it.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ],
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IQOS-New.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IQOS-New.jpg"
+    },
+    {
+      "id": "i-love-emas",
+      "title": "I Love Emas",
+      "coord": [
+        0.7822,
+        0.6741
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Jewelry, Watches, & Accessories",
+      "desc": "<b>Unit 66</b><div><div>I Love Emas is a precious metals retailer specializing in buying and selling gold, jewelry, diamonds, and other metals, accepting items in any condition, including broken or incomplete pieces.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/I-Love-Emas.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/I-Love-Emas.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "hypermart",
+      "title": "Hypermart",
+      "coord": [
+        0.5086,
+        0.254
+      ],
+      "layer": "underground",
+      "about": "Supermarket",
+      "desc": "<b>Unit 19</b>&nbsp;<div>Hypermart is a one-stop shopping destination offering a wide selection of fresh groceries, household essentials, and daily necessities.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hypermart-Lantai-LG-Unit-18-19-2-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Hypermart-Lantai-LG-Unit-18-19-2-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "hush-puppies",
+      "title": "Hush Puppies",
+      "coord": [
+        0.7618,
+        0.6598
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 59-62</b><div><div>Hush Puppies is an iconic American brand renowned for its casual footwear, apparel, and accessories, distinguished by its signature Basset Hound mascot.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/HushPuppies.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/HushPuppies.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "huawei",
+      "title": "Huawei",
+      "coord": [
+        0.4585,
+        0.6215
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 76</b><div>Huawei is a leading global technology giant from China founded in 1987, specializing in smart devices such as smartphones, laptops, wearable devices.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Huawei.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Huawei.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "havaianas",
+      "title": "Havaianas",
+      "coord": [
+        0.6046,
+        0.3718
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Footwear",
+      "desc": "<b>Unit 22</b><div><div>Havaianas is a Brazilian footwear brand founded in 1962, globally known for its iconic rubber flip-flops that combine comfort, durability, and vibrant, casual style inspired by Brazilian culture.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Havaianas.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Havaianas.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "hnm-gf",
+      "title": "H&M",
+      "coord": [
+        0.3129,
+        0.6385
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 50-51</b><div>H&amp;M is a leading Swedish multinational fashion retailer founded in 1947, known for offering trendy clothing, accessories, and home goods for men, women, and children at affordable prices.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/HM-GF-U.50-51-2.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/HM-GF-U.50-51-2.jpg",
+      "color": "#ff0000",
+      "group": [
+        "group1"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "hnm-1f",
+      "title": "H&M",
+      "coord": [
+        0.3776,
+        0.6547
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 82-85</b><br><div>H&amp;M is a leading Swedish multinational fashion retailer founded in 1947, known for offering trendy clothing, accessories, and home goods for men, women, and children at affordable prices.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/HM-L1-U.82-85-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/HM-L1-U.82-85-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "guardian",
+      "title": "Guardian",
+      "coord": [
+        0.5924,
+        0.1977
+      ],
+      "layer": "layer1",
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 21-23</b><div><div>Guardian is a health and beauty retailer offering a wide range of products from well-known local and international brands.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Guardian.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Guardian.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "goedang-loekisan",
+      "title": "Goedang Loekisan",
+      "coord": [
+        0.6456,
+        0.1873
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Lifestyle & Home Appliance",
+      "desc": "Unit 25",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Goedang-Loekisan.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Goedang-Loekisan.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "giordano",
+      "title": "Giordano",
+      "coord": [
+        0.7194,
+        0.5486
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 65-66</b><div>Giordano is a prominent Hong Kong-based international apparel retailer established in 1981, specializing in simple, high-quality, and timeless casual wear for men, women, and children.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Giordano.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Giordano.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "frederique-constant",
+      "title": "Frederique Constant",
+      "coord": [
+        0.3336,
+        0.2853
+      ],
+      "layer": "ground",
+      "about": "Jewelry, Watches, & Accessories",
+      "desc": "<b>Unit 55</b><div>Frédérique Constant is a Swiss luxury watch brand founded in 1988 in Geneva. The brand is renowned for producing classic, elegantly designed mechanical and quartz watches with a focus on affordable luxury, precision, and craftsmanship</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Frederique-Constant-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Frederique-Constant-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "frank-and-co",
+      "title": "Frank & Co",
+      "coord": [
+        0.6995,
+        0.5175
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Watches & Jewelry",
+      "desc": "<b>Unit 36</b><div>Frank &amp; co is a leading luxury jewelry brand in Indonesia established in 1996, renowned for high-quality natural diamond, gold, and wedding jewelry.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Frank-Co.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Frank-Co.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "forever-new",
+      "title": "Forever New",
+      "coord": [
+        0.6609,
+        0.3104
+      ],
+      "layer": "first",
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 31-33</b><div>Founded in Melbourne, Australia, Forever New is a global womenswear brand that creates clothing and accessories inspired by a sense of modern femininity and timeless glamour.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Forever-New.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Forever-New.jpg",
+      "color": "#ff0000",
+      "group": [
+        "group1"
+      ],
+      "type": "dot"
+    },
+    {
+      "id": "footlocker",
+      "title": "Footlocker",
+      "coord": [
+        0.402,
+        0.4764
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 112-113</b><div>Foot Locker is a leading global specialty athletic retailer that sells footwear, apparel, and accessories, primarily focusing on sneaker and youth culture.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Foot-Locker.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Foot-Locker.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "flying-tiger",
+      "title": "Flying Tiger",
+      "coord": [
+        0.5554,
+        0.643
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Lifestyle & Home Appliance",
+      "desc": "<b>Unit 10</b><div>Flying Tiger Copenhagen is a Danish variety store chain known for selling quirky, affordable, and designed products, ranging from home goods and stationery to toys and snacks.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Flying-Tiger-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Flying-Tiger-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "filosofia",
+      "title": "Filosofia",
+      "coord": [
+        0.4179,
+        0.3996
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Beauty & Wellness",
+      "desc": "<b>Unit 73-75</b><div>Discover Filosofia, the only store of its kind in Indonesia, home to 40+ niche fragrances curated from around the world. Find the fragrance that becomes your identity, only at Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Filosofia.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Filosofia.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "favourite-boutique",
+      "title": "Favourite Boutique",
+      "coord": [
+        0.7543,
+        0.5536
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 61</b><div><div>Favourite Boutique is a premium fashion retail store specializing in trendy women's clothing and accessories. It is known for its curated collections of high-end models with a noted location at Ciputra World Surabaya.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Favourite-Boutique-L2-U.61-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Favourite-Boutique-L2-U.61-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "everbest-studio",
+      "title": "Everbest Studio",
+      "coord": [
+        0.7404,
+        0.5862
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 63-67</b><div>Everbest is a prominent Singaporean-founded fashion brand established in 1979, specializing in high-quality shoes, handbags, and accessories for men and women</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Everbest.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Everbest.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "erafone",
+      "title": "Erafone",
+      "coord": [
+        0.3199,
+        0.4452
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 103B</b><div><div>Erafone is one of Indonesia's largest and most trusted multi-brand smartphone and consumer electronics retailers, part of the Erajaya Group.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Erafone.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Erafone.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "digimap",
+      "title": "Digimap",
+      "coord": [
+        0.477,
+        0.6487
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Gadget & Electronics",
+      "desc": "<b>Unit 12</b><div><div>Digimap is a leading Apple Premium Partner and Authorized Reseller in Indonesia. It offers a wide range of Apple products, and accessories along with authorized service and support.</div></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Digimap-1-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Digimap-1-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "denza",
+      "title": "Denza",
+      "coord": [
+        0.816,
+        0.8448
+      ],
+      "layer": [
+        "ground"
+      ],
+      "about": "Car Dealership",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Denza.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Denza.jpg",
+      "desc": "<b>Unit 32</b><div>DENZA is a premium electric vehicle brand presenting sophisticated design, advanced technology, and sustainable innovation for a modern luxury driving experience.</div>",
+      "color": "#00adff",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "deks-space",
+      "title": "DEKS Space",
+      "coord": [
+        0.3968,
+        0.2722
+      ],
+      "layer": "layer1",
+      "about": "Retail",
+      "desc": "<b>Unit 88-89</b><div>Deks Space is a creative hub at Ciputra World Surabaya, providing a collaborative platform for local brands, artists, and creative entrepreneurs to showcase their work.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_8456-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IMG_8456-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "d2i-store",
+      "title": "D2i Store",
+      "coord": [
+        0.769,
+        0.5947
+      ],
+      "layer": [
+        "layer1"
+      ],
+      "about": "Fashion & Accessories",
+      "desc": "<b>Unit 63</b><div>D2i Concept Store is a retail concept featuring selected collections from Indonesian designers, located in Ciputra World Surabaya.</div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/D2i.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/D2i.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "cuffed",
+      "title": "Cuffed",
+      "coord": [
+        0.4523,
+        0.4548
+      ],
+      "layer": [
+        "first"
+      ],
+      "about": "Jewelry & Accessories",
+      "desc": "<b>Unit 20</b><div><p data-pm-slice=\"1 1 []\"><strong>Cuffed</strong> is a permanent jewelry brand offering custom-fitted pieces designed for effortless everyday wear.</p></div>",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cuffed.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cuffed.jpg",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "id": "crocs",
+      "title": "Crocs",
+      "coord": [
+        0.8516,
+        0.4609
+      ],
+      "layer": "first",
+      "about": "Footwear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Crocs.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Crocs.jpg",
+      "desc": "<b>Unit 51</b><div>Crocs is a global footwear brand known for its lightweight, comfortable, and water-resistant foam shoes, featuring the iconic perforated design made from proprietary CrosliteTM material.</div>",
+      "color": "#ff0000",
+      "type": "dot",
+      "group": [
+        "group1"
+      ]
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "ikea",
+      "title": "IKEA",
+      "color": "#ff0000",
+      "zoom": "3.2445",
+      "layer": [
+        "underground"
+      ],
+      "desc": "<p><b>Unit 1-2</b></p><p>IKEA is a Swedish home furnishing retailer known for its functional Scandinavian design, flat-pack furniture, and affordable solutions. Discover inspiring home ideas in the showroom and enjoy authentic Swedish dishes at the IKEA Restaurant.</p>",
+      "coord": [
+        0.4894,
+        0.7166
+      ],
+      "about": "Lifestyle & Home Appliance",
+      "style": "store",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IKEA.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/IKEA.jpg",
+      "type": "dot",
+      "action": "tooltip"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "aigner",
+      "title": "Aigner",
+      "color": "#ff0000",
+      "zoom": "3.2468",
+      "layer": "ground",
+      "desc": "<b>Unit 2&nbsp;</b><div>AIGNER is a German luxury fashion brand founded in 1965 in Munich, renowned for its premium leather goods and elegant accessories that blend German precision with Italian craftsmanship.</div>",
+      "coord": [
+        0.6784,
+        0.8001
+      ],
+      "about": "Fashion & Accessories",
+      "style": "anchor",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Aigner-GF-U.2-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Aigner-GF-U.2-scaled-1.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "aldo",
+      "title": "Aldo",
+      "color": "#ff0000",
+      "zoom": "3.6576",
+      "layer": [
+        "first"
+      ],
+      "desc": "<b>7B</b><div>Aldo is a Canadian fashion brand offering stylish, on-trend footwear, handbags, and accessories worldwide, combining quality craftsmanship with accessible, contemporary designs.</div>",
+      "coord": [
+        0.6454,
+        0.6924
+      ],
+      "about": "Fashion & Accessories",
+      "style": "anchor",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Aldo.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Aldo.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "cnf",
+      "title": "C&F",
+      "color": "#ff0000",
+      "zoom": "2.9254",
+      "layer": [
+        "first"
+      ],
+      "desc": "<b>Unit 58</b><div>C&amp;F is a retailer of well-known beauty products with approximately 100 stores across Indonesia. C&amp;F brings you a curated range of beauty products including: Fragrances, Skincare, Make Up, Nail Color and Body Care.</div>",
+      "coord": [
+        0.8609,
+        0.7336
+      ],
+      "about": "Beauty & Wellness",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/CF.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/CF.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "calvin-klein",
+      "title": "Calvin Klein",
+      "zoom": "5.8252",
+      "layer": [
+        "first"
+      ],
+      "desc": "<b>Unit 9</b><div>Calvin Klein is a leading global fashion lifestyle brand founded in New York. The brand offers premium clothing, jeans, underwear, and accessories, positioning itself as a modern and inclusive brand focused on high-quality everyday essentials.</div>",
+      "coord": [
+        0.5851,
+        0.6299
+      ],
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Calvin-Klein.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Calvin-Klein.jpg",
+      "color": "#ff0000",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "converse",
+      "title": "Converse",
+      "color": "#ff0000",
+      "zoom": "9.6931",
+      "layer": [
+        "first"
+      ],
+      "desc": "<b>Unit 115</b><div>Converse is an American footwear brand founded in 1908, best known for its iconic Chuck Taylor All Star sneakers that blend classic design with timeless street style.</div>",
+      "coord": [
+        0.4884,
+        0.4406
+      ],
+      "about": "Sportswear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Converse.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Converse.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "cheval",
+      "title": "Cheval",
+      "color": "#ff0000",
+      "zoom": "10.582",
+      "layer": [
+        "layer1"
+      ],
+      "desc": "<b>Unit 90</b><div><div>Cheval is a lifestyle boutique located at Ciputra World Surabaya, offering a curated selection of women’s clothing and accessories that blend timeless style with everyday elegance.</div></div>",
+      "coord": [
+        0.4333,
+        0.2924
+      ],
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cheval-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cheval-scaled-1.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "batik-keris",
+      "title": "Batik Keris",
+      "color": "#ff0000",
+      "zoom": "7.7022",
+      "layer": [
+        "first"
+      ],
+      "desc": "<b>Unit 56</b><div>Batik Keris is an Indonesian heritage brand founded in 1946, known for its batik textiles, clothing, and handcrafted products inspired by Indonesia’s rich cultural traditions.</div>",
+      "coord": [
+        0.8739,
+        0.6539
+      ],
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Batik-Keris-1-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Batik-Keris-1-scaled-1.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "adidas",
+      "title": "Adidas",
+      "zoom": "8.7848",
+      "layer": [
+        "first"
+      ],
+      "desc": "<p><b>Unit 95</b></p><p>Adidas is a global sportswear brand known for its athletic footwear, apparel, and accessories, recognized by its iconic three-stripe logo and strong presence in sports and urban fashion.</p>",
+      "coord": [
+        0.3984,
+        0.304
+      ],
+      "about": "Sportswear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Adidas.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Adidas.jpg",
+      "type": "dot",
+      "color": "#ff0000"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "carolina-watch",
+      "title": "Carolina Watch",
+      "zoom": "8.7336",
+      "layer": [
+        "layer1"
+      ],
+      "desc": "<b>Unit 58</b><div><div>Carolina Watch is a retail store specializing in a wide range of watches and timepieces from various well-known brands, offering stylish and reliable options for everyday wear and special occasions.</div></div>",
+      "coord": [
+        0.7108,
+        0.4935
+      ],
+      "about": "Watches & Jewelry",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Carolina-Watch-L2-U.58-scaled-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Carolina-Watch-L2-U.58-scaled-1.jpg",
+      "color": "#ff0000",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "cole-haan",
+      "title": "Cole Haan",
+      "zoom": "7.4534",
+      "layer": "ground",
+      "desc": "<b>Unit 10</b><div>Cole Haan is an American lifestyle brand founded in 1928, renowned for its premium footwear, bags, and accessories that combine timeless craftsmanship with modern innovation.</div>",
+      "coord": [
+        0.5287,
+        0.6115
+      ],
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cole-Haan.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Cole-Haan.jpg",
+      "color": "#ff0000",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "azko",
+      "title": "Azko",
+      "color": "#ff0000",
+      "zoom": "11.6257",
+      "layer": [
+        "underground"
+      ],
+      "desc": "<span style=\"color: rgb(102, 102, 102); font-family: Poppins, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);\"><b>Unit 20-21</b><br></span><div><span style=\"background-color: rgb(255, 255, 255);\"><div style=\"\"><font color=\"#666666\" face=\"Poppins, Helvetica, Arial, sans-serif\">AZKO is a home improvement and lifestyle store offering a variety of practical tools, household essentials, and everyday solutions for modern living.</font></div></span></div>",
+      "coord": [
+        0.7192,
+        0.2588
+      ],
+      "about": "Lifestyle & Home Appliance",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Azko.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Azko.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "bags-city",
+      "title": "Bags City",
+      "color": "#ff0000",
+      "zoom": "9.2067",
+      "layer": "first",
+      "desc": "<p><b>Unit 102-103</b></p><p>Bags City is a prominent Indonesian retail company specializing in high-quality luggage, bags, and travel accessories. They offer premium brands such as Lojel, Thule, and Bagasi.</p>",
+      "coord": [
+        0.3445,
+        0.4981
+      ],
+      "about": "Travel & Luggage",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Bags-City.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Bags-City.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "birkenstock",
+      "title": "Birkenstock",
+      "color": "#ff0000",
+      "zoom": "8.7822",
+      "layer": "first",
+      "desc": "<b>Unit 100-101</b><div>Birkenstock is a German footwear brand founded in 1774, renowned for its ergonomic cork footbed sandals that combine timeless design, comfort, and craftsmanship.</div>",
+      "coord": [
+        0.3187,
+        0.4733
+      ],
+      "about": "Footwear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Birkenstock.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Birkenstock.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "coach",
+      "title": "Coach",
+      "color": "#ff0000",
+      "zoom": "8.7285",
+      "layer": [
+        "ground"
+      ],
+      "desc": "<b>Unit 7</b><div>Coach is an American luxury fashion brand founded in New York in 1941, known for its premium leather handbags, luggage, and accessories that combine timeless craftsmanship with modern style.</div>",
+      "coord": [
+        0.6126,
+        0.6058
+      ],
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Coach.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Coach.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "boss",
+      "title": "BOSS",
+      "color": "#ff0000",
+      "zoom": "7.4516",
+      "layer": [
+        "ground"
+      ],
+      "desc": "<b>Unit 35</b><div>BOSS is a renowned German fashion brand offering sophisticated menswear and womenswear, known for its modern tailoring, premium materials, and refined contemporary style.</div>",
+      "coord": [
+        0.7205,
+        0.574
+      ],
+      "about": "Fashion & Accessories",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Boss-1.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Boss-1.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "blibli",
+      "title": "Blibli",
+      "color": "#ff0000",
+      "zoom": "6.0205",
+      "layer": [
+        "layer1"
+      ],
+      "desc": "<p><b>Unit 96</b></p><p>Blibli Store is a prominent Indonesian omnichannel commerce platform (founded 2011) that integrates online shopping with physical retail stores, offering 100% original products.</p>",
+      "coord": [
+        0.4891,
+        0.4776
+      ],
+      "about": "Gadget & Electronics",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Blibli.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Blibli.jpg",
+      "type": "dot"
+    },
+    {
+      "group": [
+        "group1"
+      ],
+      "id": "asics",
+      "title": "Asics",
+      "color": "#ff0000",
+      "zoom": "5.3004",
+      "layer": "first",
+      "desc": "<p><b>Unit 15</b></p><p>ASICS is a Japanese sportswear brand, founded in 1949. Known for high-performance athletic footwear, apparel, and sports technology focused on comfort, innovation, and movement.</p>",
+      "coord": [
+        0.4731,
+        0.6459
+      ],
+      "about": "Sportswear",
+      "thumb": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Asics.jpg",
+      "image": "https://ciputraworldsurabaya.com/mall/wp-content/uploads/2026/02/Asics.jpg",
+      "type": "dot"
+    }
+  ],
+  "styles": [
+    {
+      "class": "anchor",
+      "svg": true,
+      "hover-color": "#666",
+      "base-color": "#888",
+      "active-color": "#555"
+    },
+    {
+      "class": "store",
+      "stroke-width": 1,
+      "hover-color": "#fafafa",
+      "active-color": "#ffffff",
+      "svg": true,
+      "active-stroke": "#6082cc",
+      "base-color": "#e8e8e8",
+      "hover-stroke": "#a0b5e2"
+    }
+  ],
+  "groups": [
+    {
+      "name": "group5",
+      "title": "AUTOMOTIVE"
+    },
+    {
+      "name": "group4",
+      "title": "INDULGE"
+    },
+    {
+      "name": "group3",
+      "title": "PLAY"
+    },
+    {
+      "name": "group2",
+      "title": "F&B"
+    },
+    {
+      "name": "group1",
+      "title": "SHOP"
+    }
+  ],
+  "breakpoints": [
+    {
+      "name": "all-screens",
+      "below": 8000,
+      "portrait": false,
+      "type": "list",
+      "column": 1,
+      "sidebar": 280,
+      "container": 600
+    },
+    {
+      "name": "tablet",
+      "below": 860,
+      "portrait": true,
+      "column": 3,
+      "sidebar": 200,
+      "container": 400,
+      "type": "grid"
+    },
+    {
+      "name": "mobile",
+      "below": 480,
+      "portrait": true,
+      "container": 460
+    }
+  ],
+  "filters": [
+    {
+      "id": "categories",
+      "type": "tags",
+      "name": "Categories",
+      "default": []
+    }
+  ]
+}

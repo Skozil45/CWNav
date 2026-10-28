@@ -1,0 +1,26 @@
+[
+  {
+    "floor": 0,
+    "zoom": 1,
+    "median_ms": 21.26,
+    "p95_ms": 25.57
+  },
+  {
+    "floor": 0,
+    "zoom": 4,
+    "median_ms": 18.55,
+    "p95_ms": 24.74
+  },
+  {
+    "floor": 1,
+    "zoom": 1,
+    "median_ms": 31.06,
+    "p95_ms": 40.27
+  },
+  {
+    "floor": 1,
+    "zoom": 4,
+    "median_ms": 25.87,
+    "p95_ms": 35.0
+  }
+]
