@@ -3,9 +3,9 @@
     "ground": 27,
     "first": 45
   },
-  "nodes": 421,
-  "corridor_edges": 440,
-  "connector_count": 7,
+  "nodes": 430,
+  "corridor_edges": 449,
+  "connector_count": 9,
   "scale_verified": false,
   "unsupported": {
     "ground:redback": "MPH/exterior access is separated from the mall corridor in the supplied plan; a connecting walkway is not established.",
@@ -157,7 +157,7 @@
         34.080000000000005
       ],
       "approach_node": null,
-      "status": "MSCP parking access is outside the mapped indoor corridor. The service/parking entrance is not established."
+      "status": "unsupported"
     },
     {
       "id": "ground:marketing-gallery-apartment",
@@ -196,7 +196,7 @@
         148.17000000000002
       ],
       "approach_node": null,
-      "status": "MPH/exterior access is separated from the mall corridor in the supplied plan; a connecting walkway is not established."
+      "status": "unsupported"
     },
     {
       "id": "ground:bowie",
@@ -953,32 +953,6 @@
       "status": "inferred approach"
     },
     {
-      "id": "ground:east-escalator",
-      "title": "East escalator (inferred)",
-      "floor": "ground",
-      "unit": "",
-      "category": "Escalators",
-      "marker_xy": [
-        281,
-        155
-      ],
-      "approach_node": "g-escalator",
-      "status": "inferred approach"
-    },
-    {
-      "id": "first:east-escalator",
-      "title": "East escalator (inferred)",
-      "floor": "first",
-      "unit": "",
-      "category": "Escalators",
-      "marker_xy": [
-        300,
-        160
-      ],
-      "approach_node": "f-escalator",
-      "status": "inferred approach"
-    },
-    {
       "id": "ground:east-toilets",
       "title": "East lobby toilets (map symbol)",
       "floor": "ground",
@@ -1161,8 +1135,86 @@
       "status": "inferred approach"
     },
     {
+      "id": "ground:memo-escalator",
+      "title": "Memo Paris - Laxmi Tailors escalator",
+      "floor": "ground",
+      "unit": "",
+      "category": "Escalators",
+      "marker_xy": [
+        156,
+        96
+      ],
+      "approach_node": "ground-memo-escalator-approach",
+      "status": "inferred approach"
+    },
+    {
+      "id": "first:memo-escalator",
+      "title": "Memo Paris - Laxmi Tailors escalator",
+      "floor": "first",
+      "unit": "",
+      "category": "Escalators",
+      "marker_xy": [
+        169,
+        111
+      ],
+      "approach_node": "first-memo-escalator-approach",
+      "status": "inferred approach"
+    },
+    {
+      "id": "ground:frank-escalator",
+      "title": "Frank & Co - Giordano escalator",
+      "floor": "ground",
+      "unit": "",
+      "category": "Escalators",
+      "marker_xy": [
+        297,
+        147
+      ],
+      "approach_node": "ground-frank-escalator-approach",
+      "status": "inferred approach"
+    },
+    {
+      "id": "first:east-escalator",
+      "title": "Frank & Co - Giordano escalator",
+      "floor": "first",
+      "unit": "",
+      "category": "Escalators",
+      "marker_xy": [
+        306,
+        160
+      ],
+      "approach_node": "f-escalator",
+      "status": "inferred approach"
+    },
+    {
+      "id": "ground:boss-escalator",
+      "title": "BOSS / information - Sociolla escalator",
+      "floor": "ground",
+      "unit": "",
+      "category": "Escalators",
+      "marker_xy": [
+        367,
+        180
+      ],
+      "approach_node": "ground-boss-escalator-approach",
+      "status": "inferred approach"
+    },
+    {
+      "id": "first:boss-escalator",
+      "title": "BOSS / information - Sociolla escalator",
+      "floor": "first",
+      "unit": "",
+      "category": "Escalators",
+      "marker_xy": [
+        369,
+        174
+      ],
+      "approach_node": "first-boss-escalator-approach",
+      "status": "inferred approach"
+    },
+    {
       "id": "ground:south-escalator",
-      "title": "South escalator (inferred)",
+      "title": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
       "floor": "ground",
       "unit": "",
       "category": "Escalators",
@@ -1175,7 +1227,7 @@
     },
     {
       "id": "first:south-escalator",
-      "title": "South escalator (inferred)",
+      "title": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
       "floor": "first",
       "unit": "",
       "category": "Escalators",
@@ -1188,7 +1240,7 @@
     },
     {
       "id": "ground:central-escalator",
-      "title": "Central escalator (inferred)",
+      "title": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
       "floor": "ground",
       "unit": "",
       "category": "Escalators",
@@ -1201,7 +1253,7 @@
     },
     {
       "id": "first:central-escalator",
-      "title": "Central escalator (inferred)",
+      "title": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
       "floor": "first",
       "unit": "",
       "category": "Escalators",
@@ -1213,5 +1265,52 @@
       "status": "inferred approach"
     }
   ],
-  "network_type": "shared_corridor_rails"
+  "network_type": "shared_corridor_rails",
+  "excluded_escalators": [
+    {
+      "floor": "ground",
+      "location": "Below Fore / CHAGEE",
+      "source_icon_xy": [
+        275,
+        153
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "ground",
+      "location": "Metro side near lift above unit 27",
+      "source_icon_xy": [
+        376,
+        147
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "ground",
+      "location": "Between H&M and Digimap",
+      "source_icon_xy": [
+        142,
+        187
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "first",
+      "location": "In front of Birkenstock",
+      "source_icon_xy": [
+        107,
+        142
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "first",
+      "location": "Below Hush Puppies toward MST Golf",
+      "source_icon_xy": [
+        344,
+        227
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    }
+  ]
 }

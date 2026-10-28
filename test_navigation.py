@@ -15,12 +15,12 @@ class NavigationTests(unittest.TestCase):
         self.assertEqual(self.m.route('bad','b'),([],math.inf))
 
     def test_cross_floor_uses_connector_cost(self):
-        path,cost = self.m.route('g-escalator','f-escalator')
-        self.assertEqual(path,['g-escalator','f-escalator'])
+        a,b='ground-central-escalator-approach','first-central-escalator-approach'
+        path,cost = self.m.route(a,b,'escalator')
+        self.assertEqual(path,[a,b])
         self.assertEqual(cost,12)
-        path,cost = self.m.route('g0','f-lacoste')
-        self.assertIn('g-escalator',path)
-        self.assertIn('f-escalator',path)
+        path,cost = self.m.route('g0','f-lacoste','escalator')
+        self.assertTrue(any((x,y) in self.m.connector_kinds for x,y in zip(path,path[1:])))
         self.assertGreater(cost,12)
 
     def test_buffer_boundary_and_filter(self):
@@ -82,7 +82,7 @@ class NavigationTests(unittest.TestCase):
     def test_transition_requires_nearby_connector(self):
         p=Player(self.m)
         self.assertFalse(p.transition())
-        p.node='g-escalator'
+        p.node='ground-central-escalator-approach'
         self.assertTrue(p.transition())
         self.assertEqual(p.floor,'first')
 
@@ -114,7 +114,8 @@ class NavigationTests(unittest.TestCase):
 
     def test_every_lift_and_escalator_transitions_both_ways(self):
         self.assertEqual(sum(c['kind']=='lift' for c in self.m.data['connectors']),4)
-        self.assertEqual(sum(c['kind']=='escalator' for c in self.m.data['connectors']),3)
+        self.assertEqual(sum(c['kind']=='escalator' for c in self.m.data['connectors']),5)
+
         for c in self.m.data['connectors']:
             p=Player(self.m)
             p.node=c['a']
@@ -142,6 +143,35 @@ class NavigationTests(unittest.TestCase):
         transitions=[self.m.connector_kinds.get((a,b)) for a,b in zip(path,path[1:])]
         self.assertIn('lift',transitions)
         self.assertNotIn('escalator',transitions)
+
+    def test_user_excluded_escalators_are_not_routable_facilities(self):
+        self.assertEqual(len(self.m.data['excluded_escalators']),5)
+        self.assertNotIn('ground:east-escalator',self.m.by_id)
+        self.assertNotIn(('g-escalator','f-escalator'),self.m.connector_kinds)
+        for excluded in self.m.data['excluded_escalators']:
+            self.assertFalse(any(p.category=='Escalators' and p.floor==excluded['floor']
+                                 and math.dist(p.xy,excluded['source_icon_xy'])<10 for p in self.m.places))
+        for node in ('g-escalator',):
+            player=Player(self.m)
+            player.node=node
+            self.assertIsNone(player.connector())
+            self.assertFalse(player.transition())
+            self.assertTrue(self.m.graph[node])
+        self.assertIn('first:east-escalator', self.m.by_id)
+
+    def test_five_requested_escalator_pairs(self):
+        expected = [('ground:memo-escalator','first:memo-escalator','user-confirmed'),
+                    ('ground:frank-escalator','first:east-escalator','user-confirmed'),
+                    ('ground:boss-escalator','first:boss-escalator','user-confirmed'),
+                    ('ground:south-escalator','first:south-escalator','inferred'),
+                    ('ground:central-escalator','first:central-escalator','inferred')]
+        for ground,first,source in expected:
+            a,b=self.m.by_id[ground].entrance,self.m.by_id[first].entrance
+            connection=next(c for c in self.m.data['connectors'] if c['a']==a and c['b']==b)
+            self.assertEqual(connection['pairing_source'],source)
+            self.assertFalse(connection['direction_verified'])
+            self.assertEqual(self.m.route(a,b,'escalator'),([a,b],12))
+            self.assertEqual(self.m.route(b,a,'escalator'),([b,a],12))
 
     def test_route_from_inside_edge(self):
         p=Player(self.m)
@@ -201,6 +231,79 @@ class NavigationTests(unittest.TestCase):
             self.assertEqual(p.node,next_node)
         self.assertEqual(p.floor,'first')
         self.assertEqual(p.route('f-lacoste'),(['f-lacoste'],0))
+
+    def test_connection_proximity_follows_walkway_across_junctions(self):
+        self.m.scale=1
+        self.m.nodes={key:{'floor':'ground','xy':xy} for key,xy in
+                      [('g0',(0,0)),('j',(1,0)),('k',(1,1)),('end',(2,1)),('wall',(2,1.1))]}
+        self.m.nodes['upper']={'floor':'first','xy':(2,1)}
+        self.m.graph={'g0':[('j',1)],'j':[('g0',1),('k',1)],'k':[('j',1),('end',1)],
+                      'end':[('k',1),('upper',12)],'upper':[('end',12)],'wall':[]}
+        connection={'a':'end','b':'upper','kind':'escalator'}
+        self.m.data['connectors']=[connection]
+        p=Player(self.m)
+        self.assertEqual(p.connector(),connection)  # Exactly 3 m through two junctions.
+        self.m.graph['g0']=[('j',1.01)]
+        self.assertIsNone(p.connector())
+        p.node='wall'
+        self.assertIsNone(p.connector())  # Close in straight-line distance, no walkway.
+
+    def test_giordano_branch_accepts_turn_before_and_after_junction(self):
+        for start,end,progress in (
+            ('first-corridor-584-283','first-corridor-584-320',17.7/18.5),
+            ('first-corridor-584-320','first-corridor-584-330',1.8/5)):
+            p=Player(self.m)
+            p.node,p.target,p.progress=start,end,progress
+            for _ in range(60):
+                before=p.xy
+                p.move(1,0,.05,6)
+                self.assertLessEqual(math.dist(before,p.xy)*self.m.scale,.3+1e-7)
+                self.assertTrue(any(line.distance(__import__('shapely').geometry.Point(p.xy))<1e-7
+                                    for a,b,line in self.m.edges if self.m.nodes[a]['floor']==p.floor))
+                if p.connector() is not None:
+                    break
+            self.assertGreater(p.xy[0],303)
+            self.assertEqual(p.connector()['name'],'Frank & Co - Giordano escalator')
+            self.assertTrue(p.transition())
+            self.assertEqual(p.node,'ground-frank-escalator-approach')
+
+    def test_walk_to_every_escalator_and_use_from_nearby(self):
+        for connection in self.m.data['connectors']:
+            if connection['kind']!='escalator':
+                continue
+            for end,other in ((connection['a'],connection['b']),(connection['b'],connection['a'])):
+                p=Player(self.m)
+                p.node='g0' if self.m.nodes[end]['floor']=='ground' else 'f0'
+                path,_=p.route(end)
+                for nxt in path[1:]:
+                    self.assertEqual(self.m.nodes[nxt]['floor'],p.floor)
+                    heading=None
+                    for dx,dy in ((1,0),(-1,0),(0,1),(0,-1),(1,1),(1,-1),(-1,1),(-1,-1)):
+                        probe=Player(self.m)
+                        probe.node=p.node
+                        probe.move(dx,dy,.00001)
+                        if probe.target==nxt:
+                            heading=(dx,dy)
+                            break
+                    self.assertIsNotNone(heading, f'No keyboard direction can select {p.node} -> {nxt}')
+                    for _ in range(1000):
+                        dx,dy=(self.m.nodes[nxt]['xy'][i]-p.xy[i] for i in range(2))
+                        p.move(*heading,min(.1,math.hypot(dx,dy)*self.m.scale/3))
+                        if p.node==nxt and p.target is None:
+                            break
+                    else:
+                        self.fail(f'Cannot walk to escalator {end}, segment {nxt}')
+                self.assertEqual(p.connector(),connection)
+                remaining=2.5
+                for a,b in reversed(list(zip(path,path[1:]))):
+                    length=math.dist(self.m.nodes[a]['xy'],self.m.nodes[b]['xy'])*self.m.scale
+                    if length>=remaining:
+                        p.node,p.target,p.progress=a,b,1-remaining/length
+                        break
+                    remaining-=length
+                self.assertEqual(p.connector(),connection,end)
+                self.assertTrue(p.transition(),end)
+                self.assertEqual(p.node,other)
 
 
 if __name__ == '__main__':

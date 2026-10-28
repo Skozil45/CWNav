@@ -312,18 +312,6 @@
     "offset_map_units": 0.0
   },
   {
-    "node": "g-escalator",
-    "requested_xy": [
-      281,
-      155
-    ],
-    "corridor_xy": [
-      281.0,
-      155.0
-    ],
-    "offset_map_units": 0.0
-  },
-  {
     "node": "ground-east-toilets-approach",
     "requested_xy": [
       105,
@@ -408,6 +396,42 @@
     "offset_map_units": 0.0
   },
   {
+    "node": "ground-memo-escalator-approach",
+    "requested_xy": [
+      156,
+      96
+    ],
+    "corridor_xy": [
+      156.0,
+      96.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
+    "node": "ground-frank-escalator-approach",
+    "requested_xy": [
+      297,
+      147
+    ],
+    "corridor_xy": [
+      297.0,
+      147.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
+    "node": "ground-boss-escalator-approach",
+    "requested_xy": [
+      367,
+      180
+    ],
+    "corridor_xy": [
+      367.0,
+      180.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
     "node": "ground-south-escalator-approach",
     "requested_xy": [
       247,
@@ -440,6 +464,18 @@
     "corridor_xy": [
       239.0,
       164.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
+    "node": "g-escalator",
+    "requested_xy": [
+      281.0,
+      155.0
+    ],
+    "corridor_xy": [
+      281.0,
+      155.0
     ],
     "offset_map_units": 0.0
   },
@@ -972,18 +1008,6 @@
     "offset_map_units": 0.0
   },
   {
-    "node": "f-escalator",
-    "requested_xy": [
-      300,
-      160
-    ],
-    "corridor_xy": [
-      300.0,
-      160.0
-    ],
-    "offset_map_units": 0.0
-  },
-  {
     "node": "first-north-toilets-approach",
     "requested_xy": [
       403,
@@ -1064,6 +1088,42 @@
     "corridor_xy": [
       390.0,
       151.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
+    "node": "first-memo-escalator-approach",
+    "requested_xy": [
+      169,
+      111
+    ],
+    "corridor_xy": [
+      169.0,
+      111.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
+    "node": "f-escalator",
+    "requested_xy": [
+      306,
+      160
+    ],
+    "corridor_xy": [
+      306.0,
+      160.0
+    ],
+    "offset_map_units": 0.0
+  },
+  {
+    "node": "first-boss-escalator-approach",
+    "requested_xy": [
+      369,
+      174
+    ],
+    "corridor_xy": [
+      369.0,
+      174.0
     ],
     "offset_map_units": 0.0
   },

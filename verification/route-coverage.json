@@ -5,7 +5,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 197.96,
+        "approx_meters": 218.87,
         "connections": [
           "escalator"
         ]
@@ -19,7 +19,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 197.96,
+        "approx_meters": 218.87,
         "connections": [
           "escalator"
         ]
@@ -59,17 +59,17 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 81.48,
+        "approx_meters": 81.47,
         "connections": []
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 81.48,
+        "approx_meters": 81.47,
         "connections": []
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 81.48,
+        "approx_meters": 81.47,
         "connections": []
       }
     }
@@ -80,7 +80,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 148.59,
+        "approx_meters": 176.2,
         "connections": [
           "escalator"
         ]
@@ -94,7 +94,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 148.59,
+        "approx_meters": 176.2,
         "connections": [
           "escalator"
         ]
@@ -128,21 +128,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 217.08,
+        "approx_meters": 196.95,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 282.19,
+        "approx_meters": 282.39,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 217.08,
+        "approx_meters": 196.95,
         "connections": [
           "escalator"
         ]
@@ -371,7 +371,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 106.66,
+        "approx_meters": 134.27,
         "connections": [
           "escalator"
         ]
@@ -385,7 +385,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 106.66,
+        "approx_meters": 134.27,
         "connections": [
           "escalator"
         ]
@@ -419,7 +419,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 221.53,
+        "approx_meters": 210.6,
         "connections": [
           "escalator"
         ]
@@ -433,7 +433,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 221.53,
+        "approx_meters": 210.6,
         "connections": [
           "escalator"
         ]
@@ -446,7 +446,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 103.66,
+        "approx_meters": 131.27,
         "connections": [
           "escalator"
         ]
@@ -460,7 +460,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 103.66,
+        "approx_meters": 131.27,
         "connections": [
           "escalator"
         ]
@@ -500,7 +500,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 133.08,
+        "approx_meters": 160.69,
         "connections": [
           "escalator"
         ]
@@ -514,7 +514,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 133.08,
+        "approx_meters": 160.69,
         "connections": [
           "escalator"
         ]
@@ -527,21 +527,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 179.47,
+        "approx_meters": 207.08,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 307.38,
+        "approx_meters": 307.37,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 179.47,
+        "approx_meters": 207.08,
         "connections": [
           "escalator"
         ]
@@ -575,7 +575,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 240.45,
+        "approx_meters": 200.5,
         "connections": [
           "escalator"
         ]
@@ -589,7 +589,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 240.45,
+        "approx_meters": 200.5,
         "connections": [
           "escalator"
         ]
@@ -629,21 +629,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 190.18,
+        "approx_meters": 217.79,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 318.09,
+        "approx_meters": 318.08,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 190.18,
+        "approx_meters": 217.79,
         "connections": [
           "escalator"
         ]
@@ -731,21 +731,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 183.9,
+        "approx_meters": 211.51,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 289.88,
+        "approx_meters": 289.87,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 183.9,
+        "approx_meters": 211.51,
         "connections": [
           "escalator"
         ]
@@ -779,17 +779,17 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 165.5,
+        "approx_meters": 165.49,
         "connections": []
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 165.5,
+        "approx_meters": 165.49,
         "connections": []
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 165.5,
+        "approx_meters": 165.49,
         "connections": []
       }
     }
@@ -821,7 +821,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 142.16,
+        "approx_meters": 169.77,
         "connections": [
           "escalator"
         ]
@@ -835,7 +835,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 142.16,
+        "approx_meters": 169.77,
         "connections": [
           "escalator"
         ]
@@ -848,21 +848,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 228.13,
+        "approx_meters": 224.57,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 309.81,
+        "approx_meters": 310.0,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 228.13,
+        "approx_meters": 224.57,
         "connections": [
           "escalator"
         ]
@@ -875,7 +875,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 255.04,
+        "approx_meters": 215.09,
         "connections": [
           "escalator"
         ]
@@ -889,7 +889,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 255.04,
+        "approx_meters": 215.09,
         "connections": [
           "escalator"
         ]
@@ -929,7 +929,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 233.67,
+        "approx_meters": 177.57,
         "connections": [
           "escalator"
         ]
@@ -943,7 +943,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 233.67,
+        "approx_meters": 177.57,
         "connections": [
           "escalator"
         ]
@@ -956,7 +956,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 98.66,
+        "approx_meters": 126.27,
         "connections": [
           "escalator"
         ]
@@ -970,7 +970,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 98.66,
+        "approx_meters": 126.27,
         "connections": [
           "escalator"
         ]
@@ -983,7 +983,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 116.69,
+        "approx_meters": 144.3,
         "connections": [
           "escalator"
         ]
@@ -997,7 +997,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 116.69,
+        "approx_meters": 144.3,
         "connections": [
           "escalator"
         ]
@@ -1058,7 +1058,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 126.07,
+        "approx_meters": 153.68,
         "connections": [
           "escalator"
         ]
@@ -1072,7 +1072,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 126.07,
+        "approx_meters": 153.68,
         "connections": [
           "escalator"
         ]
@@ -1085,7 +1085,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 178.56,
+        "approx_meters": 186.64,
         "connections": [
           "escalator"
         ]
@@ -1099,7 +1099,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 178.56,
+        "approx_meters": 186.64,
         "connections": [
           "escalator"
         ]
@@ -1160,7 +1160,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 114.11,
+        "approx_meters": 141.72,
         "connections": [
           "escalator"
         ]
@@ -1174,7 +1174,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 114.11,
+        "approx_meters": 141.72,
         "connections": [
           "escalator"
         ]
@@ -1208,17 +1208,17 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 71.06,
+        "approx_meters": 77.63,
         "connections": []
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 71.06,
+        "approx_meters": 77.63,
         "connections": []
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 71.06,
+        "approx_meters": 77.63,
         "connections": []
       }
     }
@@ -1229,7 +1229,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 137.16,
+        "approx_meters": 164.77,
         "connections": [
           "escalator"
         ]
@@ -1243,7 +1243,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 137.16,
+        "approx_meters": 164.77,
         "connections": [
           "escalator"
         ]
@@ -1331,7 +1331,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 100.17,
+        "approx_meters": 127.78,
         "connections": [
           "escalator"
         ]
@@ -1345,7 +1345,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 100.17,
+        "approx_meters": 127.78,
         "connections": [
           "escalator"
         ]
@@ -1427,21 +1427,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 172.05,
+        "approx_meters": 199.66,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 266.73,
+        "approx_meters": 266.72,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 172.05,
+        "approx_meters": 199.66,
         "connections": [
           "escalator"
         ]
@@ -1475,7 +1475,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 119.82,
+        "approx_meters": 147.43,
         "connections": [
           "escalator"
         ]
@@ -1489,7 +1489,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 119.82,
+        "approx_meters": 147.43,
         "connections": [
           "escalator"
         ]
@@ -1502,21 +1502,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 208.81,
+        "approx_meters": 236.42,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 327.13,
+        "approx_meters": 327.33,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 208.81,
+        "approx_meters": 236.42,
         "connections": [
           "escalator"
         ]
@@ -1529,7 +1529,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 121.19,
+        "approx_meters": 148.8,
         "connections": [
           "escalator"
         ]
@@ -1543,7 +1543,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 121.19,
+        "approx_meters": 148.8,
         "connections": [
           "escalator"
         ]
@@ -1583,21 +1583,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 232.65,
+        "approx_meters": 212.52,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 297.76,
+        "approx_meters": 297.96,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 232.65,
+        "approx_meters": 212.52,
         "connections": [
           "escalator"
         ]
@@ -1610,7 +1610,7 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 244.52,
+        "approx_meters": 180.08,
         "connections": [
           "escalator"
         ]
@@ -1624,7 +1624,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 244.52,
+        "approx_meters": 180.08,
         "connections": [
           "escalator"
         ]
@@ -1733,17 +1733,17 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 141.06,
+        "approx_meters": 141.05,
         "connections": []
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 141.06,
+        "approx_meters": 141.05,
         "connections": []
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 141.06,
+        "approx_meters": 141.05,
         "connections": []
       }
     }
@@ -1769,54 +1769,6 @@
       "escalator": {
         "reachable": true,
         "approx_meters": 95.15,
-        "connections": [
-          "escalator"
-        ]
-      }
-    }
-  },
-  {
-    "id": "ground:east-escalator",
-    "title": "East escalator (inferred)",
-    "modes": {
-      "any": {
-        "reachable": true,
-        "approx_meters": 51.45,
-        "connections": []
-      },
-      "lift": {
-        "reachable": true,
-        "approx_meters": 51.45,
-        "connections": []
-      },
-      "escalator": {
-        "reachable": true,
-        "approx_meters": 51.45,
-        "connections": []
-      }
-    }
-  },
-  {
-    "id": "first:east-escalator",
-    "title": "East escalator (inferred)",
-    "modes": {
-      "any": {
-        "reachable": true,
-        "approx_meters": 63.45,
-        "connections": [
-          "escalator"
-        ]
-      },
-      "lift": {
-        "reachable": true,
-        "approx_meters": 281.53,
-        "connections": [
-          "lift"
-        ]
-      },
-      "escalator": {
-        "reachable": true,
-        "approx_meters": 63.45,
         "connections": [
           "escalator"
         ]
@@ -1955,21 +1907,21 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 235.62,
+        "approx_meters": 248.09,
         "connections": [
           "escalator"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 333.33,
+        "approx_meters": 333.53,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 235.62,
+        "approx_meters": 248.09,
         "connections": [
           "escalator"
         ]
@@ -2104,7 +2056,7 @@
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 270.09,
+        "approx_meters": 264.93,
         "connections": [
           "escalator"
         ]
@@ -2117,17 +2069,17 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 217.68,
+        "approx_meters": 217.67,
         "connections": []
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 217.68,
+        "approx_meters": 217.67,
         "connections": []
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 217.68,
+        "approx_meters": 217.67,
         "connections": []
       }
     }
@@ -2138,21 +2090,165 @@
     "modes": {
       "any": {
         "reachable": true,
-        "approx_meters": 212.11,
+        "approx_meters": 225.67,
         "connections": [
-          "escalator"
+          "lift"
         ]
       },
       "lift": {
         "reachable": true,
-        "approx_meters": 225.68,
+        "approx_meters": 225.67,
         "connections": [
           "lift"
         ]
       },
       "escalator": {
         "reachable": true,
-        "approx_meters": 212.11,
+        "approx_meters": 233.01,
+        "connections": [
+          "escalator"
+        ]
+      }
+    }
+  },
+  {
+    "id": "ground:memo-escalator",
+    "title": "Memo Paris - Laxmi Tailors escalator",
+    "modes": {
+      "any": {
+        "reachable": true,
+        "approx_meters": 147.08,
+        "connections": []
+      },
+      "lift": {
+        "reachable": true,
+        "approx_meters": 147.08,
+        "connections": []
+      },
+      "escalator": {
+        "reachable": true,
+        "approx_meters": 147.08,
+        "connections": []
+      }
+    }
+  },
+  {
+    "id": "first:memo-escalator",
+    "title": "Memo Paris - Laxmi Tailors escalator",
+    "modes": {
+      "any": {
+        "reachable": true,
+        "approx_meters": 159.08,
+        "connections": [
+          "escalator"
+        ]
+      },
+      "lift": {
+        "reachable": true,
+        "approx_meters": 332.05,
+        "connections": [
+          "lift"
+        ]
+      },
+      "escalator": {
+        "reachable": true,
+        "approx_meters": 159.08,
+        "connections": [
+          "escalator"
+        ]
+      }
+    }
+  },
+  {
+    "id": "ground:frank-escalator",
+    "title": "Frank & Co - Giordano escalator",
+    "modes": {
+      "any": {
+        "reachable": true,
+        "approx_meters": 73.06,
+        "connections": []
+      },
+      "lift": {
+        "reachable": true,
+        "approx_meters": 73.06,
+        "connections": []
+      },
+      "escalator": {
+        "reachable": true,
+        "approx_meters": 73.06,
+        "connections": []
+      }
+    }
+  },
+  {
+    "id": "first:east-escalator",
+    "title": "Frank & Co - Giordano escalator",
+    "modes": {
+      "any": {
+        "reachable": true,
+        "approx_meters": 85.06,
+        "connections": [
+          "escalator"
+        ]
+      },
+      "lift": {
+        "reachable": true,
+        "approx_meters": 287.53,
+        "connections": [
+          "lift"
+        ]
+      },
+      "escalator": {
+        "reachable": true,
+        "approx_meters": 85.06,
+        "connections": [
+          "escalator"
+        ]
+      }
+    }
+  },
+  {
+    "id": "ground:boss-escalator",
+    "title": "BOSS / information - Sociolla escalator",
+    "modes": {
+      "any": {
+        "reachable": true,
+        "approx_meters": 171.7,
+        "connections": []
+      },
+      "lift": {
+        "reachable": true,
+        "approx_meters": 171.7,
+        "connections": []
+      },
+      "escalator": {
+        "reachable": true,
+        "approx_meters": 171.7,
+        "connections": []
+      }
+    }
+  },
+  {
+    "id": "first:boss-escalator",
+    "title": "BOSS / information - Sociolla escalator",
+    "modes": {
+      "any": {
+        "reachable": true,
+        "approx_meters": 183.7,
+        "connections": [
+          "escalator"
+        ]
+      },
+      "lift": {
+        "reachable": true,
+        "approx_meters": 274.97,
+        "connections": [
+          "lift"
+        ]
+      },
+      "escalator": {
+        "reachable": true,
+        "approx_meters": 183.7,
         "connections": [
           "escalator"
         ]
@@ -2161,7 +2257,7 @@
   },
   {
     "id": "ground:south-escalator",
-    "title": "South escalator (inferred)",
+    "title": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
     "modes": {
       "any": {
         "reachable": true,
@@ -2182,7 +2278,7 @@
   },
   {
     "id": "first:south-escalator",
-    "title": "South escalator (inferred)",
+    "title": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
     "modes": {
       "any": {
         "reachable": true,
@@ -2209,7 +2305,7 @@
   },
   {
     "id": "ground:central-escalator",
-    "title": "Central escalator (inferred)",
+    "title": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
     "modes": {
       "any": {
         "reachable": true,
@@ -2230,7 +2326,7 @@
   },
   {
     "id": "first:central-escalator",
-    "title": "Central escalator (inferred)",
+    "title": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
     "modes": {
       "any": {
         "reachable": true,

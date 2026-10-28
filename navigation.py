@@ -158,6 +158,8 @@ class Model:
 
 
 class Player:
+    connection_radius = 3.0
+    turn_radius = 2.0
     def __init__(self, model):
         self.model = model
         self.node = model.data['start']
@@ -203,6 +205,30 @@ class Player:
             a, b = self.model.nodes[self.node]['xy'], self.model.nodes[self.target]['xy']
             length = math.dist(a, b)
             alignment = ((b[0]-a[0])*dx + (b[1]-a[1])*dy) / length
+            turns = []
+            for junction, distance, forward_to_junction in (
+                    (self.node, self.progress*length, False),
+                    (self.target, (1-self.progress)*length, True)):
+                if abs(alignment) >= .35 or distance*self.model.scale > self.turn_radius:
+                    continue
+                origin = self.model.nodes[junction]['xy']
+                for branch,_ in self.model.graph[junction]:
+                    if branch in (self.node,self.target) or self.model.nodes[branch]['floor'] != self.floor:
+                        continue
+                    end = self.model.nodes[branch]['xy']
+                    heading = ((end[0]-origin[0])*dx+(end[1]-origin[1])*dy)/math.dist(origin,end)
+                    if heading > max(.35, abs(alignment)+.15):
+                        turns.append((heading,-distance,junction,branch,forward_to_junction))
+            if turns:
+                _, negative_distance, junction, branch, forward_to_junction = max(turns)
+                distance = -negative_distance
+                amount = min(remaining,distance)
+                self.progress += amount/length*(1 if forward_to_junction else -1)
+                remaining -= amount
+                if amount >= distance-1e-8:
+                    self.node,self.target,self.progress = junction,branch,0
+                    continue
+                break
             if abs(alignment) < .2:
                 break
             forward = alignment > 0
@@ -227,9 +253,30 @@ class Player:
                     (path2, cost2 + (1-self.progress) * length)], key=lambda x: x[1])
 
     def connector(self):
-        nearby = {key for key in (self.node,self.target) if key is not None
-                  and math.dist(self.xy,self.model.nodes[key]['xy'])*self.model.scale <= 1}
-        return next((c for c in self.model.data['connectors'] if nearby.intersection((c['a'],c['b']))), None)
+        distances = {self.node: 0.0}
+        if self.target is not None:
+            length = math.dist(self.model.nodes[self.node]['xy'],self.model.nodes[self.target]['xy'])*self.model.scale
+            distances = {self.node:self.progress*length, self.target:(1-self.progress)*length}
+        queue = []
+        for node, distance in distances.items():
+            heappush(queue,(distance,node))
+        while queue:
+            distance,node = heappop(queue)
+            if distance > self.connection_radius + 1e-8:
+                break
+            if distance != distances[node]:
+                continue
+            for connector in self.model.data['connectors']:
+                if node in (connector['a'],connector['b']):
+                    return connector
+            for other,weight in self.model.graph[node]:
+                if self.model.nodes[other]['floor'] != self.floor:
+                    continue
+                candidate = distance+weight
+                if candidate <= self.connection_radius+1e-8 and candidate < distances.get(other,math.inf):
+                    distances[other]=candidate
+                    heappush(queue,(candidate,other))
+        return None
 
     def transition(self):
         connector = self.connector()

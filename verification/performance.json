@@ -2,25 +2,25 @@
   {
     "floor": 0,
     "zoom": 1,
-    "median_ms": 21.26,
-    "p95_ms": 25.57
+    "median_ms": 20.78,
+    "p95_ms": 25.03
   },
   {
     "floor": 0,
     "zoom": 4,
-    "median_ms": 18.55,
-    "p95_ms": 24.74
+    "median_ms": 5.03,
+    "p95_ms": 7.11
   },
   {
     "floor": 1,
     "zoom": 1,
-    "median_ms": 31.06,
-    "p95_ms": 40.27
+    "median_ms": 25.6,
+    "p95_ms": 27.11
   },
   {
     "floor": 1,
     "zoom": 4,
-    "median_ms": 25.87,
-    "p95_ms": 35.0
+    "median_ms": 6.55,
+    "p95_ms": 7.63
   }
 ]

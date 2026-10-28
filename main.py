@@ -2,11 +2,10 @@
 import math
 import sys
 import time
-import textwrap
 import xml.etree.ElementTree as ET
 
-from PySide6.QtCore import Qt, QTimer, QPointF, QRectF
-from PySide6.QtGui import QColor, QPainter, QPainterPath, QPen, QBrush, QImage, QPixmap, QFont
+from PySide6.QtCore import Qt, QTimer, QPoint, QPointF, QRectF
+from PySide6.QtGui import QColor, QPainter, QPainterPath, QPen, QBrush, QImage, QPixmap, QFont, QFontMetricsF, QRegion
 from PySide6.QtSvg import QSvgRenderer
 from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
     QHBoxLayout, QLabel, QLineEdit, QListWidget, QListWidgetItem, QPushButton,
@@ -14,6 +13,7 @@ from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
     QMessageBox, QScrollArea, QAbstractSpinBox, QGraphicsPixmapItem)
 
 from navigation import ROOT, FLOORS, Model, Player
+from label_layout import SCALE, shop_regions, fit_label, pixel_box
 
 ACCENT = '#00695c'
 
@@ -53,7 +53,8 @@ class MapView(QGraphicsView):
                 item.hide()
         if floor not in self.floor_items:
             filename = 'ground-floor.svg' if floor == 'ground' else '1st-floor.svg'
-            renderer = QSvgRenderer(str(ROOT / 'extracted-maps' / filename))
+            display_filename = filename.replace('.svg', '-no-units.svg')
+            renderer = QSvgRenderer(str(ROOT / 'extracted-maps' / display_filename))
             if not renderer.isValid():
                 raise ValueError(f'Invalid SVG: {filename}')
             # Render once at explicit bounds; Qt SVG item caching distorts this artwork.
@@ -76,8 +77,8 @@ class MapView(QGraphicsView):
                     element.set('id', f'shop-{index}')
                     shop_ids.append(f'shop-{index}')
             shop_renderer = QSvgRenderer(ET.tostring(structure))
-            shop_bounds = [shop_renderer.boundsOnElement(key) for key in shop_ids]
-            self.shop_labels[floor] = self.make_shop_labels(floor, shop_bounds)
+            regions = shop_regions(shop_renderer, shop_ids)
+            self.shop_labels[floor] = self.make_shop_labels(floor, regions)
             for element in structure.iter():
                 if element.tag.rsplit('}', 1)[-1] in ('path', 'rect', 'polygon', 'polyline', 'circle', 'ellipse', 'text', 'image', 'use', 'line'):
                     if element.get('fill') in ('#7c7e70', '#697884'):
@@ -115,34 +116,41 @@ class MapView(QGraphicsView):
         self.setSceneRect(QRectF(0, 0, 420, 300))
         self.reset_view()
 
-    def make_shop_labels(self, floor, bounds):
+    def make_shop_labels(self, floor, regions):
+        artwork = self.floor_items[floor].pixmap().toImage()
+        font = QFont('Segoe UI', 24, QFont.Weight.DemiBold)
+        metrics = QFontMetricsF(font)
         groups = {}
         for place in self.window.model.places:
             if place.floor != floor or place.category not in ('Stores', 'Dining'):
                 continue
-            point = QPointF(*place.xy)
-            candidates = [i for i, rect in enumerate(bounds) if rect.contains(point)]
-            # Bounds matching is inferred; retain the directory position when no shop matches.
-            key = min(candidates, key=lambda i: bounds[i].width()*bounds[i].height()) if candidates else place.id
+            point = QPoint(round(place.xy[0]*SCALE), round(place.xy[1]*SCALE))
+            candidates = [i for i, region in enumerate(regions) if region.contains(point)]
+            # Source-marker matches remain inferred, even with silhouette containment.
+            key = min(candidates, key=lambda i: regions[i].boundingRect().width()*regions[i].boundingRect().height()) if candidates else place.id
             groups.setdefault(key, []).append(place)
         labels = []
         for key, places in groups.items():
-            rect = bounds[key] if isinstance(key, int) else QRectF(places[0].xy[0]-6, places[0].xy[1]-3, 12, 6)
+            region = regions[key] if isinstance(key, int) else QRegion(pixel_box(QPointF(*places[0].xy), 12, 6))
             title = ' / '.join(p.title for p in places)
-            width = max(3, min(30, rect.width() - 1))
-            caption = '\n'.join(textwrap.wrap(title, width=max(5, int(width / 1.1)), break_long_words=False))
-            text = self.scene().addSimpleText(caption, QFont('Segoe UI', 20))
-            text.setBrush(QBrush(QColor('#203b32')))
+            path, scale, center = fit_label(title, region, font, metrics, places[0].xy)
+            text = self.scene().addPath(path)
             size = text.boundingRect()
-            scale = min(.12, width / max(1, size.width()), max(2, rect.height()-1) / max(1, size.height()))
             text.setScale(scale)
             box = QRectF(0, 0, size.width()*scale+.6, size.height()*scale+.4)
             label = self.scene().addRect(box, QPen(Qt.PenStyle.NoPen), QBrush(Qt.BrushStyle.NoBrush))
-            label.setPos(rect.center() - box.center())
+            label.setPos(center - box.center())
             label.setZValue(5)
-            label.setToolTip(title + '\nPosition inferred from the source map and directory')
+            units = ', '.join(p.unit for p in places if p.unit)
+            label.setToolTip(title + (f'\nUnit {units}' if units else '') + '\nPosition inferred from the source map and directory')
+            samples = [artwork.pixelColor(max(0, min(artwork.width()-1, int((center.x()+dx)*10))),
+                                          max(0, min(artwork.height()-1, int((center.y()+dy)*10)))).lightnessF()
+                       for dx, dy in ((0,0),(-1,-1),(1,1),(-1,1),(1,-1))]
+            label.setData(0, sorted(samples)[2] < .55)
+            label.setData(1, region)
+            label.setData(2, isinstance(key, int))
             text.setParentItem(label)
-            text.setPos(.3, .2)
+            text.setPos(.3-size.left()*scale, .2-size.top()*scale)
             labels.append(label)
         return labels
 
@@ -163,7 +171,9 @@ class MapView(QGraphicsView):
             self.keys.add(event.key())
             event.accept()
         elif event.key() == Qt.Key.Key_E:
-            self.window.transition()
+            if not event.isAutoRepeat():
+                self.window.transition()
+            event.accept()
         else:
             super().keyPressEvent(event)
 
@@ -239,6 +249,10 @@ class MapView(QGraphicsView):
         self.structure_items[self.window.viewed_floor].setVisible(visible)
         for item in self.shop_labels[self.window.viewed_floor]:
             item.setVisible(visible)
+            light_text = self.window.map_picture.isChecked() and item.data(0)
+            text = item.childItems()[0]
+            text.setBrush(QBrush(QColor('#ffffff' if light_text else '#20332c')))
+            text.setPen(QPen(QColor('#20332c' if light_text else '#ffffff'), .35))
         if self.network_item is not None:
             self.network_item.setVisible(visible)
         for item in self.overlay:
@@ -395,7 +409,7 @@ class Window(QMainWindow):
         speed_row.addWidget(self.speed)
         speed_row.addStretch()
         map_layout.addLayout(speed_row)
-        map_layout.addWidget(self.label('Click map, then WASD / arrows to walk. Drag to pan; scroll to zoom.\nTeal: player and route  ·  Rust: destination  ·  Purple: inferred floor connector'))
+        map_layout.addWidget(self.label('WASD / arrows to walk. Drag to pan; scroll to zoom. E: change floor within ≈ 3 m along the walkway.\nTeal: player and route  ·  Rust: destination  ·  Purple: floor connector'))
         splitter.addWidget(map_panel)
         splitter.setSizes([330,1000])
         self.setCentralWidget(root)
@@ -473,6 +487,8 @@ class Window(QMainWindow):
 
     def transition(self):
         if self.player.transition():
+            self.view.keys.clear()
+            self.held_direction = (0,0)
             self.show_player()
             self.refresh()
 
@@ -517,7 +533,7 @@ class Window(QMainWindow):
                     message = f'{p.title}\nRemaining ≈ {remaining:.1f} m · Initial ≈ {total:.1f} m\nEntrance and distance are approximate.'
                     transitions = [c['name'] for c in self.model.data['connectors'] if any({a,b}=={c['a'],c['b']} for a,b in zip(path,path[1:]))]
                     if transitions:
-                        message += '\nVia '+', '.join(transitions)+'. Press E at connector.'
+                        message += '\nVia '+', '.join(transitions)+'. Press E within ≈ 3 m along the walkway.'
             self.route_label.setText(message)
         else:
             self.route_label.setText('Choose a destination to plan a route.\nRoutes reuse the shared corridor rails.')
@@ -539,9 +555,10 @@ class Window(QMainWindow):
                 self.nearby_list.addItem(item)
             self.last_results = rows
         self.near_status.setText(f'{FLOORS[self.player.floor]} · {len(results)} results within ≈ {radius} m')
-        self.cross.setEnabled(self.player.connector() is not None)
         connector = self.player.connector()
+        self.cross.setEnabled(connector is not None)
         self.cross.setText(f"Use {connector.get('kind','escalator')} (E)" if connector else 'Use floor connection (E)')
+        self.cross.setToolTip((connector['name']+'\n' if connector else '') + 'Available within approximately 3 m along the connected walkway. Press E or click to change floor.')
         x,y = self.player.xy
         self.position_label.setText(f'Player: {FLOORS[self.player.floor]} · ({x:.1f}, {y:.1f}) map units   |   Viewing: {FLOORS[self.viewed_floor]}')
         self.view.redraw(path,results,radius)

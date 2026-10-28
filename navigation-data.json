@@ -188,13 +188,6 @@
         173.0
       ]
     },
-    "g-escalator": {
-      "floor": "ground",
-      "xy": [
-        281.0,
-        155.0
-      ]
-    },
     "ground-east-toilets-approach": {
       "floor": "ground",
       "xy": [
@@ -244,6 +237,27 @@
         147.0
       ]
     },
+    "ground-memo-escalator-approach": {
+      "floor": "ground",
+      "xy": [
+        156.0,
+        96.0
+      ]
+    },
+    "ground-frank-escalator-approach": {
+      "floor": "ground",
+      "xy": [
+        297.0,
+        147.0
+      ]
+    },
+    "ground-boss-escalator-approach": {
+      "floor": "ground",
+      "xy": [
+        367.0,
+        180.0
+      ]
+    },
     "ground-south-escalator-approach": {
       "floor": "ground",
       "xy": [
@@ -263,6 +277,13 @@
       "xy": [
         239.0,
         164.0
+      ]
+    },
+    "g-escalator": {
+      "floor": "ground",
+      "xy": [
+        281.0,
+        155.0
       ]
     },
     "ground-corridor-170-298": {
@@ -461,18 +482,11 @@
         97.0
       ]
     },
-    "ground-corridor-320-191": {
+    "ground-corridor-312-193": {
       "floor": "ground",
       "xy": [
-        160.0,
-        95.5
-      ]
-    },
-    "ground-corridor-325-186": {
-      "floor": "ground",
-      "xy": [
-        162.5,
-        93.0
+        156.0,
+        96.5
       ]
     },
     "ground-corridor-293-223": {
@@ -550,6 +564,20 @@
       "xy": [
         181.0,
         158.5
+      ]
+    },
+    "ground-corridor-323-188": {
+      "floor": "ground",
+      "xy": [
+        161.5,
+        94.0
+      ]
+    },
+    "ground-corridor-325-186": {
+      "floor": "ground",
+      "xy": [
+        162.5,
+        93.0
       ]
     },
     "ground-corridor-333-184": {
@@ -1056,11 +1084,18 @@
         161.0
       ]
     },
-    "ground-corridor-580-302": {
+    "ground-corridor-580-298": {
       "floor": "ground",
       "xy": [
         290.0,
-        151.0
+        149.0
+      ]
+    },
+    "ground-corridor-580-294": {
+      "floor": "ground",
+      "xy": [
+        290.0,
+        147.0
       ]
     },
     "ground-corridor-607-357": {
@@ -1131,6 +1166,13 @@
       "xy": [
         343.0,
         172.0
+      ]
+    },
+    "ground-corridor-596-300": {
+      "floor": "ground",
+      "xy": [
+        298.0,
+        150.0
       ]
     },
     "ground-corridor-623-459": {
@@ -1266,11 +1308,11 @@
         181.0
       ]
     },
-    "ground-corridor-732-322": {
+    "ground-corridor-733-360": {
       "floor": "ground",
       "xy": [
-        366.0,
-        161.0
+        366.5,
+        180.0
       ]
     },
     "ground-corridor-753-402": {
@@ -1285,6 +1327,13 @@
       "xy": [
         393.5,
         201.0
+      ]
+    },
+    "ground-corridor-734-352": {
+      "floor": "ground",
+      "xy": [
+        367.0,
+        176.0
       ]
     },
     "ground-corridor-757-309": {
@@ -1616,13 +1665,6 @@
         188.0
       ]
     },
-    "f-escalator": {
-      "floor": "first",
-      "xy": [
-        300.0,
-        160.0
-      ]
-    },
     "first-north-toilets-approach": {
       "floor": "first",
       "xy": [
@@ -1670,6 +1712,27 @@
       "xy": [
         390.0,
         151.0
+      ]
+    },
+    "first-memo-escalator-approach": {
+      "floor": "first",
+      "xy": [
+        169.0,
+        111.0
+      ]
+    },
+    "f-escalator": {
+      "floor": "first",
+      "xy": [
+        306.0,
+        160.0
+      ]
+    },
+    "first-boss-escalator-approach": {
+      "floor": "first",
+      "xy": [
+        369.0,
+        174.0
       ]
     },
     "first-south-escalator-approach": {
@@ -1994,17 +2057,17 @@
         105.0
       ]
     },
-    "first-corridor-347-215": {
+    "first-corridor-345-215": {
       "floor": "first",
       "xy": [
-        173.5,
+        172.5,
         107.5
       ]
     },
-    "first-corridor-360-209": {
+    "first-corridor-361-209": {
       "floor": "first",
       "xy": [
-        180.0,
+        180.5,
         104.5
       ]
     },
@@ -2862,11 +2925,18 @@
         166.0
       ]
     },
-    "first-corridor-743-344": {
+    "first-corridor-741-343": {
       "floor": "first",
       "xy": [
-        371.5,
-        172.0
+        370.5,
+        171.5
+      ]
+    },
+    "first-corridor-747-299": {
+      "floor": "first",
+      "xy": [
+        373.5,
+        149.5
       ]
     },
     "first-corridor-752-350": {
@@ -2881,13 +2951,6 @@
       "xy": [
         376.5,
         176.0
-      ]
-    },
-    "first-corridor-747-299": {
-      "floor": "first",
-      "xy": [
-        373.5,
-        149.5
       ]
     },
     "first-corridor-749-306": {
@@ -3018,6 +3081,10 @@
     [
       "first-birkenstock-approach",
       "first-corridor-201-284"
+    ],
+    [
+      "first-boss-escalator-approach",
+      "first-corridor-741-343"
     ],
     [
       "first-calvin-klein-approach",
@@ -3233,11 +3300,15 @@
     ],
     [
       "first-corridor-340-210",
-      "first-corridor-347-215"
+      "first-corridor-345-215"
     ],
     [
-      "first-corridor-347-215",
-      "first-corridor-360-209"
+      "first-corridor-345-215",
+      "first-corridor-361-209"
+    ],
+    [
+      "first-corridor-345-215",
+      "first-memo-escalator-approach"
     ],
     [
       "first-corridor-349-376",
@@ -3276,7 +3347,7 @@
       "first-corridor-380-318"
     ],
     [
-      "first-corridor-360-209",
+      "first-corridor-361-209",
       "first-corridor-368-209"
     ],
     [
@@ -3865,10 +3936,10 @@
     ],
     [
       "first-corridor-736-332",
-      "first-corridor-743-344"
+      "first-corridor-741-343"
     ],
     [
-      "first-corridor-743-344",
+      "first-corridor-741-343",
       "first-corridor-752-350"
     ],
     [
@@ -3974,6 +4045,10 @@
     [
       "ground-boss-approach",
       "ground-corridor-686-344"
+    ],
+    [
+      "ground-boss-escalator-approach",
+      "ground-corridor-733-360"
     ],
     [
       "ground-bowie-approach",
@@ -4161,7 +4236,7 @@
     ],
     [
       "ground-corridor-301-194",
-      "ground-corridor-320-191"
+      "ground-corridor-312-193"
     ],
     [
       "ground-corridor-302-365",
@@ -4176,11 +4251,19 @@
       "ground-wilson-approach"
     ],
     [
+      "ground-corridor-312-193",
+      "ground-corridor-323-188"
+    ],
+    [
+      "ground-corridor-312-193",
+      "ground-memo-escalator-approach"
+    ],
+    [
       "ground-corridor-317-368",
       "ground-corridor-329-369"
     ],
     [
-      "ground-corridor-320-191",
+      "ground-corridor-323-188",
       "ground-corridor-325-186"
     ],
     [
@@ -4525,7 +4608,7 @@
     ],
     [
       "ground-corridor-578-322",
-      "ground-corridor-580-302"
+      "ground-corridor-580-298"
     ],
     [
       "ground-corridor-578-322",
@@ -4533,15 +4616,19 @@
     ],
     [
       "ground-corridor-580-285",
-      "ground-corridor-580-302"
+      "ground-corridor-580-294"
     ],
     [
       "ground-corridor-580-285",
       "ground-corridor-591-277"
     ],
     [
-      "ground-corridor-580-302",
-      "ground-frank-and-co-approach"
+      "ground-corridor-580-294",
+      "ground-corridor-580-298"
+    ],
+    [
+      "ground-corridor-580-294",
+      "ground-frank-escalator-approach"
     ],
     [
       "ground-corridor-582-227",
@@ -4550,6 +4637,14 @@
     [
       "ground-corridor-591-277",
       "ground-corridor-612-278"
+    ],
+    [
+      "ground-corridor-596-300",
+      "ground-frank-and-co-approach"
+    ],
+    [
+      "ground-corridor-596-300",
+      "ground-frank-escalator-approach"
     ],
     [
       "ground-corridor-607-357",
@@ -4685,15 +4780,19 @@
     ],
     [
       "ground-corridor-730-312",
-      "ground-corridor-732-322"
+      "ground-corridor-734-352"
     ],
     [
       "ground-corridor-730-312",
       "ground-corridor-757-309"
     ],
     [
-      "ground-corridor-732-322",
+      "ground-corridor-733-360",
       "ground-corridor-733-362"
+    ],
+    [
+      "ground-corridor-733-360",
+      "ground-corridor-734-352"
     ],
     [
       "ground-corridor-753-402",
@@ -4717,30 +4816,6 @@
     ]
   ],
   "connectors": [
-    {
-      "a": "g-escalator",
-      "b": "f-escalator",
-      "meters": 12,
-      "name": "East escalator (inferred pairing)",
-      "kind": "escalator",
-      "verified": false
-    },
-    {
-      "a": "ground-south-escalator-approach",
-      "b": "first-south-escalator-approach",
-      "meters": 12,
-      "name": "South escalator (inferred pairing)",
-      "kind": "escalator",
-      "verified": false
-    },
-    {
-      "a": "ground-central-escalator-approach",
-      "b": "first-central-escalator-approach",
-      "meters": 12,
-      "name": "Central escalator (inferred pairing)",
-      "kind": "escalator",
-      "verified": false
-    },
     {
       "a": "ground-south-lift-approach",
       "b": "first-south-lift-approach",
@@ -4772,6 +4847,56 @@
       "name": "North lift (inferred pairing)",
       "kind": "lift",
       "verified": false
+    },
+    {
+      "a": "ground-memo-escalator-approach",
+      "b": "first-memo-escalator-approach",
+      "meters": 12,
+      "name": "Memo Paris - Laxmi Tailors escalator",
+      "kind": "escalator",
+      "verified": false,
+      "pairing_source": "user-confirmed",
+      "direction_verified": false
+    },
+    {
+      "a": "ground-frank-escalator-approach",
+      "b": "f-escalator",
+      "meters": 12,
+      "name": "Frank & Co - Giordano escalator",
+      "kind": "escalator",
+      "verified": false,
+      "pairing_source": "user-confirmed",
+      "direction_verified": false
+    },
+    {
+      "a": "ground-boss-escalator-approach",
+      "b": "first-boss-escalator-approach",
+      "meters": 12,
+      "name": "BOSS / information - Sociolla escalator",
+      "kind": "escalator",
+      "verified": false,
+      "pairing_source": "user-confirmed",
+      "direction_verified": false
+    },
+    {
+      "a": "ground-south-escalator-approach",
+      "b": "first-south-escalator-approach",
+      "meters": 12,
+      "name": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
+      "kind": "escalator",
+      "verified": false,
+      "pairing_source": "inferred",
+      "direction_verified": false
+    },
+    {
+      "a": "ground-central-escalator-approach",
+      "b": "first-central-escalator-approach",
+      "meters": 12,
+      "name": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
+      "kind": "escalator",
+      "verified": false,
+      "pairing_source": "inferred",
+      "direction_verified": false
     }
   ],
   "entrances": {
@@ -4847,30 +4972,6 @@
     "first:asics": "first-asics-approach"
   },
   "facilities": [
-    {
-      "id": "ground:east-escalator",
-      "title": "East escalator (inferred)",
-      "floor": "ground",
-      "unit": "",
-      "category": "Escalators",
-      "xy": [
-        281,
-        155
-      ],
-      "entrance": "g-escalator"
-    },
-    {
-      "id": "first:east-escalator",
-      "title": "East escalator (inferred)",
-      "floor": "first",
-      "unit": "",
-      "category": "Escalators",
-      "xy": [
-        300,
-        160
-      ],
-      "entrance": "f-escalator"
-    },
     {
       "id": "ground:east-toilets",
       "title": "East lobby toilets (map symbol)",
@@ -5040,8 +5141,86 @@
       "entrance": "first-north-lift-approach"
     },
     {
+      "id": "ground:memo-escalator",
+      "title": "Memo Paris - Laxmi Tailors escalator",
+      "floor": "ground",
+      "category": "Escalators",
+      "xy": [
+        156,
+        96
+      ],
+      "unit": "",
+      "entrance": "ground-memo-escalator-approach",
+      "description": "Pair confirmed by user; precise approach and direction unverified."
+    },
+    {
+      "id": "first:memo-escalator",
+      "title": "Memo Paris - Laxmi Tailors escalator",
+      "floor": "first",
+      "category": "Escalators",
+      "xy": [
+        169,
+        111
+      ],
+      "unit": "",
+      "entrance": "first-memo-escalator-approach",
+      "description": "Pair confirmed by user; precise approach and direction unverified."
+    },
+    {
+      "id": "ground:frank-escalator",
+      "title": "Frank & Co - Giordano escalator",
+      "floor": "ground",
+      "category": "Escalators",
+      "xy": [
+        297,
+        147
+      ],
+      "unit": "",
+      "entrance": "ground-frank-escalator-approach",
+      "description": "Pair confirmed by user; precise approach and direction unverified."
+    },
+    {
+      "id": "first:east-escalator",
+      "title": "Frank & Co - Giordano escalator",
+      "floor": "first",
+      "category": "Escalators",
+      "xy": [
+        306,
+        160
+      ],
+      "unit": "",
+      "entrance": "f-escalator",
+      "description": "Pair confirmed by user; precise approach and direction unverified."
+    },
+    {
+      "id": "ground:boss-escalator",
+      "title": "BOSS / information - Sociolla escalator",
+      "floor": "ground",
+      "category": "Escalators",
+      "xy": [
+        367,
+        180
+      ],
+      "unit": "",
+      "entrance": "ground-boss-escalator-approach",
+      "description": "Pair confirmed by user; precise approach and direction unverified."
+    },
+    {
+      "id": "first:boss-escalator",
+      "title": "BOSS / information - Sociolla escalator",
+      "floor": "first",
+      "category": "Escalators",
+      "xy": [
+        369,
+        174
+      ],
+      "unit": "",
+      "entrance": "first-boss-escalator-approach",
+      "description": "Pair confirmed by user; precise approach and direction unverified."
+    },
+    {
       "id": "ground:south-escalator",
-      "title": "South escalator (inferred)",
+      "title": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
       "floor": "ground",
       "category": "Escalators",
       "xy": [
@@ -5049,11 +5228,12 @@
         73
       ],
       "unit": "",
-      "entrance": "ground-south-escalator-approach"
+      "entrance": "ground-south-escalator-approach",
+      "description": "Pair and approach inferred; direction unverified."
     },
     {
       "id": "first:south-escalator",
-      "title": "South escalator (inferred)",
+      "title": "Marketing Office - Project Soul / Forever New escalator (inferred pair)",
       "floor": "first",
       "category": "Escalators",
       "xy": [
@@ -5061,11 +5241,12 @@
         93
       ],
       "unit": "",
-      "entrance": "first-south-escalator-approach"
+      "entrance": "first-south-escalator-approach",
+      "description": "Pair and approach inferred; direction unverified."
     },
     {
       "id": "ground:central-escalator",
-      "title": "Central escalator (inferred)",
+      "title": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
       "floor": "ground",
       "category": "Escalators",
       "xy": [
@@ -5073,11 +5254,12 @@
         177
       ],
       "unit": "",
-      "entrance": "ground-central-escalator-approach"
+      "entrance": "ground-central-escalator-approach",
+      "description": "Pair and approach inferred; direction unverified."
     },
     {
       "id": "first:central-escalator",
-      "title": "Central escalator (inferred)",
+      "title": "Oval East Atrium - Asics / JD Sports escalator (inferred pair)",
       "floor": "first",
       "category": "Escalators",
       "xy": [
@@ -5085,13 +5267,61 @@
         180
       ],
       "unit": "",
-      "entrance": "first-central-escalator-approach"
+      "entrance": "first-central-escalator-approach",
+      "description": "Pair and approach inferred; direction unverified."
     }
   ],
   "unsupported": {
     "ground:redback": "MPH/exterior access is separated from the mall corridor in the supplied plan; a connecting walkway is not established.",
     "first:autoschoon": "MSCP parking access is outside the mapped indoor corridor. The service/parking entrance is not established."
   },
+  "excluded_escalators": [
+    {
+      "floor": "ground",
+      "location": "Below Fore / CHAGEE",
+      "source_icon_xy": [
+        275,
+        153
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "ground",
+      "location": "Metro side near lift above unit 27",
+      "source_icon_xy": [
+        376,
+        147
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "ground",
+      "location": "Between H&M and Digimap",
+      "source_icon_xy": [
+        142,
+        187
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "first",
+      "location": "In front of Birkenstock",
+      "source_icon_xy": [
+        107,
+        142
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    },
+    {
+      "floor": "first",
+      "location": "Below Hush Puppies toward MST Golf",
+      "source_icon_xy": [
+        344,
+        227
+      ],
+      "reason": "Excluded from GIS by user annotated floor plan; destination floor not independently verified"
+    }
+  ],
   "excluded_areas": [
     {
       "floor": "ground",

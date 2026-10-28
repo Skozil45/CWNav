@@ -2,14 +2,17 @@
 import json
 from pathlib import Path
 import sys
+import math
 from unittest.mock import patch
 
 from PySide6.QtCore import Qt, QPoint, QPointF
-from PySide6.QtGui import QWheelEvent, QMouseEvent
+from PySide6.QtGui import QWheelEvent, QMouseEvent, QKeyEvent
 from PySide6.QtTest import QTest
 from PySide6.QtWidgets import QApplication, QPushButton
 
 from main import Window, STYLE
+from label_layout import pixel_box
+from PySide6.QtGui import QRegion
 
 app = QApplication.instance() or QApplication(sys.argv)
 app.setStyle('Fusion')
@@ -90,6 +93,7 @@ for speed, keyboard in ((.5, True), (12, False)):
     QTest.keyRelease(w.view, Qt.Key.Key_W)
     w.set_direction((0,0))
 w.speed.setValue(3)
+w.transport.setCurrentIndex(2)
 choose('Lacoste')
 check('escalator' in w.route_label.text(),'Cross-floor routing instruction')
 w.floor.setCurrentIndex(1)
@@ -101,7 +105,7 @@ w.floor.setCurrentIndex(1)
 check(w.view.svg is first_map,'Floor artwork reused after switching')
 w.view.reset_view()
 w.grab().save(str(out/'first-floor-ui.png'))
-w.player.node='g-escalator'
+w.player.node='ground-central-escalator-approach'
 w.player.target=None
 w.player.progress=0
 w.refresh()
@@ -111,10 +115,10 @@ check(w.player.floor=='first','Explicit floor transition')
 w.category.setCurrentText('ATMs')
 check('0 results' in w.near_status.text(),'Unavailable category has empty state')
 w.category.setCurrentText('Escalators')
-check(w.nearby_list.item(0).data(Qt.ItemDataRole.UserRole)=='first:east-escalator','Nearby follows player floor')
+check(w.nearby_list.item(0).data(Qt.ItemDataRole.UserRole)=='first:central-escalator','Nearby follows player floor')
 item=w.nearby_list.item(0)
 QTest.mouseClick(w.nearby_list.viewport(),Qt.MouseButton.LeftButton,pos=w.nearby_list.visualItemRect(item).center())
-check(w.destination.id=='first:east-escalator','Recommendation click sets destination')
+check(w.destination.id=='first:central-escalator','Recommendation click sets destination')
 check('Arrived' in w.route_label.text(),'Arrival message')
 choose('MyCWS')
 check(w.destination.entrance is not None and 'Remaining' in w.route_label.text(),'Newly mapped lounge destination routes')
@@ -164,6 +168,11 @@ for floor_index in (0, 1):
     w.floor.setCurrentIndex(floor_index)
     labels = w.view.shop_labels[w.viewed_floor]
     captions = '\n'.join(item.toolTip() for item in labels)
+    check(all(item.data(2) for item in labels), f'Floor {floor_index}: every label matches a source shop silhouette')
+    check(all(QRegion(pixel_box(item.sceneBoundingRect().center(), item.rect().width(), item.rect().height())).subtracted(item.data(1)).isEmpty()
+              for item in labels), f'Floor {floor_index}: entire labels fit inside shop silhouettes')
+    check(not any(a.sceneBoundingRect().intersects(b.sceneBoundingRect()) for i,a in enumerate(labels) for b in labels[i+1:]),
+          f'Floor {floor_index}: shop labels do not overlap')
     check(all(p.title in captions for p in w.model.places if p.floor == w.viewed_floor and p.category in ('Stores', 'Dining')),
           f'Floor {floor_index}: every directory shop has a fixed label')
     positions = [item.pos() for item in labels]
@@ -184,6 +193,9 @@ for floor_index in (0, 1):
         check(w.view.player_item.isVisible() == (graph and w.player.floor == w.viewed_floor),
               f'Floor {floor_index}: player visibility {picture}/{graph}')
         check(all(item.isVisible() == graph for item in labels), f'Floor {floor_index}: shop label visibility {picture}/{graph}')
+        check(all(item.brush().style() == Qt.BrushStyle.NoBrush and
+                  item.childItems()[0].brush().color().name() == ('#ffffff' if picture and item.data(0) else '#20332c')
+                  for item in labels), f'Floor {floor_index}: text-only labels adapt to background {picture}/{graph}')
         if not picture and graph:
             w.grab().save(str(out/f'graph-only-{floor_index}.png'))
 w.map_picture.setChecked(False)
@@ -196,7 +208,7 @@ choose('Fore')
 w.stores.setFocus()
 QTest.keyClick(w.stores,Qt.Key.Key_Return)
 check(w.destination.id=='ground:fore','Enter activates search result')
-w.player.node='f-escalator'
+w.player.node='first-central-escalator-approach'
 w.player.target=None
 w.view.setFocus()
 QTest.keyClick(w.view,Qt.Key.Key_E)
@@ -218,6 +230,39 @@ w.player.target=None
 w.transport.setCurrentIndex(2)
 check('escalator' in w.route_label.text(),'Escalator-only route instruction')
 w.transport.setCurrentIndex(0)
+for connection in w.model.data['connectors']:
+    if connection['kind'] != 'escalator':
+        continue
+    for end, other in ((connection['a'],connection['b']),(connection['b'],connection['a'])):
+        for use_key in (False, True):
+            w.player.node = 'g0' if w.model.nodes[end]['floor']=='ground' else 'f0'
+            w.player.target=None
+            w.player.progress=0
+            path,_=w.player.route(end)
+            remaining=2.5
+            for a,b in reversed(list(zip(path,path[1:]))):
+                length=math.dist(w.model.nodes[a]['xy'],w.model.nodes[b]['xy'])*w.model.scale
+                if length>=remaining:
+                    w.player.node,w.player.target,w.player.progress=a,b,1-remaining/length
+                    break
+                remaining-=length
+            w.show_player()
+            w.refresh()
+            check(w.cross.isEnabled() and connection['name'] in w.cross.toolTip(),
+                  f'Nearby connection available: {end}, keyboard={use_key}')
+            w.view.setFocus()
+            if use_key:
+                QTest.keyClick(w.view,Qt.Key.Key_E)
+            else:
+                QTest.mouseClick(w.cross,Qt.MouseButton.LeftButton)
+            check(w.player.node==other and w.player.target is None,
+                  f'Nearby connection changes floor: {end}, keyboard={use_key}')
+            repeat=QKeyEvent(QKeyEvent.Type.KeyPress,Qt.Key.Key_E,Qt.KeyboardModifier.NoModifier,'e',True)
+            QApplication.sendEvent(w.view,repeat)
+            check(w.player.node==other,'Held E cannot bounce back: '+end)
+w.player.node='g0'
+w.player.target=None
+w.player.progress=0
 w.search.setText('no such tenant')
 w.clear_destination()
 w.show_player()

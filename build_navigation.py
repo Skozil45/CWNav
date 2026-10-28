@@ -249,21 +249,36 @@ def rail_paths(mask,clearance,approaches):
     return paths
 
 
+ESCALATOR_PAIRS = [
+    ('memo', 'Memo Paris - Laxmi Tailors', [156,96], [169,111], True),
+    ('east', 'Frank & Co - Giordano', [297,147], [306,160], True),
+    ('boss', 'BOSS / information - Sociolla', [367,180], [369,174], True),
+    ('south', 'Marketing Office - Project Soul / Forever New', [247,73], [260,93], False),
+    ('central', 'Oval East Atrium - Asics / JD Sports', [180,177], [205,180], False),
+]
+
+
 def build():
     old=json.loads((ROOT/'navigation-data.json').read_text(encoding='utf-8'))
     places=load_places(json.loads((ROOT/'extracted-maps/map-data.json').read_text(encoding='utf-8')))
-    facilities=old['facilities']
+    facilities=[p for p in old['facilities'] if p['category'] != 'Escalators']
     extra=[('first:east-lift','East lobby lift','first','Lifts',[113,85]),
            ('ground:north-lift','North side lift','ground','Lifts',[387,147]),
-           ('first:north-lift','North side lift','first','Lifts',[390,151]),
-           ('ground:south-escalator','South escalator','ground','Escalators',[247,73]),
-           ('first:south-escalator','South escalator','first','Escalators',[260,93]),
-           ('ground:central-escalator','Central escalator','ground','Escalators',[180,177]),
-           ('first:central-escalator','Central escalator','first','Escalators',[205,180])]
+           ('first:north-lift','North side lift','first','Lifts',[390,151])]
     existing={p['id'] for p in facilities}
     for key,title,floor,category,xy in extra:
         if key not in existing:
             facilities.append(dict(id=key,title=title+' (inferred)',floor=floor,category=category,xy=xy,unit=''))
+    for section, title, ground_xy, first_xy, confirmed in ESCALATOR_PAIRS:
+        for floor, xy in (('ground',ground_xy),('first',first_xy)):
+            # Frank's new GF endpoint must not reuse the excluded node below Fore.
+            node = 'f-escalator' if (section,floor)==('east','first') else f'{floor}-{section}-escalator-approach'
+            key = f'{floor}:{section}-escalator'
+            if (section,floor)==('east','ground'):
+                key, node = 'ground:frank-escalator', 'ground-frank-escalator-approach'
+            facilities.append(dict(id=key,title=title+' escalator'+('' if confirmed else ' (inferred pair)'),
+                floor=floor,category='Escalators',xy=xy,unit='',entrance=node,
+                description='Pair confirmed by user; precise approach and direction unverified.' if confirmed else 'Pair and approach inferred; direction unverified.'))
     unsupported={
         'ground:redback':'MPH/exterior access is separated from the mall corridor in the supplied plan; a connecting walkway is not established.',
         'first:autoschoon':'MSCP parking access is outside the mapped indoor corridor. The service/parking entrance is not established.'}
@@ -281,6 +296,8 @@ def build():
         p['entrance']=node
         desired[p['floor']][node]=p['xy']
     desired['ground']['g0']=[239,164]
+    if 'g-escalator' in old['nodes']:
+        desired['ground']['g-escalator']=old['nodes']['g-escalator']['xy']  # Corridor junction only; excluded as a floor connection.
     desired['first']['f0']=[240,160]
     nodes={}
     edges=set()
@@ -337,16 +354,22 @@ def build():
     edges=planar_edges
     facility_by_id={p['id']:p for p in facilities}
     connectors=[]
-    for kind,section in [('escalator','east'),('escalator','south'),('escalator','central'),
-                         ('lift','south'),('lift','central'),('lift','east'),('lift','north')]:
+    for kind,section in [('lift','south'),('lift','central'),('lift','east'),('lift','north')]:
         a=facility_by_id[f'ground:{section}-{kind}']['entrance']
         b=facility_by_id[f'first:{section}-{kind}']['entrance']
         connectors.append({'a':a,'b':b,'meters':12 if kind=='escalator' else 8,
             'name':f'{section.title()} {kind} (inferred pairing)','kind':kind,'verified':False})
+    for section,title,_,_,confirmed in ESCALATOR_PAIRS:
+        ground_id = 'ground:frank-escalator' if section=='east' else f'ground:{section}-escalator'
+        connectors.append(dict(a=facility_by_id[ground_id]['entrance'],
+            b=facility_by_id[f'first:{section}-escalator']['entrance'],meters=12,
+            name=title+' escalator'+('' if confirmed else ' (inferred pair)'),kind='escalator',
+            verified=False,pairing_source='user-confirmed' if confirmed else 'inferred',direction_verified=False))
     data={k:old[k] for k in ('meters_per_unit','scale_verified','scale_note')}
     data.update(network_type='shared_corridor_rails',mapping_note='Single shared corridor-centerline rail network from thinned walkable masks. Destination branches join existing rails on first contact; Dijkstra and player movement reuse these fixed LineStrings. Entrances, connector pairs, costs and directionality are inferred, not surveyed.',
         start='g0',nodes=nodes,edges=sorted(edges),connectors=connectors,entrances=entrances,
         facilities=facilities,unsupported=unsupported,
+        excluded_escalators=old.get('excluded_escalators', []),
         excluded_areas=[{'floor':floor,'name':name,'ring':ring} for floor,areas in EXCLUSIONS.items() for name,ring in areas])
     (ROOT/'navigation-data.json').write_text(json.dumps(data,indent=2),encoding='utf-8')
     (ROOT/'verification/approach-audit.json').write_text(json.dumps(audit,indent=2),encoding='utf-8')

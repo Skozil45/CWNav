@@ -7,6 +7,6 @@ venv/
 !.env.example
 
 # Generated UI screenshots and machine-specific performance results.
-Main/verification/*-ui.png
-Main/verification/graph-only-*.png
-Main/verification/performance.json
+verification/*-ui.png
+verification/graph-only-*.png
+verification/performance.json

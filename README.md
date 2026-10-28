@@ -4,7 +4,7 @@ Python desktop prototype for Ciputra World Surabaya Ground Floor and 1st Floor. 
 
 ## Run
 
-The active application folder is `C:\Users\USER\Desktop\Kuliah\Semester 5\Computer Graphic\AFL2\Main`. Keep future code, data, and asset changes in this folder.
+The active application and repository folder is `C:\Users\USER\Desktop\Kuliah\Semester 5\Computer Graphic\AFL2\Main\CWNav`. Keep future code, data, and asset changes in this folder.
 
 From this directory, with Python 3.10 or newer:
 
@@ -23,11 +23,11 @@ The tested environment is Windows, Python 3.14, PySide6 6.12.0. The dependency i
 - Click the map and use WASD or arrow keys. Hold an on-screen movement button as an alternative. Movement selects the connected corridor most aligned with your input; it cannot move freely through a store.
 - Drag the map to pan. Use the mouse wheel or zoom buttons to zoom; Reset view fits the floor.
 - The floor selector changes only the viewed map. Show player floor returns to your actual simulated floor.
-- At a purple connector, press E or Use floor connection. This is the only way to move between floors.
-- Choose Any floor connection, Lifts only, or Escalators only under Your route. This restricts the connections used by Dijkstra. The action button names the lift or escalator when you are within approximately 1 m of its approach point.
+- Within approximately 3 m of a purple connector along the connected walkway, press E or Use floor connection. The nearest eligible connector is selected, even across small corridor junctions. Straight-line closeness across a wall is not sufficient. A held E key cannot bounce back automatically, and movement input clears after the floor change.
+- Choose Any floor connection, Lifts only, or Escalators only under Your route. This restricts the connections used by Dijkstra. Hover the action button to see the nearby connection's name. Search for the escalator name (for example, Frank & Co - Giordano) to route to the escalator approach rather than the shop entrance.
 - Clear destination removes the route. Map picture toggles the supplied floor artwork. Graph independently toggles shop/service outlines, shared rails, mapped entry points, routes, connectors, player and search buffer. Both can be on or off; choices persist when switching floors. These are display controls: movement and GIS calculations continue.
 - Graph-only shop outlines reuse the source SVG's shop/service-colored shapes. They are visual references, not surveyed tenant polygons or verified doors.
-- Shop names stay fixed at the center of the smallest source shop bounding box containing their directory marker. Unmatched names keep their directory position; names sharing one shape are grouped. Labels wrap and fit the available box, scale with zoom, and follow the Graph toggle. Hover shows the full name. Matching is inferred, not a verified unit-to-polygon association; unnamed shapes remain unlabeled.
+- Shop names use fixed positions inside the actual source shop silhouettes. The layout chooses centered text wrapping, size and an interior position with clearance from the shop boundary; it does not reposition labels during movement or zoom. All current directory markers match a silhouette. Names sharing one shape are grouped. Labels follow the Graph toggle; hover shows the full name and unit. Matching remains inferred rather than surveyed; unnamed shapes remain unlabeled. Tiny shops need zoom for readable labels.
 - Nearby results use the player's floor, even when viewing the other floor. Categories include Stores, Dining, Toilets, Lifts, Escalators, and ATMs. Missing categories have a real empty state.
 - The default 20 m search expands to 40 and 60 m if necessary. A custom radius is used as entered, with no expansion. Facility distances are straight-line distances; route distances follow the graph.
 
@@ -35,17 +35,18 @@ For a quick demonstration, select Fore on GF, then Lacoste on 1F. Try Lifts only
 
 ## Data and accuracy
 
-This is a simulation with routes to 70 of 72 directory tenants and all 20 mapped facility approaches, not a surveyed wayfinding system. All distances and approach points are explicitly approximate. No GPS, backend, account, or live indoor positioning is involved.
+This is a simulation with routes to 70 of 72 directory tenants and all 24 mapped facility approaches, not a surveyed wayfinding system. All distances and approach points are explicitly approximate. No GPS, backend, account, or live indoor positioning is involved.
 
 The imported directory contains **72 tenant entries across GF and 1F**. It handles both single-string and array-valued floor assignments and converts descriptions to plain text. Raw HTML is never inserted into a web view. The directory supplies tenant markers, which are generally inside stores and are not entrance coordinates.
 
 `navigation-data.json` adds a deliberately separate dataset:
 
-- A shared rail graph derived offline by thinning the walkable corridor mask to one centerline. Short destination branches join the existing rails on first contact. Unused spurs and loops are removed, and intersections form real junctions. Dijkstra and player movement repeatedly use the same fixed graph, rather than generating a different geometric path for every destination. The graph has 421 nodes and 440 corridor segments.
+- A shared rail graph derived offline by thinning the walkable corridor mask to one centerline. Short destination branches join the existing rails on first contact. Unused spurs and loops are removed, and intersections form real junctions. Dijkstra and player movement repeatedly use the same fixed graph, rather than generating a different geometric path for every destination. The graph has 430 nodes and 449 corridor segments.
 - 70 inferred tenant approach points. These are corridor-side approaches, not verified doors. Interior directory markers remain separate from routing endpoints.
 - Four inferred lift pairings: south, central, east, and north. Each has an illustrative 8 m travel weight.
-- Three inferred escalator pairings: east, south, and central. Each has an illustrative 12 m travel weight. All seven connections are bidirectional prototype assumptions; actual pairing, direction, access restrictions, and travel lengths require a site check.
-- 20 facility records: 6 toilet points, 8 lift endpoints, and 6 escalator endpoints. Routes lead to corridor-side access points; they do not model the internal corridors of toilet/service cores.
+- Five escalator pairings: Memo Paris–Laxmi Tailors, Frank & Co–Giordano, BOSS/information–Sociolla (pairings confirmed by the user); Marketing Office–Project Soul/Forever New and Oval East Atrium–Asics/JD Sports (inferred pairings approved for inclusion). The Sociolla endpoint uses the lower icon nearest Sociolla, not the upper MyCWS-side icon. Precise approaches and directions remain unverified. Each has an illustrative 12 m travel cost. All five escalator and four lift connections remain bidirectional prototype assumptions.
+- 24 facility records: 6 toilet points, 8 lift endpoints, and 10 escalator endpoints. The Giordano endpoint now connects to Frank & Co; it does not connect to the excluded GF endpoint below Fore. Routes lead to corridor-side access points; they do not model the internal corridors of toilet/service cores.
+- The user's latest annotated maps exclude five escalator locations from GIS: GF below Fore/CHAGEE, beside Metro's lift, and between H&M/Digimap; 1F in front of Birkenstock and below Hush Puppies. `excluded_escalators` records them in the navigation data. The excluded GF East facility and its inferred cross-floor edge were removed; ordinary corridor nodes/edges remain. The other four were not active GIS facilities. The source-map icons remain visible because this correction concerns GIS, not artwork. Unmarked sites are not automatically assigned new floor pairings.
 - Six manually traced pale-atrium exclusion polygons, plus source-derived corridor masks. These are inferred spatial boundaries, not surveyed building geometry.
 
 Two tenant access routes remain unsupported: Redback is in the detached MPH/exterior area, and Autoschoon is in the MSCP parking area. The supplied floor plans do not establish their connecting walkways/entrances. Their search results explain this instead of drawing a path through intervening walls or service areas. No GF/1F ATM records were present in the imported directory; no ATM position has been fabricated. Lift-only routing does not certify wheelchair accessibility. Stair routes, occupancy, exact doors, and every label-to-tenant association remain physically unverified.
@@ -96,6 +97,12 @@ python -m unittest -v test_navigation
 The extra image-processing packages are needed only to regenerate the data, not to run the desktop app. The builder overwrites `navigation-data.json`; make manual authoring changes in the builder's mapping inputs if you intend to regenerate.
 
 ## Files
+
+- `extracted-maps/*-no-units.svg`: display variants with unit-number glyphs hidden. Keep these files with the app. Original SVGs and PNGs remain unchanged for source reference and mapping.
+- `build_display_maps.py`: rebuilds those variants from reviewed source glyph blocks, with source SHA-256 checks and an assertion that other elements are unchanged. If source maps change, review the glyph blocks before updating the hashes. Unit numbers remain available in search and tooltips.
+- The original MYCWS LOUNGE text is also hidden in the display SVG. Its independent Graph label, searchable destination and route remain available.
+- `label_layout.py`: fits fixed labels into source silhouettes sampled at four pixels per map unit, without changing GIS navigation geometry.
+- `verify_network.py`: checks every network node, every supported destination pair in all three transport modes, and traversal of every corridor segment in both directions. Writes `verification/network-connectivity.json`.
 
 - `main.py`: desktop interface, SVG rendering, keyboard/on-screen input, route overlays.
 - `navigation.py`: data loading, coordinate conversion, graph routing, constrained movement, spatial queries.
