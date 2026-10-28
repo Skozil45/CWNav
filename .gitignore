@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Generated UI screenshots and machine-specific performance results.
+Main/verification/*-ui.png
+Main/verification/graph-only-*.png
+Main/verification/performance.json
