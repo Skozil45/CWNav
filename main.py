@@ -282,7 +282,6 @@ class Window(QMainWindow):
         self.destination = None
         self.total_distance = None
         self.viewed_floor = 'ground'
-        self.held_direction = (0,0)
         self.last_time = time.monotonic()
         self.last_results = None
         self.last_detail_refresh = 0.0
@@ -364,6 +363,9 @@ class Window(QMainWindow):
         self.floor.addItems(list(FLOORS.values()))
         self.floor.setAccessibleName('Viewed floor; does not move the player')
         toolbar.addWidget(self.floor)
+        follow = QPushButton('Show player floor')
+        follow.clicked.connect(self.show_player)
+        toolbar.addWidget(follow)
         self.map_picture = QCheckBox('Map picture')
         self.map_picture.setChecked(True)
         toolbar.addWidget(self.map_picture)
@@ -381,27 +383,16 @@ class Window(QMainWindow):
         map_layout.addWidget(self.view, 1)
         self.position_label = self.label('')
         map_layout.addWidget(self.position_label)
-        movement = QHBoxLayout()
-        for title, direction in [('Left',(-1,0)),('Up',(0,-1)),('Down',(0,1)),('Right',(1,0))]:
-            button = QPushButton(title)
-            button.setAccessibleName('Move ' + title.lower() + ' along corridor')
-            button.pressed.connect(lambda d=direction:self.set_direction(d))
-            button.released.connect(lambda:self.set_direction((0,0)))
-            movement.addWidget(button)
         self.cross = QPushButton('Use floor connection (E)')
         self.cross.clicked.connect(self.transition)
-        movement.addWidget(self.cross)
-        follow = QPushButton('Show player floor')
-        follow.clicked.connect(self.show_player)
-        movement.addWidget(follow)
-        map_layout.addLayout(movement)
+        map_layout.addWidget(self.cross)
         speed_row = QHBoxLayout()
         speed_label = QLabel('Movement speed')
         self.speed = QDoubleSpinBox()
         self.speed.setRange(.5, 12)
         self.speed.setSingleStep(.5)
         self.speed.setDecimals(1)
-        self.speed.setValue(3)
+        self.speed.setValue(12)
         self.speed.setSuffix(' m/s (approx.)')
         self.speed.setAccessibleName('Simulated movement speed in approximate meters per second')
         speed_label.setBuddy(self.speed)
@@ -482,13 +473,9 @@ class Window(QMainWindow):
         self.floor.setCurrentIndex(list(FLOORS).index(self.player.floor))
         self.view.reset_view()
 
-    def set_direction(self, direction):
-        self.held_direction = direction
-
     def transition(self):
         if self.player.transition():
             self.view.keys.clear()
-            self.held_direction = (0,0)
             self.show_player()
             self.refresh()
 
@@ -498,9 +485,8 @@ class Window(QMainWindow):
         self.last_time = now
         if not self.isActiveWindow():
             self.view.keys.clear()
-            self.held_direction = (0,0)
             return
-        dx,dy = self.held_direction
+        dx,dy = 0,0
         for key in self.view.keys:
             vx,vy = self.directions[key]
             dx,dy = dx+vx,dy+vy

@@ -40,6 +40,7 @@ def choose(query):
     app.processEvents()
 
 
+check(w.speed.value() == 12, 'Default movement speed is 12 m/s')
 choose('Fore')
 artwork=w.view.svg.pixmap().toImage()
 check(artwork.pixelColor(300,300).name()=='#c1c1c1','GF artwork retains exterior coordinates')
@@ -79,20 +80,16 @@ QTest.qWait(300)
 QTest.keyRelease(w.view,Qt.Key.Key_W)
 w.timer.stop()
 check(w.player.xy!=before,'Live timer moves player while keyboard key is held')
-for speed, keyboard in ((.5, True), (12, False)):
+for speed in (.5, 12):
     w.speed.setValue(speed)
     w.view.setFocus()
-    if keyboard:
-        QTest.keyPress(w.view, Qt.Key.Key_W)
-    else:
-        w.set_direction((0,-1))
+    QTest.keyPress(w.view, Qt.Key.Key_W)
     with patch.object(w.player, 'move', wraps=w.player.move) as move:
         w.last_time=__import__('time').monotonic()-.05
         w.tick()
-        check(move.called and move.call_args.args[3] == speed, f'Speed {speed} reaches movement via keyboard={keyboard}')
+        check(move.called and move.call_args.args[3] == speed, f'Speed {speed} reaches keyboard movement')
     QTest.keyRelease(w.view, Qt.Key.Key_W)
-    w.set_direction((0,0))
-w.speed.setValue(3)
+w.speed.setValue(12)
 w.transport.setCurrentIndex(2)
 choose('Lacoste')
 check('escalator' in w.route_label.text(),'Cross-floor routing instruction')
@@ -153,11 +150,8 @@ QTest.mouseRelease(w.view.viewport(),Qt.MouseButton.LeftButton,pos=pos+QPoint(60
 after_scroll=(w.view.horizontalScrollBar().value(),w.view.verticalScrollBar().value())
 check(before_scroll!=after_scroll,'Mouse drag pan')
 w.view.reset_view()
-for name in ['Left','Up','Down','Right']:
-    QTest.mousePress(buttons[name],Qt.MouseButton.LeftButton)
-    check(w.held_direction!=(0,0),name+' on-screen movement press')
-    QTest.mouseRelease(buttons[name],Qt.MouseButton.LeftButton)
-    check(w.held_direction==(0,0),name+' on-screen movement release')
+check(not any(name in buttons for name in ['Left','Up','Down','Right']), 'Directional buttons removed')
+check(buttons['Show player floor'].mapTo(w, QPoint(0,0)).y() < w.view.mapTo(w, QPoint(0,0)).y(), 'Show player floor is above map')
 w.radius.setValue(35)
 check('35 m' in w.near_status.text(),'Custom radius applied')
 w.network.setChecked(False)

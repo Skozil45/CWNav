@@ -17,12 +17,12 @@ The tested environment is Windows, Python 3.14, PySide6 6.12.0. The dependency i
 
 ## Controls
 
-- Movement speed below the map controls adjusts keyboard and on-screen movement from 0.5 to 12 approximate m/s (default 3). Changes apply immediately and reset to the default when the app restarts. Movement remains constrained to the same corridor graph.
+- Movement speed below the map controls adjusts keyboard movement from 0.5 to 12 approximate m/s (default 12). Changes apply immediately and reset to the default when the app restarts. Movement remains constrained to the same corridor graph.
 
 - Search by tenant name or unit. Click a result or press Enter to select it.
-- Click the map and use WASD or arrow keys. Hold an on-screen movement button as an alternative. Movement selects the connected corridor most aligned with your input; it cannot move freely through a store.
+- Click the map and use WASD or arrow keys. Movement selects the connected corridor most aligned with your input; it cannot move freely through a store.
 - Drag the map to pan. Use the mouse wheel or zoom buttons to zoom; Reset view fits the floor.
-- The floor selector changes only the viewed map. Show player floor returns to your actual simulated floor.
+- The floor selector changes only the viewed map. Show player floor in the top toolbar returns to your actual simulated floor.
 - Within approximately 3 m of a purple connector along the connected walkway, press E or Use floor connection. The nearest eligible connector is selected, even across small corridor junctions. Straight-line closeness across a wall is not sufficient. A held E key cannot bounce back automatically, and movement input clears after the floor change.
 - Choose Any floor connection, Lifts only, or Escalators only under Your route. This restricts the connections used by Dijkstra. Hover the action button to see the nearby connection's name. Search for the escalator name (for example, Frank & Co - Giordano) to route to the escalator approach rather than the shop entrance.
 - Clear destination removes the route. Map picture toggles the supplied floor artwork. Graph independently toggles shop/service outlines, shared rails, mapped entry points, routes, connectors, player and search buffer. Both can be on or off; choices persist when switching floors. These are display controls: movement and GIS calculations continue.
