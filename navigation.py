@@ -7,6 +7,7 @@ import math
 from pathlib import Path
 import re
 
+import geopandas as gpd
 from shapely.geometry import LineString, Point, Polygon
 
 ROOT = Path(__file__).resolve().parent
@@ -72,7 +73,11 @@ class Model:
             if node['floor'] not in FLOORS or len(node['xy']) != 2 or not all(math.isfinite(v) for v in node['xy']):
                 raise ValueError(f'Invalid node: {key}')
         self.exclusions = [(row['floor'], Polygon(row['ring'])) for row in self.data['excluded_areas']]
-        if any(not polygon.is_valid for _, polygon in self.exclusions):
+        # Local artwork coordinates are not a surveyed geographic CRS.
+        self.exclusions_gdf = gpd.GeoDataFrame(
+            {'floor': [floor for floor, _ in self.exclusions]},
+            geometry=[polygon for _, polygon in self.exclusions], crs=None)
+        if not self.exclusions_gdf.is_valid.all():
             raise ValueError('Invalid exclusion polygon')
         self.graph = {key: [] for key in self.nodes}
         self.edges = []
@@ -83,10 +88,15 @@ class Model:
             line = LineString([self.nodes[a]['xy'], self.nodes[b]['xy']])
             if line.length <= 0:
                 raise ValueError('Zero-length edge')
-            if any(floor == self.nodes[a]['floor'] and line.intersects(polygon) for floor, polygon in self.exclusions):
+            exclusions = self.exclusions_gdf[self.exclusions_gdf.floor == self.nodes[a]['floor']]
+            if exclusions.intersects(line).any():
                 raise ValueError(f'Corridor crosses a mapped exclusion: {a}, {b}')
             self.edges.append((a, b, line))
             self.connect(a, b, line.length * self.scale)
+        self.corridors_gdf = gpd.GeoDataFrame(
+            [{'start': a, 'end': b, 'floor': self.nodes[a]['floor'], 'geometry': line}
+             for a, b, line in self.edges], geometry='geometry', crs=None)
+        self.corridors_gdf['length_approx_m'] = self.corridors_gdf.length * self.scale
         for c in self.data['connectors']:
             if not math.isfinite(c['meters']) or c['meters'] <= 0:
                 raise ValueError('Invalid connector weight')
@@ -105,7 +115,17 @@ class Model:
         for p in self.places:
             if p.entrance and (p.entrance not in self.nodes or self.nodes[p.entrance]['floor'] != p.floor):
                 raise ValueError(f'Invalid entrance for {p.id}')
+        self.rebuild_places_layer()
+
+    def rebuild_places_layer(self):
+        """Refresh the spatial table after loading or editing place records."""
         self.by_id = {p.id: p for p in self.places}
+        self.places_gdf = gpd.GeoDataFrame(
+            [{'id': p.id, 'title': p.title, 'floor': p.floor, 'unit': p.unit,
+              'category': p.category, 'entrance': p.entrance, 'geometry': Point(p.xy)}
+             for p in self.places],
+            columns=['id', 'title', 'floor', 'unit', 'category', 'entrance', 'geometry'],
+            geometry='geometry', crs=None).set_index('id')
 
     def connect(self, a, b, cost):
         self.graph[a].append((b, cost))
@@ -142,16 +162,15 @@ class Model:
             raise ValueError('Radius must be finite and positive')
         radii = [20, 40, 60] if radius == 20 else [radius]
         center = Point(xy)
+        places = self.places_gdf[self.places_gdf.floor == floor]
+        if category != 'All':
+            places = places[places.category == category]
+        distances = places.distance(center) * self.scale
         for actual in radii:
             buffer = center.buffer(actual / self.scale, quad_segs=64)
-            matches = []
-            for p in self.places:
-                if p.floor != floor or (category != 'All' and p.category != category):
-                    continue
-                distance = center.distance(Point(p.xy)) * self.scale
-                # Polygon approximation must not exclude a true circular boundary point.
-                if buffer.intersects(Point(p.xy)) or distance <= actual + 1e-9:
-                    matches.append((distance, p))
+            # Include exact circular boundaries missed by polygon approximation.
+            inside = places.intersects(buffer) | (distances <= actual + 1e-9)
+            matches = [(float(distances.loc[key]), self.by_id[key]) for key in places.index[inside]]
             if matches:
                 return sorted(matches, key=lambda row: (row[0], row[1].title)), actual
         return [], radii[-1]
