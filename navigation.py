@@ -228,7 +228,7 @@ class Player:
             for junction, distance, forward_to_junction in (
                     (self.node, self.progress*length, False),
                     (self.target, (1-self.progress)*length, True)):
-                if abs(alignment) >= .35 or distance*self.model.scale > self.turn_radius:
+                if alignment >= .35 or distance*self.model.scale > self.turn_radius:
                     continue
                 origin = self.model.nodes[junction]['xy']
                 for branch,_ in self.model.graph[junction]:

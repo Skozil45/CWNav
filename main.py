@@ -214,18 +214,21 @@ class MapView(QGraphicsView):
                 if w.model.nodes[a]['floor'] == floor:
                     network_path.moveTo(QPointF(*w.model.nodes[a]['xy']))
                     network_path.lineTo(QPointF(*w.model.nodes[b]['xy']))
+            shop_points = QPainterPath()
             for node_id in set(w.model.data['entrances'].values()):
                 node = w.model.nodes[node_id]
                 if node['floor'] == floor:
-                    network_path.addEllipse(QPointF(*node['xy']), .9, .9)
+                    shop_points.addEllipse(QPointF(*node['xy']), .9, .9)
             pen = QPen(QColor('#61736b'), .65)
             self.network_item = self.scene().addPath(network_path, pen)
+            points_item = self.scene().addPath(shop_points, QPen(QColor('black'), .65), QBrush(QColor('black')))
+            points_item.setParentItem(self.network_item)
         self.network_item.setVisible(w.network.isChecked())
         r = radius / w.model.scale
         self.buffer_item.setRect(-r,-r,2*r,2*r)
         for _, place in results:
             if place.floor == floor:
-                self.marker(place.xy, '#52685b', 1, place.title)
+                self.marker(place.xy, '#000000', 1, place.title)
         if path:
             if w.player.floor == floor:
                 self.line([w.player.xy, w.model.nodes[path[0]]['xy']], ACCENT, 1.4)
