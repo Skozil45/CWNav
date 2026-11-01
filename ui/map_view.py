@@ -1,4 +1,3 @@
-"""Interactive 2D map view for CWNav mall layout rendering."""
 import xml.etree.ElementTree as ET
 
 from PySide6.QtCore import Qt, QPoint, QPointF, QRectF
@@ -259,10 +258,6 @@ class MapView(QGraphicsView):
         self.network_item.setVisible(w.network.isChecked())
         r = radius / w.model.scale
         self.buffer_item.setRect(-r, -r, 2 * r, 2 * r)
-
-        for _, place in results:
-            if place.floor == floor:
-                self.marker(place.xy, '#000000', 1, place.title)
 
         if path:
             if w.player.floor == floor:
