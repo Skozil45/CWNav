@@ -1,4 +1,3 @@
-"""Package containing UI presentation components for CWNav."""
 from ui.map_view import MapView
 from ui.sidebar_panel import SidebarPanel
 from ui.main_window import Window

@@ -1,5 +1,4 @@
-"""Fit fixed labels inside rasterized source shop silhouettes, in local map units."""
-import math
+import math
 import textwrap
 
 from PySide6.QtCore import QPoint, QPointF, QRect, QRectF, Qt
