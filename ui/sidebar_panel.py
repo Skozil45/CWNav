@@ -1,4 +1,3 @@
-"""Sidebar controls and search panel for CWNav."""
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
@@ -15,6 +14,7 @@ class SidebarPanel(QWidget):
 
         side = QVBoxLayout(self)
         side.setContentsMargins(6, 8, 18, 8)
+        side.setSpacing(6)
 
         # Store search section
         side.addWidget(self._heading('Find a store or facility'))
@@ -29,7 +29,7 @@ class SidebarPanel(QWidget):
         self.stores.setMaximumHeight(230)
         side.addWidget(self.stores)
 
-        # Route preference section
+        # Route preference section (grouped close to find-a-store)
         side.addWidget(self._heading('Your route'))
         self.transport = QComboBox()
         self.transport.addItems(['Any floor connection', 'Lifts only', 'Escalators only'])
@@ -43,7 +43,8 @@ class SidebarPanel(QWidget):
         clear_btn.clicked.connect(self.window.clear_destination)
         side.addWidget(clear_btn)
 
-        # Nearby facilities section
+        # Nearby facilities section (spaced further down)
+        side.addSpacing(22)
         side.addWidget(self._heading('Nearby on your floor'))
         self.category = QComboBox()
         self.category.addItems(['All', 'Dining', 'Toilets', 'Lifts', 'Escalators', 'ATMs', 'Stores'])
@@ -56,23 +57,30 @@ class SidebarPanel(QWidget):
         self.radius = QSpinBox()
         self.radius.setRange(5, 60)
         self.radius.setValue(20)
-        self.radius.setSuffix(' m (approx.)')
-        self.radius.setAccessibleName('Search radius in approximate meters')
+        self.radius.setSuffix(' m')
+        self.radius.setAccessibleName('Search radius in meters')
         radius_label.setBuddy(self.radius)
         radius_row.addWidget(radius_label)
         radius_row.addWidget(self.radius)
         side.addLayout(radius_row)
 
-        self.near_status = self._label('')
-        side.addWidget(self.near_status)
+        # Unified nearby card: header bar + list widget
+        nearby_box = QVBoxLayout()
+        nearby_box.setSpacing(0)
+
+        self.near_status = QLabel('')
+        self.near_status.setObjectName('near_header')
+        self.near_status.setTextFormat(Qt.TextFormat.PlainText)
+        nearby_box.addWidget(self.near_status)
 
         self.nearby_list = QListWidget()
+        self.nearby_list.setObjectName('nearby_list')
         self.nearby_list.setAccessibleName('Nearby facilities; Enter selects a destination')
         self.nearby_list.setMinimumHeight(90)
         self.nearby_list.setMaximumHeight(180)
-        side.addWidget(self.nearby_list)
+        nearby_box.addWidget(self.nearby_list)
 
-        side.addWidget(self._label('Nearby = straight-line distance. Routes follow corridors.\n20 m expands to 40 / 60 m when empty.'))
+        side.addLayout(nearby_box)
         side.addStretch()
 
         self._wire_signals()
