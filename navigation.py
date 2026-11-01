@@ -64,7 +64,10 @@ def load_places(data):
 
 class Model:
     def __init__(self, root=ROOT):
-        self.data = json.loads((root / 'navigation-data.json').read_text(encoding='utf-8'))
+        data_path = root / 'data' / 'navigation-data.json'
+        if not data_path.exists():
+            data_path = root / 'navigation-data.json'
+        self.data = json.loads(data_path.read_text(encoding='utf-8'))
         self.scale = float(self.data['meters_per_unit'])
         if not math.isfinite(self.scale) or self.scale <= 0:
             raise ValueError('meters_per_unit must be finite and positive')
