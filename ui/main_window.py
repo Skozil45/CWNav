@@ -1,4 +1,3 @@
-"""Main application window for CWNav."""
 import time
 from PySide6.QtCore import Qt, QTimer
 from PySide6.QtWidgets import (
@@ -58,19 +57,13 @@ class Window(QMainWindow):
         layout = QVBoxLayout(root)
         layout.setContentsMargins(18, 14, 18, 12)
 
-        # Header bar
+        # Header bar (title only)
         header = QHBoxLayout()
         title = QLabel('CWNav')
         title.setObjectName('title')
         header.addWidget(title)
-        header.addWidget(QLabel('Ciputra World Surabaya  /  Indoor navigation'))
         header.addStretch()
         layout.addLayout(header)
-
-        notice = QLabel('SIMULATION | Approximate approaches, distances and floor connections')
-        notice.setObjectName('notice')
-        notice.setWordWrap(True)
-        layout.addWidget(notice)
 
         splitter = QSplitter()
         layout.addWidget(splitter, 1)
@@ -91,7 +84,7 @@ class Window(QMainWindow):
         toolbar = QHBoxLayout()
         self.floor = QComboBox()
         self.floor.addItems(list(FLOORS.values()))
-        self.floor.setAccessibleName('Viewed floor; does not move the player')
+        self.floor.setAccessibleName('Viewed floor; does not move player')
         self.floor.currentIndexChanged.connect(self.change_floor)
         toolbar.addWidget(self.floor)
 
@@ -122,32 +115,38 @@ class Window(QMainWindow):
             toolbar.addWidget(btn)
 
         map_layout.addLayout(toolbar)
-        map_layout.addWidget(self.view, 1)
 
         self.position_label = self._label('')
         map_layout.addWidget(self.position_label)
 
+        map_layout.addWidget(self.view, 1)
+
+        # Action row: Floor connection + spacer + Movement speed
+        action_row = QHBoxLayout()
+        action_row.setSpacing(12)
+
         self.cross = QPushButton('Use floor connection (E)')
         self.cross.clicked.connect(self.transition)
-        map_layout.addWidget(self.cross)
+        action_row.addWidget(self.cross)
+        action_row.addStretch()
 
-        speed_row = QHBoxLayout()
         speed_label = QLabel('Movement speed')
         self.speed = QDoubleSpinBox()
         self.speed.setRange(0.5, 12)
         self.speed.setSingleStep(0.5)
         self.speed.setDecimals(1)
         self.speed.setValue(12)
-        self.speed.setSuffix(' m/s (approx.)')
-        self.speed.setAccessibleName('Simulated movement speed in approximate meters per second')
+        self.speed.setSuffix(' m/s')
+        self.speed.setAccessibleName('Simulated movement speed in meters per second')
         speed_label.setBuddy(self.speed)
-        speed_row.addWidget(speed_label)
-        speed_row.addWidget(self.speed)
-        speed_row.addStretch()
-        map_layout.addLayout(speed_row)
+        action_row.addWidget(speed_label)
+        action_row.addWidget(self.speed)
 
+        map_layout.addLayout(action_row)
+
+        # Tutorial text with pipe separators
         map_layout.addWidget(self._label(
-            'WASD / arrows to walk. Drag to pan; scroll to zoom. E: change floor within ~3 m along the walkway.\n'
+            'WASD / arrows to walk | Drag to pan | Scroll to zoom | E: change floor within 3 m along walkway\n'
             'Teal: player and route | Rust: destination | Purple: floor connector'
         ))
 
@@ -173,7 +172,7 @@ class Window(QMainWindow):
                 continue
             item = QListWidgetItem(f'{p.title}\n{FLOORS[p.floor]}' + (f' - Unit {p.unit}' if p.unit else ''))
             item.setData(Qt.ItemDataRole.UserRole, p.id)
-            item.setToolTip('Approximate approach mapped' if p.entrance else 'Entrance not mapped: routing unavailable')
+            item.setToolTip('Approach mapped' if p.entrance else 'Entrance not mapped: routing unavailable')
             self.sidebar.stores.addItem(item)
 
         if not self.sidebar.stores.count():
@@ -258,16 +257,16 @@ class Window(QMainWindow):
                 if not path:
                     message = f'{p.title}\nNo connected route from your position.'
                 elif remaining < 0.2:
-                    message = f'{p.title}\nArrived at the approximate approach point.'
+                    message = f'{p.title}\nArrived at destination approach point.'
                 else:
                     total = self.total_distance if self.total_distance is not None else remaining
-                    message = f'{p.title}\nRemaining ~ {remaining:.1f} m | Initial ~ {total:.1f} m\nEntrance and distance are approximate.'
+                    message = f'{p.title}\nRemaining {remaining:.1f} m | Initial {total:.1f} m'
                     transitions = [
                         c['name'] for c in self.model.data['connectors']
                         if any({a, b} == {c['a'], c['b']} for a, b in zip(path, path[1:]))
                     ]
                     if transitions:
-                        message += '\nVia ' + ', '.join(transitions) + '. Press E within ~ 3 m along the walkway.'
+                        message += '\nVia ' + ', '.join(transitions) + '. Press E within 3 m along walkway.'
             self.sidebar.route_label.setText(message)
         else:
             self.sidebar.route_label.setText('Choose a destination to plan a route.\nRoutes reuse the shared corridor rails.')
@@ -287,7 +286,7 @@ class Window(QMainWindow):
 
             for distance, place in results:
                 item = QListWidgetItem(
-                    f'{place.title}\n~ {distance:.1f} m straight-line' +
+                    f'{place.title}\n{distance:.1f} m straight-line' +
                     (' | route unavailable' if not place.entrance else '')
                 )
                 item.setData(Qt.ItemDataRole.UserRole, place.id)
@@ -301,15 +300,15 @@ class Window(QMainWindow):
                 self.sidebar.nearby_list.addItem(item)
             self.last_results = rows
 
-        self.sidebar.near_status.setText(f'{FLOORS[self.player.floor]} | {len(results)} results within ~ {radius} m')
+        self.sidebar.near_status.setText(f'{FLOORS[self.player.floor]} | {len(results)} results within {radius} m')
         connector = self.player.connector()
         self.cross.setEnabled(connector is not None)
         self.cross.setText(f"Use {connector.get('kind', 'escalator')} (E)" if connector else 'Use floor connection (E)')
         self.cross.setToolTip(
             (connector['name'] + '\n' if connector else '') +
-            'Available within approximately 3 m along the connected walkway. Press E or click to change floor.'
+            'Available within 3 m along connected walkway. Press E or click to change floor.'
         )
 
         x, y = self.player.xy
-        self.position_label.setText(f'Player: {FLOORS[self.player.floor]} | ({x:.1f}, {y:.1f}) map units   |   Viewing: {FLOORS[self.viewed_floor]}')
+        self.position_label.setText(f'Player: {FLOORS[self.player.floor]} | ({x:.1f}, {y:.1f}) map units')
         self.view.redraw(path, results, radius)
