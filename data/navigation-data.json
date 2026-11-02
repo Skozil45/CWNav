@@ -3015,6 +3015,27 @@
         398.5,
         212.5
       ]
+    },
+    "ground-east-exit-approach": {
+      "floor": "ground",
+      "xy": [
+        91.0,
+        149.0
+      ]
+    },
+    "ground-south-exit-approach": {
+      "floor": "ground",
+      "xy": [
+        258.5,
+        34.0
+      ]
+    },
+    "ground-north-exit-approach": {
+      "floor": "ground",
+      "xy": [
+        341.0,
+        258.0
+      ]
     }
   },
   "edges": [
@@ -4096,10 +4117,6 @@
     ],
     [
       "ground-corridor-170-298",
-      "ground-corridor-210-298"
-    ],
-    [
-      "ground-corridor-170-298",
       "ground-loft-approach"
     ],
     [
@@ -4813,6 +4830,22 @@
     [
       "ground-corridor-787-402",
       "ground-north-toilets-approach"
+    ],
+    [
+      "ground-corridor-517-76",
+      "ground-south-exit-approach"
+    ],
+    [
+      "ground-corridor-678-516",
+      "ground-north-exit-approach"
+    ],
+    [
+      "ground-corridor-170-298",
+      "ground-east-exit-approach"
+    ],
+    [
+      "ground-east-exit-approach",
+      "ground-corridor-210-298"
     ]
   ],
   "connectors": [
@@ -5269,6 +5302,45 @@
       "unit": "",
       "entrance": "first-central-escalator-approach",
       "description": "Pair and approach inferred; direction unverified."
+    },
+    {
+      "id": "ground:east-exit",
+      "title": "East Lobby Exit",
+      "floor": "ground",
+      "unit": "",
+      "category": "Exit",
+      "xy": [
+        91.0,
+        149.0
+      ],
+      "entrance": "ground-east-exit-approach",
+      "description": "Approximate lobby exit approach inferred from supplied floor plan; not a surveyed or certified emergency exit."
+    },
+    {
+      "id": "ground:south-exit",
+      "title": "South Lobby Exit",
+      "floor": "ground",
+      "unit": "",
+      "category": "Exit",
+      "xy": [
+        258.5,
+        34.0
+      ],
+      "entrance": "ground-south-exit-approach",
+      "description": "Approximate lobby exit approach inferred from supplied floor plan; not a surveyed or certified emergency exit."
+    },
+    {
+      "id": "ground:north-exit",
+      "title": "North Lobby Exit",
+      "floor": "ground",
+      "unit": "",
+      "category": "Exit",
+      "xy": [
+        341.0,
+        258.0
+      ],
+      "entrance": "ground-north-exit-approach",
+      "description": "Approximate lobby exit approach inferred from supplied floor plan; not a surveyed or certified emergency exit."
     }
   ],
   "unsupported": {

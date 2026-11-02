@@ -57,12 +57,19 @@ class Window(QMainWindow):
         layout = QVBoxLayout(root)
         layout.setContentsMargins(18, 14, 18, 12)
 
-        # Header bar (title only)
         header = QHBoxLayout()
         title = QLabel('CWNav')
         title.setObjectName('title')
         header.addWidget(title)
         header.addStretch()
+        transport_label = QLabel('Route preference')
+        self.transport = QComboBox()
+        self.transport.addItems(['Any floor connection', 'Lifts only', 'Escalators only'])
+        self.transport.setAccessibleName('Route transport preference')
+        transport_label.setBuddy(self.transport)
+        self.transport.currentIndexChanged.connect(self.change_transport)
+        header.addWidget(transport_label)
+        header.addWidget(self.transport)
         layout.addLayout(header)
 
         splitter = QSplitter()
@@ -72,6 +79,8 @@ class Window(QMainWindow):
         self.sidebar = SidebarPanel(self)
         scroll = QScrollArea()
         scroll.setWidgetResizable(True)
+        # Reserve scrollbar width so expanding sections cannot reflow those above.
+        scroll.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
         scroll.setWidget(self.sidebar)
         scroll.setMinimumWidth(280)
         splitter.addWidget(scroll)
@@ -147,7 +156,7 @@ class Window(QMainWindow):
         # Tutorial text with pipe separators
         map_layout.addWidget(self._label(
             'WASD / arrows to walk | Drag to pan | Scroll to zoom | E: change floor within 3 m along walkway\n'
-            'Teal: player and route | Rust: destination | Purple: floor connector'
+            'Red: player | Teal: route | Rust: destination | Purple: floor connector'
         ))
 
         splitter.addWidget(map_panel)
@@ -187,6 +196,22 @@ class Window(QMainWindow):
         self.destination = self.model.by_id[key]
         self.total_distance = self.player.route(self.destination.entrance)[1] if self.destination.entrance else None
         self.refresh()
+
+    def find_nearest_place(self) -> None:
+        category = self.sidebar.route_category.currentText()
+        place, distance = self.player.nearest_place(category)
+        if place is None:
+            self.sidebar.nearest_status.setText(f'No reachable destination in {category}. Existing route kept.')
+            return
+        self.destination = place
+        self.total_distance = distance
+        self.sidebar.nearest_status.setText(
+            f'Selected {place.title}: approximately {distance:.1f} m by route. '
+            'Click Find nearest again after moving or changing preferences.'
+        )
+        self.show_player()
+        self.refresh()
+        self.view.setFocus()
 
     def clear_destination(self) -> None:
         self.destination = None

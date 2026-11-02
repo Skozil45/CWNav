@@ -114,10 +114,22 @@ class MapView(QGraphicsView):
             item.setVisible(self.window.network.isChecked())
 
         self.network_item = None
-        self.player_item = self.scene().addEllipse(
-            -2.2, -2.2, 4.4, 4.4,
-            QPen(QColor('white'), 0.6),
-            QBrush(QColor(ACCENT))
+        person = QPainterPath()
+        person.addEllipse(QRectF(-0.9, -8, 1.8, 1.8))
+        # Feet sit at the actual player coordinate; overlapping parts form one silhouette.
+        for x, y, width, height, radius in (
+            (-1.8, -5.9, 3.6, 2.1, 0.9),
+            (-1.0, -5.0, 2.0, 3.0, 0.3),
+            (-1.8, -4.8, 0.65, 2.8, 0.325),
+            (1.15, -4.8, 0.65, 2.8, 0.325),
+            (-1.0, -2.8, 0.8, 2.8, 0.4),
+            (0.2, -2.8, 0.8, 2.8, 0.4),
+        ):
+            part = QPainterPath()
+            part.addRoundedRect(QRectF(x, y, width, height), radius, radius)
+            person = person.united(part)
+        self.player_item = self.scene().addPath(
+            person, QPen(QColor('white'), 0.18), QBrush(QColor('#dc2626'))
         )
         self.player_item.setToolTip('You are here (simulated)')
         self.player_item.setZValue(10)
@@ -266,6 +278,10 @@ class MapView(QGraphicsView):
                 na, nb = w.model.nodes[a], w.model.nodes[b]
                 if na['floor'] == nb['floor'] == floor:
                     self.line([na['xy'], nb['xy']], ACCENT, 1.4)
+
+        for place in w.model.places:
+            if place.category == 'Exit' and place.floor == floor:
+                self.marker(place.xy, '#28794c', 1.5, place.title)
 
         if w.destination and w.destination.floor == floor:
             xy = w.model.nodes[w.destination.entrance]['xy'] if w.destination.entrance else w.destination.xy

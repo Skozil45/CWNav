@@ -11,6 +11,7 @@ from shapely.geometry import LineString, Point, Polygon
 
 ROOT = Path(__file__).resolve().parent
 FLOORS = {'ground': 'Ground Floor', 'first': '1st Floor'}
+CATEGORIES = ['All', 'Dining', 'Toilets', 'Lifts', 'Escalators', 'ATMs', 'Stores', 'Exit']
 
 
 class PlainText(HTMLParser):
@@ -219,7 +220,8 @@ class Model:
             inside = places.intersects(buffer) | (distances <= actual + 1e-9)
             matches = [(float(distances.loc[key]), self.by_id[key]) for key in places.index[inside]]
             if matches:
-                return sorted(matches, key=lambda row: (row[0], row[1].title)), actual
+                matches.sort(key=lambda row: (row[0], row[1].title))
+                return (matches[:1] if category == 'Exit' else matches), actual
         return [], radii[-1]
 
 
@@ -332,6 +334,22 @@ class Player:
              (path2, cost2 + (1 - self.progress) * length)],
             key=lambda x: x[1]
         )
+
+    def nearest_place(self, category: str) -> tuple[Place | None, float]:
+        """Choose the reachable destination with the shortest Dijkstra route."""
+        if category not in CATEGORIES:
+            raise ValueError('Unknown facility category')
+        candidates = []
+        for place in self.model.places:
+            if not place.entrance or (category != 'All' and place.category != category):
+                continue
+            path, distance = self.route(place.entrance)
+            if path and math.isfinite(distance):
+                candidates.append((distance, place.title, place.id, place))
+        if not candidates:
+            return None, math.inf
+        distance, _, _, place = min(candidates)
+        return place, distance
 
     def connector(self) -> dict | None:
         """Find the nearest vertical connector if player is within threshold radius."""

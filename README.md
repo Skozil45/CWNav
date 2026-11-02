@@ -14,7 +14,12 @@ Keep `main.py`, `navigation.py`, `ui/`, `data/`, `extracted-maps/`, and `require
 
 ## Controls
 
+- Click the left-panel section headers to expand or collapse search, nearest-route and nearby controls. Your route summary and Clear destination stay visible. The route preference dropdown is in the top header.
+
 - Select a shop or facility to show its route.
+- Search for East Lobby Exit, South Lobby Exit or North Lobby Exit to route to a Ground Floor exit approach (green markers).
+- Choose a category under Nearest by walking route and click Find nearest. It selects the shortest reachable route from your current position across both floors, respecting the lift/escalator preference. Click again after moving or changing preferences to choose a new nearest destination.
+- Nearby on your floor uses straight-line distance and its search radius. The Exit category shows only the nearest exit within that radius; no exits are mapped on 1st Floor. The Dijkstra search is independent of this radius.
 - Click the map and use WASD or arrow keys to move along corridors.
 - Default speed is 12 approximate m/s and can be adjusted.
 - Drag to pan and scroll to zoom.
@@ -26,6 +31,8 @@ Keep `main.py`, `navigation.py`, `ui/`, `data/`, `extracted-maps/`, and `require
 GeoPandas manages spatial layers and nearby queries, Shapely supplies geometry, Dijkstra finds routes and PySide6 displays the interface. Coordinates are local map units without a geographic CRS. Scale and physical access remain unverified.
 
 ## Project Architecture
+
+The three lobby exit approaches and their short corridor branches are inferred from the supplied Ground Floor plan. Their physical positions, accessibility and scale are unverified; this is not a certified emergency evacuation map.
 
 ```text
 CWNav/

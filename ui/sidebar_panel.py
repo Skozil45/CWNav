@@ -1,8 +1,9 @@
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
-    QListWidget, QPushButton, QComboBox, QSpinBox
+    QListWidget, QPushButton, QComboBox, QSpinBox, QToolButton, QSizePolicy
 )
+from navigation import CATEGORIES
 
 
 class SidebarPanel(QWidget):
@@ -16,41 +17,40 @@ class SidebarPanel(QWidget):
         side.setContentsMargins(6, 8, 18, 8)
         side.setSpacing(6)
 
-        # Store search section
-        side.addWidget(self._heading('Find a store or facility'))
+        search_section = self._accordion(side, 'Find a store or facility', True)
         self.search = QLineEdit()
         self.search.setPlaceholderText('Name or unit number, e.g. Fore or 53')
         self.search.setAccessibleName('Search stores by name or unit number')
-        side.addWidget(self.search)
+        search_section.addWidget(self.search)
 
         self.stores = QListWidget()
         self.stores.setAccessibleName('Search results; Enter selects a destination')
-        self.stores.setMinimumHeight(100)
-        self.stores.setMaximumHeight(230)
-        side.addWidget(self.stores)
+        self.stores.setFixedHeight(230)
+        search_section.addWidget(self.stores)
 
-        # Route preference section (grouped close to find-a-store)
         side.addWidget(self._heading('Your route'))
-        self.transport = QComboBox()
-        self.transport.addItems(['Any floor connection', 'Lifts only', 'Escalators only'])
-        self.transport.setAccessibleName('Route transport preference')
-        side.addWidget(self.transport)
 
         self.route_label = self._label('Choose a destination to plan a route.')
         side.addWidget(self.route_label)
 
-        clear_btn = QPushButton('Clear destination')
-        clear_btn.clicked.connect(self.window.clear_destination)
-        side.addWidget(clear_btn)
+        nearest_section = self._accordion(side, 'Nearest by walking route')
+        self.route_category = QComboBox()
+        self.route_category.addItems(CATEGORIES)
+        self.route_category.setCurrentText('Dining')
+        self.route_category.setAccessibleName('Category for shortest walking route')
+        nearest_section.addWidget(self.route_category)
+        self.find_nearest = QPushButton('Find nearest')
+        self.find_nearest.clicked.connect(self.window.find_nearest_place)
+        nearest_section.addWidget(self.find_nearest)
+        self.nearest_status = self._label('Across both floors. Uses route preference, not nearby radius.')
+        nearest_section.addWidget(self.nearest_status)
 
-        # Nearby facilities section (spaced further down)
-        side.addSpacing(22)
-        side.addWidget(self._heading('Nearby on your floor'))
+        nearby_section = self._accordion(side, 'Nearby on your floor')
         self.category = QComboBox()
-        self.category.addItems(['All', 'Dining', 'Toilets', 'Lifts', 'Escalators', 'ATMs', 'Stores'])
+        self.category.addItems(CATEGORIES)
         self.category.setAccessibleName('Facility category')
         self.category.setCurrentText('Dining')
-        side.addWidget(self.category)
+        nearby_section.addWidget(self.category)
 
         radius_row = QHBoxLayout()
         radius_label = QLabel('Search radius')
@@ -62,7 +62,7 @@ class SidebarPanel(QWidget):
         radius_label.setBuddy(self.radius)
         radius_row.addWidget(radius_label)
         radius_row.addWidget(self.radius)
-        side.addLayout(radius_row)
+        nearby_section.addLayout(radius_row)
 
         # Unified nearby card: header bar + list widget
         nearby_box = QVBoxLayout()
@@ -76,12 +76,14 @@ class SidebarPanel(QWidget):
         self.nearby_list = QListWidget()
         self.nearby_list.setObjectName('nearby_list')
         self.nearby_list.setAccessibleName('Nearby facilities; Enter selects a destination')
-        self.nearby_list.setMinimumHeight(90)
-        self.nearby_list.setMaximumHeight(180)
+        self.nearby_list.setFixedHeight(180)
         nearby_box.addWidget(self.nearby_list)
 
-        side.addLayout(nearby_box)
+        nearby_section.addLayout(nearby_box)
         side.addStretch()
+        clear_btn = QPushButton('Clear destination')
+        clear_btn.clicked.connect(self.window.clear_destination)
+        side.addWidget(clear_btn)
 
         self._wire_signals()
 
@@ -93,7 +95,28 @@ class SidebarPanel(QWidget):
         self.nearby_list.itemActivated.connect(self.window.select_item)
         self.category.currentTextChanged.connect(self.window.refresh)
         self.radius.valueChanged.connect(self.window.refresh)
-        self.transport.currentIndexChanged.connect(self.window.change_transport)
+
+    def _accordion(self, side: QVBoxLayout, title: str, expanded: bool = False) -> QVBoxLayout:
+        header = QToolButton()
+        header.setObjectName('accordion')
+        header.setText(title)
+        header.setCheckable(True)
+        header.setChecked(expanded)
+        header.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextBesideIcon)
+        header.setArrowType(Qt.ArrowType.DownArrow if expanded else Qt.ArrowType.RightArrow)
+        header.setAccessibleName(title)
+        header.setToolTip('Expand or collapse this section')
+        body = QWidget()
+        body.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Fixed)
+        content = QVBoxLayout(body)
+        content.setContentsMargins(6, 6, 6, 10)
+        body.setVisible(expanded)
+        header.toggled.connect(body.setVisible)
+        header.toggled.connect(lambda checked: header.setArrowType(
+            Qt.ArrowType.DownArrow if checked else Qt.ArrowType.RightArrow))
+        side.addWidget(header)
+        side.addWidget(body)
+        return content
 
     def _heading(self, text: str) -> QLabel:
         lbl = QLabel(text)

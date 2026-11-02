@@ -27,6 +27,19 @@ QLabel#heading {{
     font-weight: 600;
     color: #1b2622;
 }}
+QToolButton#accordion {{
+    background: #e7ede8;
+    border: 1px solid #b5c2ba;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 600;
+}}
+QToolButton#accordion:hover {{
+    background: #d4e7de;
+}}
+QToolButton#accordion:focus {{
+    border: 1.5px solid #00695c;
+}}
 
 /* Form elements & buttons: cleaner, thinner outline and comfortable padding */
 QPushButton, QLineEdit {{
